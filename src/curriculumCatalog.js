@@ -58,9 +58,9 @@ export const curriculumCatalog = {
       ]
     },
     "CRE": {
-      title: "Christian Religious Education Pre-Primary 1 (KICD design, April 2024)",
+      title: "Christian Religious Education Pre-Primary 1 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-PP1-APRIL-2024.pdf",
-      sourceLabel: "Official KICD Pre-Primary 1 CRE curriculum design, April 2024.",
+      sourceLabel: "Official KICD Pre-Primary 1 CRE design, April 2024. Verify any later revision before final school planning.",
       totalSuggestedLessons: 90,
       strands: [
         { name: "1.0 Creation", subStrands: ["1.1 Our God (7 lessons)", "1.2 God Our Creator (8 lessons)", "1.3 God Our Loving Father (8 lessons)"] },
