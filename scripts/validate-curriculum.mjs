@@ -39,6 +39,19 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
       }
     }
     if (isCurriculumPlaceholder(null, curriculum) || !hasIndexedTopic) sourceOnlyCount += 1;
+
+    // Where every sub-strand has an explicit lesson count, verify it against the declared total.
+    // Placeholder-only and partial allocations are not treated as complete totals.
+    const allocationValues = (curriculum.strands || []).flatMap(strand => strand.subStrands || []).map(item => {
+      const match = typeof item === "string" ? item.match(/\((\d+)\s+lessons?\)/i) : null;
+      return match ? Number(match[1]) : null;
+    });
+    if (curriculum.totalSuggestedLessons && allocationValues.length > 0 && allocationValues.every(value => value !== null)) {
+      const allocationTotal = allocationValues.reduce((sum, value) => sum + value, 0);
+      if (allocationTotal !== curriculum.totalSuggestedLessons) {
+        errors.push(`${label}: sub-strand lesson allocations sum to ${allocationTotal}, but totalSuggestedLessons is ${curriculum.totalSuggestedLessons}`);
+      }
+    }
   }
 }
 
