@@ -193,6 +193,18 @@ export const curriculumCatalog = {
     }
   },
   "Grade 8": {
+    "Agriculture": {
+      title: "Agriculture Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Agriculture-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 Agriculture design, April 2024; verify any later revision before final school planning.",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Conservation of Resources", subStrands: ["1.1 Soil Conservation Measures (10 lessons)", "1.2 Water Harvesting and Storage (9 lessons)"] },
+        { name: "2.0 Food Production Processes", subStrands: ["2.1 Kitchen and Backyard Gardening (9 lessons)", "2.2 Poultry Rearing in a Fold (11 lessons)", "2.3 Crop Pest and Disease Control (10 lessons)", "2.4 Preparation of Animal Products (9 lessons)", "2.5 Preserving Animal Products (9 lessons)", "2.6 Cooking: Preparing a Balanced Meal (11 lessons)"] },
+        { name: "3.0 Hygiene Practices", subStrands: ["3.1 Cleaning the Kitchen (9 lessons)"] },
+        { name: "4.0 Production Techniques", subStrands: ["4.1 Sewing Skills: Constructing Household Items (14 lessons)", "4.2 Constructing an Innovative Animal Waterer (10 lessons)", "4.3 ICT Support Services (9 lessons)"] }
+      ]
+    },
     "Mathematics": {
       title: "Mathematics Grade 8 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mathematics-Grade-8-Design-Formatted-April-2024.pdf",
