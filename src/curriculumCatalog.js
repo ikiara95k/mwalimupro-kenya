@@ -705,12 +705,12 @@ export const curriculumCatalog = {
   },
   "Grade 6": {
     "CRE": {
-      title: "Christian Religious Education Grade 6 (KICD curriculum design, April 2024 — partial transcription)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-GRADE-6-DESIGN-APRIL-2024.pdf",
-      sourceLabel: "Official KICD Grade 6 CRE design, April 2024. This is a partial transcription only; the complete strand sequence must be checked against the full design.",
+      title: "Christian Religious Education Grade 6 (revised KICD design, October 2024 — partial transcription)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/CRE-GRADE-6-DESIGN-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 6 CRE design, October 2024. The partial labels here came from the April 2024 summary and have not yet been reconciled against this revision; scheme generation remains blocked.",
       totalSuggestedLessons: 90,
       reviewRequired: true,
-      reviewReason: "Partial transcription only: strands 1.0–3.0 and Church sub-strands 4.1–4.2 still need to be transcribed from the full KICD design. Scheme generation remains blocked.",
+      reviewReason: "Partial transcription only: reconcile these April 2024 topic labels against the revised October 2024 design, transcribe strands 1.0–3.0 and Church sub-strands 4.1–4.2. Scheme generation remains blocked.",
       strands: [
         { name: "4.0 The Church (partial)", subStrands: ["4.3 Church Unity (5 lessons)"] },
         { name: "5.0 Christian Living Today", subStrands: ["5.1 Friendship Formation (6 lessons)", "5.2 Human Sexuality (7 lessons)", "5.3 Sanctity of Life (4 lessons)", "5.4 Alcohol, Drug and Substance Abuse (4 lessons)"] }
