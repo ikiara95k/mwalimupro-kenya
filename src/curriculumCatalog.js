@@ -665,80 +665,15 @@ export const curriculumCatalog = {
       ]
     },
     "Mandarin": {
-      title: "Mandarin Grade 5 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
-      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Mandarin Grade 5 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Mandarin-Grade-5-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 5 Mandarin design, October 2024.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
-      ]
-    },
-    "Science & Technology": {
-      title: "Science & Technology Grade 5 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
-      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
-      strands: [
-        { name: "Science & Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
-      ]
-    },
-  },
-  "Grade 6": {
-    "CRE": {
-      title: "Christian Religious Education Grade 6 (Revised 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/CRE-GRADE-6-DESIGN-Revised.pdf",
-      sourceLabel: "Official KICD revised Grade 6 CRE curriculum design (October 2024). Strand sequence awaits transcription and verification.",
-      strands: [
-        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Six CRE design to confirm the current strand and sub-strand sequence before planning."] }
-      ]
-    },
-    "Social Studies": {
-      title: "Social Studies Grade 6 (Revised 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-6-Social-studies-Revised-Oct-1.pdf",
-      sourceLabel: "Official KICD Grade 6 Social Studies curriculum design (revised 2024)",
-      strands: [
-        { name: "1.0 Natural and the Built Environments", subStrands: ["Position and Size of Countries in Eastern Africa (3 lessons)", "Main Physical Features in Eastern Africa (4 lessons)", "Climatic Regions in Eastern Africa (5 lessons)", "Vegetation in Eastern Africa (4 lessons)", "Historic Built Environments (4 lessons)"] },
-        { name: "2.0 People and Social Organisation", subStrands: ["Language Groups in Eastern Africa (5 lessons)", "Population Distribution in Eastern Africa (3 lessons)", "Culture and Social Organisation (4 lessons)", "School and Community (3 lessons)"] },
-        { name: "3.0 Resources and Economic Activities in Eastern Africa", subStrands: ["Beef Farming (4 lessons)", "Fishing in Eastern Africa (5 lessons)", "Wildlife and Tourism in Eastern Africa (5 lessons)", "Transport in Eastern Africa (4 lessons)", "Communication in Eastern Africa (4 lessons)", "Mining in Eastern Africa (5 lessons)"] },
-        { name: "4.0 Political Systems", subStrands: ["Traditional Forms of Government (5 lessons)", "Regional Co-operations (4 lessons)", "Citizenship (4 lessons)", "Human Rights (4 lessons)"] },
-        { name: "5.0 Governance", subStrands: ["Peace and Conflict Resolution (4 lessons)", "Government Revenue and Expenditure (4 lessons)", "The Preamble of the Constitution of Kenya (3 lessons)"] }
-      ]
-    },
-    "English": {
-      title: "English Grade 6 (KICD revised curriculum design, September 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/ENGLISH-GRADE-6-UPDATED-Revised-Sept.pdf",
-      sourceLabel: "Official KICD revised Grade 6 English design, September 2024.",
-      totalSuggestedLessons: 150,
-      strands: [
-        { name: "1.0 Listening and Speaking", subStrands: ["Pronunciation and Vocabulary (39 lessons)"] },
-        { name: "2.0 Reading", subStrands: ["Extensive Reading (11 lessons)", "Intensive Reading (22 lessons)", "Fluency (3 lessons)"] },
-        { name: "3.0 Language Use", subStrands: ["Word Classes (33 lessons)", "Tenses (6 lessons)"] },
-        { name: "4.0 Writing", subStrands: ["Creative Writing (14 lessons)", "Functional Writing (6 lessons)", "Mechanics of Writing (13 lessons)", "Guided Compositions (3 lessons)"] }
-      ]
-    },
-    "IRE": {
-      title: "Islamic Religious Education Grade 6 (Revised 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/IRE-GRADE-6-CURRICULUM-DESIGNS-Revised.pdf",
-      sourceLabel: "Official KICD revised Grade 6 IRE design, October 2024; complete strand sequence and 90-lesson allocation.",
-      totalSuggestedLessons: 90,
-      strands: [
-        { name: "1.0 Qur'an", subStrands: ["1.1 Selected Chapters (Surah) (12 lessons)"] },
-        { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Purity of Actions (3 lessons)", "2.2 Hadith on Dressing (3 lessons)", "2.3 Hadith on Planting (3 lessons)", "2.4 Hadith on Responsible Capabilities and Resources (3 lessons)"] },
-        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Stories of Prophets Ibrahim and Yusuf (A.S.) (8 lessons)", "3.2 Taqwa (God Consciousness) (2 lessons)", "3.3 Tawakul (Reliance on Allah) (2 lessons)"] },
-        { name: "4.0 Devotional Acts", subStrands: ["4.1 Twaharah (Purity) (6 lessons)", "4.2 Zakat (3 lessons)", "4.3 Saum (4 lessons)", "4.4 Hajj (3 lessons)"] },
-        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Virtues: Work as a Form of Ibadah (2 lessons)", "5.2 Adalah (Justice) (2 lessons)", "5.3 Prohibitions in Islam: Intoxicants (3 lessons)", "5.4 Israf (Extravagance) (2 lessons)", "5.5 Dua (Supplication When Travelling) (2 lessons)"] },
-        { name: "6.0 Muamalat (Social Relations)", subStrands: ["6.1 Fair Treatment of Workers (3 lessons)", "6.2 Relationship with People of Other Faiths (3 lessons)", "6.3 Corruption (4 lessons)"] },
-        { name: "7.0 History of Islam", subStrands: ["7.1 Battle of Badr and Uhud (4 lessons)", "7.2 Treaty of Hudaybiya (3 lessons)", "7.3 Conquest of Makkah (7 lessons)", "7.4 Farewell Pilgrimage (3 lessons)"] }
-      ]
-    },
-    "Agriculture": {
-      title: "Agriculture Grade 6 (Revised 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/AGRICULTURE-Grade-6-30.07.2024.pdf",
-      sourceLabel: "Official KICD Grade 6 Agriculture curriculum design (revised 2024)",
-      totalSuggestedLessons: 120,
-      strands: [
-        { name: "1.0 Conservation of Resources", subStrands: ["1.1 Controlling Soil Erosion (11 lessons)", "1.2 Conserving Water (11 lessons)", "1.3 Conserving Wild Animals (10 lessons)"] },
-        { name: "2.0 Food Production Processes", subStrands: ["2.1 Rearing Small Domestic Animals (12 lessons)", "2.2 Preserving Crop Products (11 lessons)", "2.3 Cooking Food (13 lessons)"] },
-        { name: "3.0 Hygiene Practices", subStrands: ["3.1 Good Grooming (9 lessons)", "3.2 Laundry: Stain Removal (12 lessons)"] },
-        { name: "4.0 Production Techniques", subStrands: ["4.1 Crocheting of Personal Protective Equipment (16 lessons)", "4.2 Constructing Moist Bed Garden (15 lessons)"] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Phonological Awareness: sound discrimination, initials and finals, rhyming, vocabulary and tone discrimination (9 lessons)", "Listening for Gist: active listening, comprehension and summarising (9 lessons)", "Imitative Speaking: pronunciation, intonation, rhythm, stress patterns, active listening and fluency (9 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Reading Aloud: Chinese tones, fluency, word recognition, oral presentation and vocabulary expansion (10 lessons)", "Guided Reading: word recognition, vocabulary development, reading strategies, articulation and intonation (8 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing: spelling, word order, punctuation, Chinese tones and characters, handwriting, vocabulary, paragraph writing and sentence structures (9 lessons)"] }
       ]
     },
     "Mathematics": {
