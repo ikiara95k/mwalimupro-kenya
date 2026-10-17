@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from "react";
 import { Document, Packer, Paragraph, Table, TableRow, TableCell, HeadingLevel, WidthType } from "docx";
-import { getCurriculum, getCurriculumTopics, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
+import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
 
 function App() {
-  const [subject, setSubject] = useState("Mathematics");
+  const [subject, setSubject] = useState("Core Mathematics");
   const [grade, setGrade] = useState("Grade 10");
   const [term, setTerm] = useState("Term 1");
   const [year, setYear] = useState("2027");
@@ -15,6 +15,8 @@ function App() {
 
   const curriculum = useMemo(() => getCurriculum(grade, subject), [grade, subject]);
   const topics = useMemo(() => getCurriculumTopics(grade, subject), [grade, subject]);
+  const gradeSubjects = useMemo(() => getSubjectsForGrade(grade), [grade]);
+  const gradeSourceUrl = getCurriculumSourceUrl(grade);
 
   function changeSubject(value) {
     setSubject(value);
@@ -23,7 +25,9 @@ function App() {
   }
 
   function changeGrade(value) {
+    const availableSubjects = getSubjectsForGrade(value);
     setGrade(value);
+    if (!availableSubjects.includes(subject)) setSubject(availableSubjects[0] || "Mathematics");
     setScheme(null);
     setNotice("");
   }
@@ -125,21 +129,21 @@ function App() {
           <div className="panel-heading"><div><div className="eyebrow">DOCUMENT BUILDER</div><h2>Scheme of work generator</h2><p>Enter your teaching details and create an editable draft.</p></div><div className="panel-symbol">▤</div></div>
           <form onSubmit={generateScheme}>
             <div className="form-grid">
-              <label>Subject<select value={subject} onChange={e => changeSubject(e.target.value)}>{["Mathematics", "Physics"].map(item => <option key={item}>{item}</option>)}</select></label>
-              <label>Grade / Class<select value={grade} onChange={e => changeGrade(e.target.value)}>{["Grade 7","Grade 8","Grade 9","Grade 10","Grade 11","Grade 12"].map(item => <option key={item}>{item}</option>)}</select></label>
+              <label>Subject<select value={subject} onChange={e => changeSubject(e.target.value)}>{gradeSubjects.map(item => <option key={item}>{item}</option>)}</select></label>
+              <label>Grade / Class<select value={grade} onChange={e => changeGrade(e.target.value)}>{getGrades().map(item => <option key={item}>{item}</option>)}</select></label>
               <label>Term<select value={term} onChange={e => setTerm(e.target.value)}>{["Term 1","Term 2","Term 3"].map(item => <option key={item}>{item}</option>)}</select></label>
               <label>Academic year<input value={year} onChange={e => setYear(e.target.value)} inputMode="numeric" /></label>
               <label>Teacher name<input value={teacher} onChange={e => setTeacher(e.target.value)} placeholder="Enter teacher name" /></label>
               <label>School name<input value={school} onChange={e => setSchool(e.target.value)} placeholder="Enter school name" /></label>
               <label className="full">Teaching weeks <div className="range-row"><input type="range" min="1" max="16" value={weeks} onChange={e => setWeeks(Number(e.target.value))} /><b>{weeks} weeks</b></div></label>
-              <div className="full curriculum-source"><div><b>{curriculum ? curriculum.title : "KICD design index: " + grade + " " + subject}</b><p>{curriculum ? topics.length + " indexed sub-strands loaded in official sequence." : "The topic list for this grade and subject is not indexed in MwalimuPro yet. No generic topics will be substituted."}</p></div><a href={curriculum ? curriculum.sourceUrl : KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Open official KICD design ↗</a>{curriculum && <ol className="curriculum-list">{curriculum.strands.map(strand => <li key={strand.name}><b>{strand.name}</b><ul>{strand.subStrands.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>}</div>
+              <div className="full curriculum-source"><div><b>{curriculum ? curriculum.title : "Official KICD source: " + grade + " — " + subject}</b><p>{curriculum ? topics.length + " indexed sub-strands loaded in sequence." : "The official KICD grade page is linked below. This subject is not yet indexed inside MwalimuPro, so the app will not invent or substitute topics."}</p></div><a href={curriculum ? curriculum.sourceUrl : gradeSourceUrl} target="_blank" rel="noreferrer">Open official KICD design for this grade ↗</a>{!curriculum && <><p className="directory-label">Subjects listed for {grade} on the KICD directory:</p><div className="subject-chips">{gradeSubjects.map(item => <span key={item} className={item === subject ? "subject-chip selected" : "subject-chip"}>{item}</span>)}</div></>}{curriculum && <ol className="curriculum-list">{curriculum.strands.map(strand => <li key={strand.name}><b>{strand.name}</b><ul>{strand.subStrands.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>}</div>
             </div>
             <div className="form-footer"><span>Drafts should be reviewed before classroom use.</span><button className="primary" type="submit">Generate scheme <b>→</b></button></div>
           </form>
           {notice && <div className="notice" role="status">{notice}</div>}
         </div>
         <aside className="right-column">
-          <div className="tip-card"><div className="tip-symbol">✦</div><div className="eyebrow">OFFICIAL SOURCE</div><h3>Curriculum-first planning.</h3><p>MwalimuPro loads the indexed strand and sub-strand sequence. Confirm specific learning outcomes, suggested experiences, lesson counts and assessment details in the official design.</p><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Browse KICD curriculum designs ↗</a><div className="tip-footer">No generic topic list is substituted when curriculum data is unavailable.</div></div>
+          <div className="tip-card"><div className="tip-symbol">✦</div><div className="eyebrow">OFFICIAL SOURCE</div><h3>Curriculum-first planning.</h3><p>MwalimuPro links to KICD curriculum-design pages for Pre-Primary and Grades 1–12. Only verified, indexed strands can be used to generate a scheme; other subjects remain linked to KICD until their design content is indexed.</p><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Browse KICD curriculum designs ↗</a><div className="tip-footer">No generic topic list is substituted when curriculum data is unavailable.</div></div>
           <div className="panel roadmap"><h3>What's coming next</h3>{[["Lesson plans","Structured lesson preparation"],["Assessments","Questions and marking guides"],["Document library","Save and revisit your work"],["M-Pesa payments","When paid plans launch"]].map(([title,desc]) => <div className="roadmap-item" key={title}><span /> <div><b>{title}</b><p>{desc}</p></div></div>)}</div>
         </aside>
       </section>
