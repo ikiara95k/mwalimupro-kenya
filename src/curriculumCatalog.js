@@ -964,7 +964,7 @@ export const curriculumCatalog = {
     "Integrated Science": {
       title: "Integrated Science Grade 7 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Integrated-Science-Grade-7-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 7 Integrated Science design, April 2024. Verify any later revision before final school planning.",
+      sourceLabel: "Official KICD Grade 7 Integrated Science curriculum design, April 2024.",
       totalSuggestedLessons: 150,
       strands: [
         { name: "1.0 Scientific Investigation", subStrands: ["1.1 Introduction to Integrated Science (12 lessons)", "1.2 Laboratory Safety (14 lessons)", "1.3 Laboratory Apparatus and Instruments (16 lessons)"] },
