@@ -232,6 +232,30 @@ export const curriculumCatalog = {
         { name: "3.0 Writing", subStrands: ["Guided Writing: Paragraph Writing (2 lessons)", "Guided Writing: Handwriting (4 lessons)", "Guided Writing (6 lessons)", "Guided Writing: Imaginative Composition (2 lessons)", "Guided Writing: Summary Writing (2 lessons)", "Guided Writing: Poetry (2 lessons)"] }
       ]
     },
+    "French": {
+      title: "French Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/French-Grade-9-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 French design, April 2024. Strand allocations are 27 lessons for Listening and Speaking, 18 for Reading, and 9 for Writing, plus 6 showcase lessons; individual sub-strand allocations are not listed in this index.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
+      strands: [
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["Interactive Speaking", "Oral Expression", "Interactive Listening", "Active Listening", "Listening for Information"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["Reading Aloud", "Reading for Understanding", "Guided Reading"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["Guided Writing"] }
+      ]
+    },
+    "German": {
+      title: "German Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/German-Grade-9-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 German design, April 2024. Strand allocations are 27 lessons for Listening and Speaking, 18 for Reading, and 9 for Writing, plus 6 showcase lessons; individual sub-strand allocations are not listed in this index.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
+      strands: [
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["Active Listening", "Listening for Information", "Interactive Speaking", "Oral Expression"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["Reading Comprehension", "Reading Aloud (Articulation)", "Reading Aloud (Fluency)", "Extensive Reading", "Speed Reading"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["Guided Writing", "German Orthography Rules", "Vocabulary", "Creative Writing", "Functional Writing"] }
+      ]
+    },
     "IRE": {
       title: "Islamic Religious Education Grade 9 (KICD curriculum design, March 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Islamic-Religious-Education-Grade-9-Formatted-12.3.2024.pdf",
