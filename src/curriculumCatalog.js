@@ -255,8 +255,8 @@ export const curriculumCatalog = {
     },
     "Mathematics": {
       title: "Mathematics Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/02/GRADE.1.MATHEMATICS.ACTIVITIES.pdf",
+      sourceLabel: "Official KICD Grade 1 Mathematics Activities design (February 2024). The indexed curriculum sequence is not yet transcribed; verify strands, sub-strands and lesson allocations against this document before scheme generation.",
       strands: [
         { name: "Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -329,8 +329,8 @@ export const curriculumCatalog = {
     },
     "Mathematics": {
       title: "Mathematics Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/02/GRADE.2.MATHEMATICS.ACTIVITIES.pdf",
+      sourceLabel: "Official KICD Grade 2 Mathematics Activities design (February 2024). The indexed curriculum sequence is not yet transcribed; verify strands, sub-strands and lesson allocations against this document before scheme generation.",
       strands: [
         { name: "Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -403,8 +403,8 @@ export const curriculumCatalog = {
     },
     "Mathematics": {
       title: "Mathematics Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/02/GRADE.3.MATHEMATICS.ACTIVITIES.pdf",
+      sourceLabel: "Official KICD Grade 3 Mathematics Activities design (February 2024). The indexed curriculum sequence is not yet transcribed; verify strands, sub-strands and lesson allocations against this document before scheme generation.",
       strands: [
         { name: "Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
