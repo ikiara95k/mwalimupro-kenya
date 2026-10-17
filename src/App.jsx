@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { Document, Packer, Paragraph, Table, TableRow, TableCell, HeadingLevel, WidthType } from "docx";
 
 const topicBank = {
   Mathematics: ["Numbers and operations", "Algebraic expressions", "Equations and inequalities", "Geometry", "Measurement", "Statistics and probability", "Revision and assessment"],
@@ -34,14 +35,28 @@ function App() {
       setNotice("Add at least one topic before generating your scheme.");
       return;
     }
-    const count = Math.max(1, Number(weeks));
+    const count = Math.max(1, Math.min(16, Number(weeks) || 1));
+    // Keep the curriculum list in its original order. If there are more topics than
+    // weeks, group adjacent topics so none silently disappears. If there are extra
+    // weeks, spread them across topics in sequence for consolidation and practice.
     const rows = Array.from({ length: count }, (_, index) => {
-      const topic = topics[Math.min(topics.length - 1, Math.floor(index * topics.length / count))];
+      const start = Math.floor(index * topics.length / count);
+      const end = Math.floor((index + 1) * topics.length / count);
+      const grouped = topics.length >= count
+        ? topics.slice(start, Math.max(start + 1, end))
+        : [topics[Math.min(topics.length - 1, Math.floor(index * topics.length / count))]];
+      const topic = grouped.join(" + ");
+      const topicIndex = Math.min(topics.length - 1, Math.floor(index * topics.length / count));
+      const focus = topics.length < count
+        ? (index === 0 || Math.floor((index - 1) * topics.length / count) !== topicIndex
+            ? "Introduction and key concepts"
+            : index === count - 1 ? "Consolidation, application and review" : "Guided practice and application")
+        : "Key concepts, skills and application";
       return {
         week: index + 1,
         topic,
-        subtopic: "Key concepts, skills and application",
-        objectives: `By the end of the week, learners should be able to explain and apply ${topic.toLowerCase()}.`,
+        subtopic: focus,
+        objectives: `By the end of the week, learners should be able to explain and apply the key ideas in ${topic.toLowerCase()}.`,
         activities: index % 2 === 0 ? "Teacher demonstration, guided discussion and learner practice" : "Pair work, problem-solving and class feedback",
         resources: subject === "Physics" ? "Course book, charts and locally available apparatus" : "Course book, board, worksheets and locally available materials",
         assessment: index === count - 1 ? "Revision and end-of-term assessment" : "Oral questions, class exercise and review of learner work"
@@ -49,6 +64,39 @@ function App() {
     });
     setScheme({ subject, grade, term, year, teacher, school, rows });
     setNotice("Your draft is ready. Review and adapt it to the applicable curriculum design and school calendar.");
+  }
+
+  async function exportDocx() {
+    if (!scheme) return;
+    const cell = (value, bold = false) => new TableCell({
+      width: { size: 100 / 7, type: WidthType.PERCENTAGE },
+      children: [new Paragraph({ text: String(value ?? ""), bold })]
+    });
+    const header = ["Week", "Strand / Topic", "Sub-topic", "Learning objectives", "Learning activities", "Resources", "Assessment"];
+    const rows = [
+      new TableRow({ children: header.map(value => cell(value, true)) }),
+      ...scheme.rows.map(row => new TableRow({ children: [
+        cell(row.week), cell(row.topic), cell(row.subtopic), cell(row.objectives),
+        cell(row.activities), cell(row.resources), cell(row.assessment)
+      ] }))
+    ];
+    const doc = new Document({ sections: [{ children: [
+      new Paragraph({ text: "MWALIMUPRO KENYA", heading: HeadingLevel.HEADING_1 }),
+      new Paragraph({ text: `${scheme.subject} — SCHEME OF WORK`, heading: HeadingLevel.HEADING_2 }),
+      new Paragraph({ text: `Class: ${scheme.grade} | Term: ${scheme.term} | Year: ${scheme.year}` }),
+      new Paragraph({ text: `Teacher: ${scheme.teacher || "________________"} | School: ${scheme.school || "________________"}` }),
+      new Paragraph({ text: " " }),
+      new Table({ rows, width: { size: 100, type: WidthType.PERCENTAGE } }),
+      new Paragraph({ text: " " }),
+      new Paragraph({ text: "Note: This is a template-generated draft. Verify topics, learning outcomes and timing against the current official curriculum design and school calendar." })
+    ] }] });
+    const blob = await Packer.toBlob(doc);
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `mwalimupro-${scheme.subject.toLowerCase().replaceAll(" ", "-")}-${scheme.term.toLowerCase().replaceAll(" ", "-")}.docx`;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   function exportCsv() {
@@ -107,7 +155,7 @@ function App() {
         </aside>
       </section>
       {scheme && <section className="panel preview">
-        <div className="preview-heading"><div><div className="eyebrow">DOCUMENT PREVIEW</div><h2>{scheme.subject} — Scheme of Work</h2><p>{scheme.grade} · {scheme.term} · {scheme.year}{scheme.school ? ` · ${scheme.school}` : ""}{scheme.teacher ? ` · ${scheme.teacher}` : ""}</p></div><div className="button-row"><button className="secondary" onClick={exportCsv}>Export CSV</button><button className="primary" onClick={() => window.print()}>Print / Save PDF</button></div></div>
+        <div className="preview-heading"><div><div className="eyebrow">DOCUMENT PREVIEW</div><h2>{scheme.subject} — Scheme of Work</h2><p>{scheme.grade} · {scheme.term} · {scheme.year}{scheme.school ? ` · ${scheme.school}` : ""}{scheme.teacher ? ` · ${scheme.teacher}` : ""}</p></div><div className="button-row"><button className="secondary" onClick={exportCsv}>Export CSV</button><button className="secondary" onClick={exportDocx}>Download Word</button><button className="primary" onClick={() => window.print()}>Print / Save PDF</button></div></div>
         <div className="table-wrap"><table><thead><tr><th>Week</th><th>Strand / Topic</th><th>Sub-topic</th><th>Learning objectives</th><th>Activities</th><th>Resources</th><th>Assessment</th></tr></thead><tbody>{scheme.rows.map(row => <tr key={row.week}><td>{row.week}</td><td>{row.topic}</td><td>{row.subtopic}</td><td>{row.objectives}</td><td>{row.activities}</td><td>{row.resources}</td><td>{row.assessment}</td></tr>)}</tbody></table></div>
         <p className="disclaimer">Important: this is a template-generated draft, not an officially validated curriculum document. Verify all content against the current curriculum design and your school's calendar.</p>
       </section>}
