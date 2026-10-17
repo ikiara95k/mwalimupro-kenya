@@ -937,14 +937,14 @@ export const curriculumCatalog = {
     "HRE": {
       title: "Hindu Religious Education Grade 7 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Hindu-Religious-Education-Grade-7-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 7 HRE design. Verify the sequence against the full design and any later revision before final school planning.",
+      sourceLabel: "Official KICD Grade 7 Hindu Religious Education design, April 2024. The source summary labels the allocation column 'Number of Lessons Per Week'; verify the design and any later revision before planning.",
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Manifestations of Paramatma", subStrands: ["1.1 Enlightened Beings (15 lessons)"] },
         { name: "2.0 Scriptures", subStrands: ["2.1 Scriptural Texts (14 lessons)"] },
         { name: "3.0 Principles of Dharma", subStrands: ["3.1 Fundamental Principles (14 lessons)"] },
         { name: "4.0 Religious Practices", subStrands: ["4.1 Buddhist Practices (15 lessons)", "4.2 Places of Worship (16 lessons)"] },
-        { name: "5.0 Yog", subStrands: ["5.1 Concepts of Yog (16 lessons)", "5.2 Path of Devotion (Bhakti Yog) (15 lessons)"] },
+        { name: "5.0 Yog", subStrands: ["5.1 Concepts of Yog (16 lessons)", "5.2 Path of Devotion: Bhakti Yog (15 lessons)"] },
         { name: "6.0 Rites of Passage", subStrands: ["6.1 Religious Ceremonies (15 lessons)"] }
       ]
     },
