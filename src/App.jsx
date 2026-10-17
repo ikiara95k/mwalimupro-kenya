@@ -1,12 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Document, Packer, Paragraph, Table, TableRow, TableCell, HeadingLevel, WidthType } from "docx";
-
-const topicBank = {
-  Mathematics: ["Numbers and operations", "Algebraic expressions", "Equations and inequalities", "Geometry", "Measurement", "Statistics and probability", "Revision and assessment"],
-  Physics: ["Introduction to Physics", "Measurement", "Force and motion", "Work, energy and power", "Thermal physics", "Waves and sound", "Revision and assessment"],
-  English: ["Listening and speaking", "Reading comprehension", "Grammar", "Writing skills", "Literature", "Revision and assessment"],
-  "Integrated Science": ["Scientific investigation", "Living things", "Matter and materials", "Energy", "Environment", "Revision and assessment"]
-};
+import { getCurriculum, getCurriculumTopics, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
 
 function App() {
   const [subject, setSubject] = useState("Mathematics");
@@ -16,54 +10,49 @@ function App() {
   const [weeks, setWeeks] = useState(10);
   const [teacher, setTeacher] = useState("");
   const [school, setSchool] = useState("");
-  const [topicsText, setTopicsText] = useState(topicBank.Mathematics.join("\n"));
   const [scheme, setScheme] = useState(null);
   const [notice, setNotice] = useState("");
 
-  const topics = useMemo(() => topicsText.split("\n").map(t => t.trim()).filter(Boolean), [topicsText]);
+  const curriculum = useMemo(() => getCurriculum(grade, subject), [grade, subject]);
+  const topics = useMemo(() => getCurriculumTopics(grade, subject), [grade, subject]);
 
   function changeSubject(value) {
     setSubject(value);
-    setTopicsText(topicBank[value].join("\n"));
+    setScheme(null);
+    setNotice("");
+  }
+
+  function changeGrade(value) {
+    setGrade(value);
     setScheme(null);
     setNotice("");
   }
 
   function generateScheme(event) {
     event.preventDefault();
-    if (!topics.length) {
-      setNotice("Add at least one topic before generating your scheme.");
+    if (!curriculum || !topics.length) {
+      setScheme(null);
+      setNotice("A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
       return;
     }
     const count = Math.max(1, Math.min(16, Number(weeks) || 1));
-    // Keep the curriculum list in its original order. If there are more topics than
-    // weeks, group adjacent topics so none silently disappears. If there are extra
-    // weeks, spread them across topics in sequence for consolidation and practice.
+    // Preserve KICD strand/sub-strand order. Group adjacent sub-strands if weeks are limited.
     const rows = Array.from({ length: count }, (_, index) => {
-      const start = Math.floor(index * topics.length / count);
-      const end = Math.floor((index + 1) * topics.length / count);
-      const grouped = topics.length >= count
-        ? topics.slice(start, Math.max(start + 1, end))
-        : [topics[Math.min(topics.length - 1, Math.floor(index * topics.length / count))]];
-      const topic = grouped.join(" + ");
-      const topicIndex = Math.min(topics.length - 1, Math.floor(index * topics.length / count));
-      const focus = topics.length < count
-        ? (index === 0 || Math.floor((index - 1) * topics.length / count) !== topicIndex
-            ? "Introduction and key concepts"
-            : index === count - 1 ? "Consolidation, application and review" : "Guided practice and application")
-        : "Key concepts, skills and application";
+      const from = Math.floor(index * topics.length / count);
+      const to = Math.floor((index + 1) * topics.length / count);
+      const group = topics.length >= count ? topics.slice(from, Math.max(from + 1, to)) : [topics[Math.min(topics.length - 1, Math.floor(index * topics.length / count))]];
+      const topic = [...new Set(group.map(item => item.strand))].join(" / ");
+      const subtopic = group.map(item => item.subStrand).join("; ");
       return {
-        week: index + 1,
-        topic,
-        subtopic: focus,
-        objectives: `By the end of the week, learners should be able to explain and apply the key ideas in ${topic.toLowerCase()}.`,
-        activities: index % 2 === 0 ? "Teacher demonstration, guided discussion and learner practice" : "Pair work, problem-solving and class feedback",
-        resources: subject === "Physics" ? "Course book, charts and locally available apparatus" : "Course book, board, worksheets and locally available materials",
-        assessment: index === count - 1 ? "Revision and end-of-term assessment" : "Oral questions, class exercise and review of learner work"
+        week: index + 1, topic, subtopic,
+        objectives: "Plan learning outcomes for " + subtopic + ". Use the specific learning outcomes in the official KICD design.",
+        activities: "Use suggested learning experiences in the KICD design; adapt to learner needs and available resources",
+        resources: subject === "Physics" ? "KICD design, course book, locally available apparatus and approved digital resources" : "KICD design, course book, board, worksheets and locally available materials",
+        assessment: "Use the assessment methods and rubric in the official KICD design; record evidence of learner progress"
       };
     });
-    setScheme({ subject, grade, term, year, teacher, school, rows });
-    setNotice("Your draft is ready. Review and adapt it to the applicable curriculum design and school calendar.");
+    setScheme({ subject, grade, term, year, teacher, school, rows, curriculumTitle: curriculum.title, sourceUrl: curriculum.sourceUrl });
+    setNotice("Your draft uses the indexed KICD strand/sub-strand sequence. Add specific learning outcomes, suggested learning experiences and assessment details from the official design before use.");
   }
 
   async function exportDocx() {
@@ -136,21 +125,21 @@ function App() {
           <div className="panel-heading"><div><div className="eyebrow">DOCUMENT BUILDER</div><h2>Scheme of work generator</h2><p>Enter your teaching details and create an editable draft.</p></div><div className="panel-symbol">▤</div></div>
           <form onSubmit={generateScheme}>
             <div className="form-grid">
-              <label>Subject<select value={subject} onChange={e => changeSubject(e.target.value)}>{Object.keys(topicBank).map(item => <option key={item}>{item}</option>)}</select></label>
-              <label>Grade / Class<select value={grade} onChange={e => setGrade(e.target.value)}>{["Grade 7","Grade 8","Grade 9","Grade 10","Form 1","Form 2","Form 3","Form 4"].map(item => <option key={item}>{item}</option>)}</select></label>
+              <label>Subject<select value={subject} onChange={e => changeSubject(e.target.value)}>{["Mathematics", "Physics"].map(item => <option key={item}>{item}</option>)}</select></label>
+              <label>Grade / Class<select value={grade} onChange={e => changeGrade(e.target.value)}>{["Grade 7","Grade 8","Grade 9","Grade 10","Grade 11","Grade 12"].map(item => <option key={item}>{item}</option>)}</select></label>
               <label>Term<select value={term} onChange={e => setTerm(e.target.value)}>{["Term 1","Term 2","Term 3"].map(item => <option key={item}>{item}</option>)}</select></label>
               <label>Academic year<input value={year} onChange={e => setYear(e.target.value)} inputMode="numeric" /></label>
               <label>Teacher name<input value={teacher} onChange={e => setTeacher(e.target.value)} placeholder="Enter teacher name" /></label>
               <label>School name<input value={school} onChange={e => setSchool(e.target.value)} placeholder="Enter school name" /></label>
               <label className="full">Teaching weeks <div className="range-row"><input type="range" min="1" max="16" value={weeks} onChange={e => setWeeks(Number(e.target.value))} /><b>{weeks} weeks</b></div></label>
-              <label className="full">Topics / strands <span className="hint">Edit the suggestions below to match your curriculum design.</span><textarea rows="7" value={topicsText} onChange={e => setTopicsText(e.target.value)} /></label>
+              <div className="full curriculum-source"><div><b>{curriculum ? curriculum.title : "KICD design index: " + grade + " " + subject}</b><p>{curriculum ? topics.length + " indexed sub-strands loaded in official sequence." : "The topic list for this grade and subject is not indexed in MwalimuPro yet. No generic topics will be substituted."}</p></div><a href={curriculum ? curriculum.sourceUrl : KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Open official KICD design ↗</a>{curriculum && <ol className="curriculum-list">{curriculum.strands.map(strand => <li key={strand.name}><b>{strand.name}</b><ul>{strand.subStrands.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>}</div>
             </div>
             <div className="form-footer"><span>Drafts should be reviewed before classroom use.</span><button className="primary" type="submit">Generate scheme <b>→</b></button></div>
           </form>
           {notice && <div className="notice" role="status">{notice}</div>}
         </div>
         <aside className="right-column">
-          <div className="tip-card"><div className="tip-symbol">✦</div><div className="eyebrow">QUICK TIP</div><h3>Start with your curriculum design.</h3><p>Use the topic list as a starting point, then confirm strands, learning outcomes and lesson timing against the official design for your class.</p><div className="tip-footer">Built to support your professional judgement.</div></div>
+          <div className="tip-card"><div className="tip-symbol">✦</div><div className="eyebrow">OFFICIAL SOURCE</div><h3>Curriculum-first planning.</h3><p>MwalimuPro loads the indexed strand and sub-strand sequence. Confirm specific learning outcomes, suggested experiences, lesson counts and assessment details in the official design.</p><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Browse KICD curriculum designs ↗</a><div className="tip-footer">No generic topic list is substituted when curriculum data is unavailable.</div></div>
           <div className="panel roadmap"><h3>What's coming next</h3>{[["Lesson plans","Structured lesson preparation"],["Assessments","Questions and marking guides"],["Document library","Save and revisit your work"],["M-Pesa payments","When paid plans launch"]].map(([title,desc]) => <div className="roadmap-item" key={title}><span /> <div><b>{title}</b><p>{desc}</p></div></div>)}</div>
         </aside>
       </section>
