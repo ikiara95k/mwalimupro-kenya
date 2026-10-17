@@ -2504,15 +2504,31 @@ export function getCurriculum(grade, subject) {
 export function getCurriculumTopics(grade, subject) {
   const curriculum = getCurriculum(grade, subject);
   if (!curriculum) return [];
-  const topics = curriculum.strands.flatMap(strand =>
-    strand.subStrands.map(subStrand => ({ strand: strand.name, subStrand }))
-  );
+  const topics = curriculum.strands.flatMap(strand => {
+    const subStrands = strand.subStrands || [];
+    const strandAllocation = (strand.name || "").match(/\((\d+)\s+lessons across strand\)/i);
+    const strandTotal = strandAllocation ? Number(strandAllocation[1]) : null;
+    const displayStrand = (strand.name || "").replace(/\s*\(\d+\s+lessons across strand\)/i, "");
+    return subStrands.map(subStrand => {
+      const explicitAllocation = typeof subStrand === "string" ? subStrand.match(/\((\d+)\s+lessons?\)/i) : null;
+      // Use explicit sub-strand counts when present. If KICD only states a strand total,
+      // divide that total evenly for balancing purposes without presenting it as an official
+      // per-topic allocation in the generated document.
+      const planningWeight = explicitAllocation
+        ? Number(explicitAllocation[1])
+        : strandTotal !== null && subStrands.length
+          ? strandTotal / subStrands.length
+          : 1;
+      return { strand: displayStrand, subStrand, planningWeight };
+    });
+  });
   // Some KICD language designs allocate additional lessons to showcasing/exhibitions.
   // Keep these visible in the generated scheme instead of silently dropping those lessons.
   if (curriculum.additionalShowcaseLessons > 0) {
     topics.push({
       strand: "Showcasing of Skills and Concepts",
-      subStrand: `Showcasing of Skills and Concepts (Exhibition) (${curriculum.additionalShowcaseLessons} lessons)`
+      subStrand: `Showcasing of Skills and Concepts (Exhibition) (${curriculum.additionalShowcaseLessons} lessons)`,
+      planningWeight: curriculum.additionalShowcaseLessons
     });
   }
   return topics;

@@ -51,7 +51,7 @@ function App() {
     // If allocations are missing, fall back to equal topic weights rather than inventing lesson counts.
     const weights = topics.map(item => {
       const match = item.subStrand.match(/\((\d+) lessons?\)/i);
-      return match ? Number(match[1]) : 1;
+      return match ? Number(match[1]) : (Number(item.planningWeight) || 1);
     });
     const groups = [];
     if (topics.length >= count) {
