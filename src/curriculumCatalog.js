@@ -621,11 +621,15 @@ export const curriculumCatalog = {
       ]
     },
     "German": {
-      title: "German Grade 5 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
-      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "German Grade 5 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/GERMAN-GRADE-5-Edited-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 5 German design, October 2024. Strand-level allocations are published; individual sub-strand counts are not listed in this index.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["Listening for Gist", "Imitative Speaking", "Phonological Awareness"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["Reading Aloud", "Guided Reading", "Reading for Comprehension"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["Guided Writing"] }
       ]
     },
     "HRE": {
