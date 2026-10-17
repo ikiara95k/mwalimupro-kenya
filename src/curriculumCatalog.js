@@ -1177,6 +1177,7 @@ export const curriculumCatalog = {
       sourceUrl: "https://drive.google.com/file/d/1Cvh2JSBlrHU4z4FKt7uVMgTMXEWq9jdu/preview",
       sourceLabel: "KICD-linked revised Grade 8 design, July 2024. The summary table gives a 120-lesson sequence, but some detailed sub-strand pages show different allocations and labels; confirm the complete current sequence and lesson counts against the full design before final school planning.",
       totalSuggestedLessons: 120,
+      reviewRequired: true,
       strands: [
         { name: "1.0 Foundations of Pre-Technical Studies", subStrands: ["1.1 Fire Safety (7 lessons)", "1.2 Data Safety (11 lessons)"] },
         { name: "2.0 Communication in Pre-Technical Studies", subStrands: ["2.1 Plane Geometry (4 lessons)", "2.2 Dimensioning (7 lessons)", "2.3 Plain Scale Drawing (6 lessons)", "2.4 Visual Programming (14 lessons)"] },
@@ -2456,6 +2457,8 @@ const placeholderPattern = /(?:use the official KICD .* to confirm the current s
 export function isCurriculumPlaceholder(item, curriculum = null) {
   if (typeof item === "string" && placeholderPattern.test(item)) return true;
   if (!curriculum) return false;
+  // A source may contain a topic list but still require human reconciliation before planning.
+  if (curriculum.reviewRequired === true) return true;
   if (placeholderPattern.test(curriculum.title || "")) return true;
   if (placeholderPattern.test(curriculum.sourceLabel || "")) return true;
   return (curriculum.strands || []).some(strand =>
