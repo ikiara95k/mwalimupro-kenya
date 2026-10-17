@@ -1128,7 +1128,7 @@ export const curriculumCatalog = {
     "Indigenous Language": {
       title: "Indigenous Languages Grade 8 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Indigenous-Languages-Grade-8-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 8 Indigenous Languages design, April 2024. The design allocates 54 strand lessons plus 6 showcase lessons; verify any later revision before planning.",
+      sourceLabel: "Official KICD Grade 8 Indigenous Languages design, April 2024; language-specific adaptation should follow the official design.",
       totalSuggestedLessons: 60,
       additionalShowcaseLessons: 6,
       strands: [
