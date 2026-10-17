@@ -17,6 +17,12 @@ function App() {
   const topics = useMemo(() => getCurriculumTopics(grade, subject), [grade, subject]);
   const gradeSubjects = useMemo(() => getSubjectsForGrade(grade), [grade]);
   const gradeSourceUrl = getCurriculumSourceUrl(grade);
+  // Some directory entries are intentionally source-linked placeholders, not verified topic indexes.
+  // Never let these placeholders produce a misleading scheme of work.
+  const hasPlaceholderTopics = Boolean(curriculum?.strands?.some(strand =>
+    strand.subStrands?.some(item => /use the official KICD .* to confirm the current strand and sub-strand sequence/i.test(item))
+  ));
+  const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics);
 
   function changeSubject(value) {
     setSubject(value);
@@ -34,9 +40,11 @@ function App() {
 
   function generateScheme(event) {
     event.preventDefault();
-    if (!curriculum || !topics.length) {
+    if (!curriculumReady) {
       setScheme(null);
-      setNotice("A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
+      setNotice(hasPlaceholderTopics
+        ? "This subject is linked to the official KICD source, but its strand and sub-strand sequence is still a placeholder. A scheme cannot be generated until the actual curriculum sequence is verified and indexed."
+        : "A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
       return;
     }
     const count = Math.max(1, Math.min(16, Number(weeks) || 1));
@@ -136,7 +144,7 @@ function App() {
               <label>Teacher name<input value={teacher} onChange={e => setTeacher(e.target.value)} placeholder="Enter teacher name" /></label>
               <label>School name<input value={school} onChange={e => setSchool(e.target.value)} placeholder="Enter school name" /></label>
               <label className="full">Teaching weeks <div className="range-row"><input type="range" min="1" max="16" value={weeks} onChange={e => setWeeks(Number(e.target.value))} /><b>{weeks} weeks</b></div></label>
-              <div className="full curriculum-source"><div><b>{curriculum ? curriculum.title : "Official KICD source: " + grade + " — " + subject}</b><p>{curriculum ? topics.length + " indexed sub-strands loaded in sequence." : "The official KICD grade page is linked below. This subject is not yet indexed inside MwalimuPro, so the app will not invent or substitute topics."}</p></div><a href={curriculum ? curriculum.sourceUrl : gradeSourceUrl} target="_blank" rel="noreferrer">Open official KICD design for this grade ↗</a>{!curriculum && <><p className="directory-label">Subjects listed for {grade} on the KICD directory:</p><div className="subject-chips">{gradeSubjects.map(item => <span key={item} className={item === subject ? "subject-chip selected" : "subject-chip"}>{item}</span>)}</div></>}{curriculum && <ol className="curriculum-list">{curriculum.strands.map(strand => <li key={strand.name}><b>{strand.name}</b><ul>{strand.subStrands.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>}</div>
+              <div className="full curriculum-source"><div><b>{curriculumReady ? curriculum.title : "Official KICD source: " + grade + " — " + subject}</b><p>{curriculumReady ? topics.length + " indexed sub-strands loaded in sequence." : hasPlaceholderTopics ? "Source linked, but the curriculum sequence is not yet verified. Scheme generation is disabled for this entry." : "The official KICD grade page is linked below. This subject is not yet indexed inside MwalimuPro, so the app will not invent or substitute topics."}</p></div><a href={curriculumReady ? curriculum.sourceUrl : (curriculum?.sourceUrl || gradeSourceUrl)} target="_blank" rel="noreferrer">Open official KICD design for this grade ↗</a>{!curriculum && <><p className="directory-label">Subjects listed for {grade} on the KICD directory:</p><div className="subject-chips">{gradeSubjects.map(item => <span key={item} className={item === subject ? "subject-chip selected" : "subject-chip"}>{item}</span>)}</div></>}{curriculumReady && <ol className="curriculum-list">{curriculum.strands.map(strand => <li key={strand.name}><b>{strand.name}</b><ul>{strand.subStrands.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>}</div>
             </div>
             <div className="form-footer"><span>Drafts should be reviewed before classroom use.</span><button className="primary" type="submit">Generate scheme <b>→</b></button></div>
           </form>
