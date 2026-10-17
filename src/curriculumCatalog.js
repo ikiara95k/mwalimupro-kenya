@@ -2172,7 +2172,8 @@ export const curriculumCatalog = {
       strands: [
         { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
-      "Advanced English": {
+    },
+    "Advanced English": {
       title: "Advanced English Grade 12 (KICD source-linked placeholder)",
       sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
       sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
@@ -2332,7 +2333,6 @@ export const curriculumCatalog = {
         { name: "Christian Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
-  },
   }
 };
 
