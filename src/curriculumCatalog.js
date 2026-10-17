@@ -899,6 +899,8 @@ export const curriculumCatalog = {
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Arabic-Grade-7-Design-Formatted-April-2024.pdf",
       sourceLabel: "Official KICD Grade 7 Arabic curriculum design, April 2024. The searchable summary's lesson-count arithmetic is inconsistent, so topic labels are indexed without disputed individual allocations; confirm the full table before planning.",
       totalSuggestedLessons: 60,
+      reviewRequired: true,
+      reviewReason: "The searchable KICD summary has inconsistent lesson-count arithmetic and no verified per-strand allocations. Confirm the full table before generating a scheme.",
       additionalShowcaseLessons: 6,
       strands: [
         { name: "1.0 Listening and Speaking", subStrands: ["Listening for Gist", "Imitative Speaking: Pronunciation", "Phonological Awareness: Pronunciation", "Listening for Information", "Conversational Skills"] },
@@ -1025,6 +1027,8 @@ export const curriculumCatalog = {
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mandarin-Grade-7-Design-Formatted-April-2024.pdf",
       sourceLabel: "Official KICD Grade 7 Mandarin design, April 2024. The searchable summary's lesson-count arithmetic is inconsistent, so this entry indexes topic labels without disputed individual allocations; confirm the full table before planning.",
       totalSuggestedLessons: 60,
+      reviewRequired: true,
+      reviewReason: "The searchable KICD summary has inconsistent lesson-count arithmetic and no verified per-strand allocations. Confirm the full table before generating a scheme.",
       additionalShowcaseLessons: 6,
       strands: [
         { name: "1.0 Listening and Speaking", subStrands: ["Oral Expression", "Phonological Awareness", "Listening for Information", "Interactive Speaking"] },
