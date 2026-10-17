@@ -346,7 +346,6 @@ export const curriculumCatalog = {
         { name: "3.0 Force and Energy", subStrands: ["3.1 Curved Mirrors (18 lessons)", "3.2 Waves (16 lessons)"] }
       ]
     }
-  },
     "Creative Arts": {
       title: "Creative Arts & Sports Grade 9 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1XONxUP98Z6I85bPKx7CYIsAkEucl_dm-/preview",
@@ -387,6 +386,7 @@ export const curriculumCatalog = {
         { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Nine design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
+  },
   "Grade 10": {
     "Core Mathematics": {
       title: "Core Mathematics Grade 10 (July 2025)",
