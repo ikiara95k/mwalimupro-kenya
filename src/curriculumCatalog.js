@@ -699,14 +699,15 @@ export const curriculumCatalog = {
       ]
     },
     "English": {
-      title: "English Grade 6 (KICD curriculum design)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/09/GRADE-6-ENGLISH.pdf",
-      sourceLabel: "Official KICD Grade 6 English curriculum design; language skills and grammar are developed through the listed themes.",
+      title: "English Grade 6 (KICD revised curriculum design, September 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/ENGLISH-GRADE-6-UPDATED-Revised-Sept.pdf",
+      sourceLabel: "Official KICD revised Grade 6 English design, September 2024.",
+      totalSuggestedLessons: 150,
       strands: [
-        { name: "1.0 Listening and Speaking", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] },
-        { name: "2.0 Reading", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] },
-        { name: "3.0 Grammar in Use", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] },
-        { name: "4.0 Writing", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Pronunciation and Vocabulary (39 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Extensive Reading (11 lessons)", "Intensive Reading (22 lessons)", "Fluency (3 lessons)"] },
+        { name: "3.0 Language Use", subStrands: ["Word Classes (33 lessons)", "Tenses (6 lessons)"] },
+        { name: "4.0 Writing", subStrands: ["Creative Writing (14 lessons)", "Functional Writing (6 lessons)", "Mechanics of Writing (13 lessons)", "Guided Compositions (3 lessons)"] }
       ]
     },
     "IRE": {
