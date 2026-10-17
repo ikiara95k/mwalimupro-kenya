@@ -220,6 +220,18 @@ export const curriculumCatalog = {
         { name: "4.0 Production Techniques", subStrands: ["4.1 Grafting in Plants (13 lessons)", "4.2 Homemade Sun Dryer (13 lessons)"] }
       ]
     },
+    "Arabic": {
+      title: "Arabic Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Arabic-Grade-9-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 Arabic curriculum design, April 2024; the 54 sub-strand lessons are accompanied by 6 additional showcasing lessons.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
+      strands: [
+        { name: "1.0 Listening and Speaking", subStrands: ["Interactive Speaking (6 lessons)", "Listening for Information (4 lessons)", "Active Speaking (2 lessons)", "Oral Expression (4 lessons)", "Active Listening (2 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Guided Reading: Reading Fluency (6 lessons)", "Guided Reading: Reading Aloud (2 lessons)", "Guided Reading: Reading Comprehension (2 lessons)", "Reading for Information (6 lessons)", "Extensive Reading: Library Skills (2 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing: Paragraph Writing (2 lessons)", "Guided Writing: Handwriting (4 lessons)", "Guided Writing (6 lessons)", "Guided Writing: Imaginative Composition (2 lessons)", "Guided Writing: Summary Writing (2 lessons)", "Guided Writing: Poetry (2 lessons)"] }
+      ]
+    },
     "IRE": {
       title: "Islamic Religious Education Grade 9 (KICD curriculum design, March 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Islamic-Religious-Education-Grade-9-Formatted-12.3.2024.pdf",
