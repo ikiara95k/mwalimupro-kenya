@@ -4,10 +4,15 @@ const rows = [];
 for (const [grade, directory] of Object.entries(curriculumDirectory)) {
   for (const subject of directory.subjects ?? []) {
     const entry = curriculumCatalog[grade]?.[subject];
-    const topicCount = (entry?.strands ?? []).reduce(
-      (sum, strand) => sum + (strand.subStrands ?? []).length,
-      0
-    );
+    // Count only real topic labels; placeholder text must never inflate curriculum coverage.
+    const topicCount = entry && !isCurriculumPlaceholder(null, entry)
+      ? (entry.strands ?? []).reduce(
+          (sum, strand) => sum + (strand.subStrands ?? []).filter(
+            item => typeof item === "string" && !isCurriculumPlaceholder(item)
+          ).length,
+          0
+        )
+      : 0;
     let status = "NOT_INDEXED";
     if (entry?.reviewRequired === true) status = "REVIEW_REQUIRED";
     else if (entry && isCurriculumPlaceholder(null, entry)) status = "SOURCE_ONLY";
