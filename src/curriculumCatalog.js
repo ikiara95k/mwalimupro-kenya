@@ -1065,11 +1065,15 @@ export const curriculumCatalog = {
       ]
     },
     "German": {
-      title: "German Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "German Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/German-Grade-8-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 German design, April 2024. Published allocations are 27 lessons for Listening and Speaking, 18 for Reading and 9 for Writing, plus 6 showcase lessons. Individual sub-strand lesson counts are not stated in this index; verify the design before planning.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["Active Listening", "Listening for Information", "Interactive Speaking", "Oral Expression"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["Reading Comprehension", "Reading Aloud: Articulation", "Reading Aloud: Fluency"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["Guided Writing", "German Orthography Rules", "Vocabulary", "Creative Writing", "Functional Writing"] }
       ]
     },
     "HRE": {
