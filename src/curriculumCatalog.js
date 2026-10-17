@@ -766,11 +766,19 @@ export const curriculumCatalog = {
       ]
     },
     "HRE": {
-      title: "HRE Grade 6 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
-      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Hindu Religious Education Grade 6 (KICD revised design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/HRE-GRADE-6-Revised.pdf",
+      sourceLabel: "Official KICD Grade 6 HRE design. Verify the sequence against the full design and any later revision before final school planning.",
+      totalSuggestedLessons: 90,
       strands: [
-        { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Creation", subStrands: ["1.1 Creation as per Buddhist and Sikh faiths (8 lessons)", "1.2 Gifts of Nature (8 lessons)"] },
+        { name: "2.0 Manifestations of Paramatma", subStrands: ["2.1 Enlightened Beings and Social Welfare (8 lessons)"] },
+        { name: "3.0 Scriptures", subStrands: ["3.1 Scriptures and Moral Values (8 lessons)"] },
+        { name: "4.0 Worship", subStrands: ["4.1 Basic Chants and Mantras in Buddhist Faith (8 lessons)", "4.2 Buddhist Vihaars in Africa (8 lessons)"] },
+        { name: "5.0 Sadachaar (Social Ethics)", subStrands: ["5.1 Managing Resources (9 lessons)"] },
+        { name: "6.0 Yoga (Holistic Wellness)", subStrands: ["6.1 Asanas (8 lessons)", "6.2 Communal Aspect of Yoga (9 lessons)"] },
+        { name: "7.0 Principles of Dharma", subStrands: ["7.1 Virtues and Principles of Dharma in Buddhist Faith (8 lessons)"] },
+        { name: "8.0 Utsav (Social Festivals)", subStrands: ["8.1 Utsavs from Other Faiths (8 lessons)"] }
       ]
     },
     "Indigenous Language": {
@@ -876,11 +884,17 @@ export const curriculumCatalog = {
       ]
     },
     "HRE": {
-      title: "HRE Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Hindu Religious Education Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Hindu-Religious-Education-Grade-7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 HRE design. Verify the sequence against the full design and any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Manifestations of Paramatma", subStrands: ["1.1 Enlightened Beings (15 lessons)"] },
+        { name: "2.0 Scriptures", subStrands: ["2.1 Scriptural Texts (14 lessons)"] },
+        { name: "3.0 Principles of Dharma", subStrands: ["3.1 Fundamental Principles (14 lessons)"] },
+        { name: "4.0 Religious Practices", subStrands: ["4.1 Buddhist Practices (15 lessons)", "4.2 Places of Worship (16 lessons)"] },
+        { name: "5.0 Yog", subStrands: ["5.1 Concepts of Yog (16 lessons)", "5.2 Path of Devotion (Bhakti Yog) (15 lessons)"] },
+        { name: "6.0 Rites of Passage", subStrands: ["6.1 Religious Ceremonies (15 lessons)"] }
       ]
     },
     "Indigenous Language": {
@@ -1015,11 +1029,17 @@ export const curriculumCatalog = {
       ]
     },
     "HRE": {
-      title: "HRE Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Hindu Religious Education Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Hindu-Religious-Education-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 HRE design. Verify the sequence against the full design and any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Manifestations of Paramatma", subStrands: ["1.1 Enlightened Beings (14 lessons)"] },
+        { name: "2.0 Scriptures", subStrands: ["2.1 Scriptural Texts (13 lessons)"] },
+        { name: "3.0 Principles of Dharma", subStrands: ["3.1 Fundamental Principles (13 lessons)", "3.2 Buddhist Principles (13 lessons)"] },
+        { name: "4.0 Religious Practices", subStrands: ["4.1 Protocols in Sanatan Dharma (14 lessons)", "4.2 Protocols in Jain Dharma (13 lessons)"] },
+        { name: "5.0 Yog", subStrands: ["5.1 Path of Action (Karma Yog) (14 lessons)"] },
+        { name: "6.0 Sanskaars", subStrands: ["6.1 Religious Ceremonies (13 lessons)", "6.2 Buddhist Sanskaars (13 lessons)"] }
       ]
     },
     "Indigenous Language": {
