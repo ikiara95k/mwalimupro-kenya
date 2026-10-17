@@ -47,6 +47,10 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
     const label = `${grade} / ${subject}`;
     if (!curriculum.title?.trim()) errors.push(`${label}: missing title`);
     if (!/^https:\/\//i.test(curriculum.sourceUrl || "")) errors.push(`${label}: missing or non-HTTPS source URL`);
+    if (curriculum.reviewRequired === true) {
+      if (!curriculum.reviewReason?.trim()) errors.push(`${label}: reviewRequired is true but reviewReason is missing`);
+      if (!isCurriculumPlaceholder(null, curriculum)) errors.push(`${label}: review-required entry is not blocked from scheme generation`);
+    }
     if (!Array.isArray(curriculum.strands) || curriculum.strands.length === 0) {
       errors.push(`${label}: no strands defined`);
       continue;
