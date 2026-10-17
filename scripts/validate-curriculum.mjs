@@ -56,6 +56,16 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
   }
 }
 
+// Every subject listed in the official grade directory must have a catalog record.
+ // Source-only placeholders are allowed, but missing grade/subject records are not.
+for (const [grade, directory] of Object.entries(curriculumDirectory)) {
+  for (const subject of directory.subjects ?? []) {
+    if (!curriculumCatalog[grade]?.[subject]) {
+      errors.push(`${grade} / ${subject}: directory subject has no catalog record`);
+    }
+  }
+}
+
 if (errors.length) {
   console.error("Curriculum catalog validation failed:");
   for (const error of errors) console.error(`- ${error}`);
