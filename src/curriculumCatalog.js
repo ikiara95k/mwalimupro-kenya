@@ -909,11 +909,15 @@ export const curriculumCatalog = {
       ]
     },
     "French": {
-      title: "French Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "French Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/French-Grade-7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 French design, April 2024. Published strand allocations are 27 lessons for Listening and Speaking, 18 for Reading and 9 for Writing, plus 6 showcase lessons. Individual sub-strand lesson counts are not stated in this index; verify the design before planning.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["1.1 Interactive Speaking", "1.2 Oral Expression", "1.3 Interactive Listening", "1.4 Active Listening", "1.5 Listening for Information"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["2.1 Reading Aloud", "2.2 Reading for Understanding", "2.3 Guided Reading"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["3.1 Guided Writing"] }
       ]
     },
     "German": {
