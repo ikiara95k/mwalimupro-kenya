@@ -269,6 +269,32 @@ export const curriculumCatalog = {
   }
 };
 
+// Coverage reporting separates indexed topic lists from source-linked placeholders.
+// "Indexed" means the app has topic labels in its catalog; teachers should still verify them against KICD.
+export function getCurriculumCoverage() {
+  const placeholderPattern = /use the official KICD .* to confirm the current strand and sub-strand sequence/i;
+  const grades = Object.entries(curriculumDirectory).map(([grade, directory]) => {
+    const subjects = directory.subjects ?? [];
+    let indexed = 0;
+    let sourceOnly = 0;
+    for (const subject of subjects) {
+      const entry = curriculumCatalog[grade]?.[subject];
+      if (!entry) continue;
+      const isPlaceholder = entry.strands?.some(strand => strand.subStrands?.some(item => placeholderPattern.test(item)));
+      if (isPlaceholder) sourceOnly++;
+      else if (entry.strands?.some(strand => strand.subStrands?.length)) indexed++;
+    }
+    return { grade, total: subjects.length, indexed, sourceOnly, notIndexed: subjects.length - indexed - sourceOnly };
+  });
+  return {
+    grades,
+    total: grades.reduce((sum, item) => sum + item.total, 0),
+    indexed: grades.reduce((sum, item) => sum + item.indexed, 0),
+    sourceOnly: grades.reduce((sum, item) => sum + item.sourceOnly, 0),
+    notIndexed: grades.reduce((sum, item) => sum + item.notIndexed, 0)
+  };
+}
+
 export function getCurriculum(grade, subject) {
   return curriculumCatalog[grade]?.[subject] ?? null;
 }

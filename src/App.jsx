@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Document, Packer, Paragraph, Table, TableRow, TableCell, HeadingLevel, WidthType } from "docx";
-import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
+import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, getCurriculumCoverage, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
 
 function App() {
   const [subject, setSubject] = useState("Core Mathematics");
@@ -17,6 +17,7 @@ function App() {
   const topics = useMemo(() => getCurriculumTopics(grade, subject), [grade, subject]);
   const gradeSubjects = useMemo(() => getSubjectsForGrade(grade), [grade]);
   const gradeSourceUrl = getCurriculumSourceUrl(grade);
+  const coverage = useMemo(() => getCurriculumCoverage(), []);
   // Some directory entries are intentionally source-linked placeholders, not verified topic indexes.
   // Never let these placeholders produce a misleading scheme of work.
   const hasPlaceholderTopics = Boolean(curriculum?.strands?.some(strand =>
@@ -131,6 +132,16 @@ function App() {
         <article><div className="stat-icon green">▤</div><div><small>Available tool</small><b>Scheme of work</b><span>Draft and export</span></div></article>
         <article><div className="stat-icon yellow">✎</div><div><small>Designed for</small><b>Kenyan teachers</b><span>Teacher-first workflow</span></div></article>
         <article><div className="stat-icon blue">↗</div><div><small>Export formats</small><b>CSV + Print</b><span>Save as PDF from browser</span></div></article>
+      </section>
+      <section className="coverage-panel" aria-labelledby="coverage-title">
+        <div className="coverage-heading"><div><div className="eyebrow">CURRICULUM COVERAGE</div><h2 id="coverage-title">Know what is ready — and what still needs indexing.</h2><p>Counts reflect subjects listed in the grade directory. “Indexed” means topic labels exist in MwalimuPro; it is not a claim that every outcome has been independently verified.</p></div><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Check official KICD designs ↗</a></div>
+        <div className="coverage-summary">
+          <article><b>{coverage.indexed}</b><span>Indexed subject entries</span></article>
+          <article><b>{coverage.sourceOnly}</b><span>Source-linked placeholders</span></article>
+          <article><b>{coverage.notIndexed}</b><span>Still to index</span></article>
+          <article><b>{coverage.total}</b><span>Directory subject slots</span></article>
+        </div>
+        <div className="coverage-grid">{coverage.grades.map(item => <article className="coverage-grade" key={item.grade}><div className="coverage-grade-title"><b>{item.grade}</b><span>{item.indexed}/{item.total}</span></div><div className="coverage-track" role="img" aria-label={item.indexed + " of " + item.total + " subjects have topic entries"}><span style={{ width: (item.total ? item.indexed / item.total * 100 : 0) + "%" }} /></div><div className="coverage-legend"><span>{item.indexed} indexed</span><span>{item.sourceOnly} source-only</span><span>{item.notIndexed} remaining</span></div></article>)}</div>
       </section>
       <section className="layout">
         <div className="panel" id="builder">
