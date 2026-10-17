@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Document, Packer, Paragraph, Table, TableRow, TableCell, HeadingLevel, WidthType } from "docx";
-import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, getCurriculumCoverage, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
+import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, getCurriculumCoverage, isCurriculumPlaceholder, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
 
 function App() {
   const [subject, setSubject] = useState("Core Mathematics");
@@ -20,9 +20,7 @@ function App() {
   const coverage = useMemo(() => getCurriculumCoverage(), []);
   // Some directory entries are intentionally source-linked placeholders, not verified topic indexes.
   // Never let these placeholders produce a misleading scheme of work.
-  const hasPlaceholderTopics = Boolean(curriculum?.strands?.some(strand =>
-    strand.subStrands?.some(item => /use the official KICD .* to confirm the current strand and sub-strand sequence/i.test(item))
-  ));
+  const hasPlaceholderTopics = Boolean(curriculum && isCurriculumPlaceholder(null, curriculum));
   const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics);
 
   function changeSubject(value) {
