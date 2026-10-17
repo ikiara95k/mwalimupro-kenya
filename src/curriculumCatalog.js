@@ -1035,11 +1035,17 @@ export const curriculumCatalog = {
       ]
     },
     "CRE": {
-      title: "CRE Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Christian Religious Education Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 CRE design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Creation", subStrands: ["1.1 Origin and Consequences of Sin (6 lessons)", "1.2 God's Plan for Redemption (6 lessons)"] },
+        { name: "2.0 The Bible", subStrands: ["2.1 Faith and God's Promises (6 lessons)", "2.2 Abrahamic Covenant (6 lessons)", "2.3 Leadership in Israel: Saul (6 lessons)"] },
+        { name: "3.0 The Life and Ministry of Jesus", subStrands: ["3.1 Healing of Blind Bartimaeus (7 lessons)", "3.2 Calming the Storm (7 lessons)", "3.3 Healing of the Paralytic (7 lessons)"] },
+        { name: "4.0 Teachings of Jesus Christ", subStrands: ["4.1 Teaching on Prayer (7 lessons)", "4.2 The Lost Sheep (7 lessons)"] },
+        { name: "5.0 The Church", subStrands: ["5.1 The Holy Spirit (7 lessons)", "5.2 Acts of Compassion (7 lessons)"] },
+        { name: "6.0 Christian Living Today", subStrands: ["6.1 Family Relationships (6 lessons)", "6.2 Human Sexuality: Responsible Sexual Behaviour (7 lessons)", "6.3 Sacredness of Life (7 lessons)", "6.4 Bullying (7 lessons)", "6.5 Work: Talents and Abilities (7 lessons)", "6.6 Leisure (7 lessons)"] }
       ]
     },
     "English": {
