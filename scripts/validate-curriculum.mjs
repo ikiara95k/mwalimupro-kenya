@@ -69,6 +69,24 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
         }
       }
     }
+    // Duplicate sub-strand labels within a subject usually indicate an indexing mistake.
+    const seenSubStrands = new Map();
+    for (const strand of curriculum.strands || []) {
+      for (const item of strand.subStrands || []) {
+        const label = typeof item === "string" ? item : item?.name || item?.subStrand || "";
+        const normalized = label
+          .toLowerCase()
+          .replace(/\(\d+\s+lessons?\)/i, "")
+          .replace(/^\s*\d+(?:\.\d+)?\s*/, "")
+          .trim();
+        if (!normalized || isCurriculumPlaceholder(label)) continue;
+        if (seenSubStrands.has(normalized)) {
+          errors.push(label + ': duplicate sub-strand label in ' + grade + ' ' + subject + ' (also listed as "' + seenSubStrands.get(normalized) + '")');
+        } else {
+          seenSubStrands.set(normalized, label);
+        }
+      }
+    }
     if (curriculum.reviewRequired === true) reviewRequiredCount += 1;
     else if (isCurriculumPlaceholder(null, curriculum) || !hasIndexedTopic) sourceOnlyCount += 1;
 
