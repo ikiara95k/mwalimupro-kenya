@@ -660,11 +660,18 @@ export const curriculumCatalog = {
       ]
     },
     "IRE": {
-      title: "IRE Grade 5 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
-      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Islamic Religious Education Grade 5 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/IRE-GRADE-5-CURRICULUM-DESIGN-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 5 IRE curriculum design, October 2024.",
+      totalSuggestedLessons: 90,
       strands: [
-        { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Qur'an", subStrands: ["1.1 Selected Chapters (Surah) (16 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Good Behaviour (3 lessons)", "2.2 Hadith on Greetings (3 lessons)", "2.3 Hadith on Knowledge (3 lessons)", "2.4 Hadith on Gratitude (3 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Belief in Allah (5 lessons)", "3.2 Belief in Angels (3 lessons)", "3.3 Belief in Prophets (3 lessons)", "3.4 Miracles of Prophets (6 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1 Nullifiers of Swalah (2 lessons)", "4.2 Sunnah Optional Prayers (2 lessons)", "4.3 Taraweh and Witr (2 lessons)", "4.4 Swadaqah (Charity) (3 lessons)", "4.5 Saum (4 lessons)", "4.6 Nullifiers of Saum (Fasting) (2 lessons)"] },
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Virtues: Generosity (2 lessons)", "5.2 Effects of Social Media (3 lessons)", "5.3 Prohibitions in Islam (2 lessons)", "5.4 Dua: Supplication for Increase in Knowledge (2 lessons)"] },
+        { name: "6.0 Muamalat (Social Relations)", subStrands: ["6.1 Etiquette of Islamic Wedding Celebrations (3 lessons)", "6.2 Rights of Neighbours (3 lessons)", "6.3 Islamic Rules on Buying and Selling (3 lessons)"] },
+        { name: "7.0 History of Islam", subStrands: ["7.1 Al-Isra wal Miraj (3 lessons)", "7.2 Pledges of Aqabah (3 lessons)", "7.3 Hijra to Madina (3 lessons)", "7.4 Constitution of Madina (3 lessons)"] }
       ]
     },
     "Kiswahili": {
