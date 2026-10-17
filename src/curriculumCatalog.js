@@ -25,9 +25,9 @@ const seniorSubjects = [
 export const curriculumDirectory = {
   "Pre-Primary 1": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
   "Pre-Primary 2": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
-  "Grade 1": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
-  "Grade 2": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
-  "Grade 3": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
+  "Grade 1": { url: "https://kicd.ac.ke/cbc-materials/lower-primary/", subjects: ["Creative Activities", "CRE", "English Activities", "Environmental Activities", "HRE", "Indigenous Languages", "IRE", "Kiswahili", "Mathematics"] },
+  "Grade 2": { url: "https://kicd.ac.ke/cbc-materials/lower-primary/", subjects: ["Creative Activities", "CRE", "English Activities", "Environmental Activities", "HRE", "Indigenous Languages", "IRE", "Kiswahili", "Mathematics"] },
+  "Grade 3": { url: "https://kicd.ac.ke/cbc-materials/lower-primary/", subjects: ["Creative Activities", "CRE", "English Activities", "Environmental Activities", "HRE", "Indigenous Languages", "IRE", "Kiswahili", "Mathematics"] },
   "Grade 4": { url: ROOT + "grade-four-designs/", subjects: primarySubjects },
   "Grade 5": { url: ROOT + "grade-five-designs/", subjects: primarySubjects },
   "Grade 6": { url: ROOT + "grade-six-designs/", subjects: primarySubjects },
