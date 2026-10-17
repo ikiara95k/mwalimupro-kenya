@@ -1023,11 +1023,16 @@ export const curriculumCatalog = {
       ]
     },
     "Pre-Technical Studies": {
-      title: "Pre-Technical Studies Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Pre-Technical Studies Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Pre-Technical-Studies-Grade-7-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 Pre-Technical Studies curriculum design, April 2024.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "Pre-Technical Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Foundations of Pre-Technical Studies", subStrands: ["1.1 Introduction to Pre-Technical Studies (4 lessons)", "1.2 Safety in the Immediate Environment (6 lessons)", "1.3 Computer Concepts (6 lessons)"] },
+        { name: "2.0 Communication in Pre-Technical Studies", subStrands: ["2.1 Introduction to Drawing (6 lessons)", "2.2 Free-Hand Sketching (10 lessons)", "2.3 ICT Tools in Communication (8 lessons)"] },
+        { name: "3.0 Materials for Production", subStrands: ["3.1 Introduction to Materials (6 lessons)", "3.2 Metallic Materials (10 lessons)", "3.3 Non-Metallic Materials (10 lessons)"] },
+        { name: "4.0 Tools and Production", subStrands: ["4.1 Measuring and Marking-Out Tools (18 lessons)", "4.2 Computer Hardware (8 lessons)"] },
+        { name: "5.0 Entrepreneurship", subStrands: ["5.1 Introduction to Entrepreneurship (8 lessons)", "5.2 Production Unit (10 lessons)", "5.3 Financial Goals (10 lessons)"] }
       ]
     },
     "Social Studies": {
