@@ -91,6 +91,30 @@ export const curriculumCatalog = {
     }
   },
   "Grade 6": {
+    "Social Studies": {
+      title: "Social Studies Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-6-Social-studies-Revised-Oct-1.pdf",
+      sourceLabel: "Official KICD Grade 6 Social Studies curriculum design (revised 2024)",
+      strands: [
+        { name: "1.0 Natural and the Built Environments", subStrands: ["Position and Size of Countries in Eastern Africa (3 lessons)", "Main Physical Features in Eastern Africa (4 lessons)", "Climatic Regions in Eastern Africa (5 lessons)", "Vegetation in Eastern Africa (4 lessons)", "Historic Built Environments (4 lessons)"] },
+        { name: "2.0 People and Social Organisation", subStrands: ["Language Groups in Eastern Africa (5 lessons)", "Population Distribution in Eastern Africa (3 lessons)", "Culture and Social Organisation (4 lessons)", "School and Community (3 lessons)"] },
+        { name: "3.0 Resources and Economic Activities in Eastern Africa", subStrands: ["Beef Farming (4 lessons)", "Fishing in Eastern Africa (5 lessons)", "Wildlife and Tourism in Eastern Africa (5 lessons)", "Transport in Eastern Africa (4 lessons)", "Communication in Eastern Africa (4 lessons)", "Mining in Eastern Africa (5 lessons)"] },
+        { name: "4.0 Political Systems", subStrands: ["Traditional Forms of Government (5 lessons)", "Regional Co-operations (4 lessons)", "Citizenship (4 lessons)", "Human Rights (4 lessons)"] },
+        { name: "5.0 Governance", subStrands: ["Peace and Conflict Resolution (4 lessons)", "Government Revenue and Expenditure (4 lessons)", "The Preamble of the Constitution of Kenya (3 lessons)"] }
+      ]
+    },
+    "IRE": {
+      title: "Islamic Religious Education Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/IRE-GRADE-6-CURRICULUM-DESIGNS-Revised.pdf",
+      sourceLabel: "Official KICD Grade 6 IRE curriculum design (revised 2024)",
+      strands: [
+        { name: "1.0 Qur'an", subStrands: ["1.1 Selected Chapters (Surah) (12 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Purity of Actions (3 lessons)", "2.2 Hadith on Dressing (3 lessons)", "2.3 Hadith on Planting (3 lessons)", "2.4 Hadith on Responsible Capabilities and Resources (3 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Stories of Prophets Ibrahim and Yusuf (A.S.) (8 lessons)", "3.2 Taqwa (God Consciousness) (2 lessons)", "3.3 Tawakul (Reliance on Allah) (2 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1 Twaharah (Purity) (6 lessons)", "4.2 Zakat (3 lessons)", "4.3 Saum (4 lessons)", "4.4 Hajj (3 lessons)"] },
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Virtues: Work as a Form of Ibadah (2 lessons)", "5.2 Adalah (Justice) (2 lessons)", "5.3 Prohibitions in Islam: Intoxicants (3 lessons)", "5.4 Israf (Extravagance) (2 lessons)", "5.5 Dua (Supplication When Travelling) (2 lessons)"] }
+      ]
+    },
     "Agriculture": {
       title: "Agriculture Grade 6 (Revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/AGRICULTURE-Grade-6-30.07.2024.pdf",
