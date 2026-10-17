@@ -347,6 +347,46 @@ export const curriculumCatalog = {
       ]
     }
   },
+    "Creative Arts": {
+      title: "Creative Arts & Sports Grade 9 (KICD source-linked placeholder)",
+      sourceUrl: "https://drive.google.com/file/d/1XONxUP98Z6I85bPKx7CYIsAkEucl_dm-/preview",
+      sourceLabel: "Official KICD Grade Nine Designs page links to this revised design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Creative Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Nine design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "English": {
+      title: "English Grade 9 (KICD source-linked placeholder)",
+      sourceUrl: "https://drive.google.com/file/d/1ehe01q4q8G-ft1PsA0r7skcz6grZfiNQ/preview",
+      sourceLabel: "Official KICD Grade Nine Designs page links to the revised October design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Nine design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "HRE": {
+      title: "HRE Grade 9 (KICD source-linked placeholder)",
+      sourceUrl: "https://drive.google.com/file/d/1ePaw7pIrLG3AjX2mbTXIEimXTRnkdfuC/preview",
+      sourceLabel: "Official KICD Grade Nine Designs page links to the July 2024 design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Nine design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Gredi 9 (KICD source-linked placeholder)",
+      sourceUrl: "https://drive.google.com/file/d/14r0D5u2jy79nZdcixJ2Gu3qTattpY0_Y/preview",
+      sourceLabel: "Official KICD Grade Nine Designs page links to the revised October design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Nine design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mandarin": {
+      title: "Mandarin Grade 9 (KICD source-linked placeholder)",
+      sourceUrl: "https://drive.google.com/file/d/1Qn8CsuytmDlsnmfaf89KAZ3Fg2y-bYe2/preview",
+      sourceLabel: "Official KICD Grade Nine Designs page links to the revised October design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Nine design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   "Grade 10": {
     "Core Mathematics": {
       title: "Core Mathematics Grade 10 (July 2025)",
