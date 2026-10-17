@@ -472,11 +472,15 @@ export const curriculumCatalog = {
       ]
     },
     "Mandarin": {
-      title: "Mandarin Grade 4 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
-      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Mandarin Grade 4 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Mandarin-Grade-4-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 4 Mandarin design, October 2024.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Phonological Awareness: intonation, articulation, syllable blending and sentence construction (9 lessons)", "Imitative Speaking: word recognition, vocabulary development, pronunciation and fluency (9 lessons)", "Listening for Gist: active listening and comprehension (9 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Reading Aloud: pronunciation, articulation, intonation, vocabulary, fluency and comprehension (12 lessons)", "Guided Reading: vocabulary development, drawing inferences, fluency and reading strategies (6 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing: handwriting, spelling, punctuation, vocabulary, paragraph writing and sentence patterns (9 lessons)"] }
       ]
     },
     "Agriculture": {
