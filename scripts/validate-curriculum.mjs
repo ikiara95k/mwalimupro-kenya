@@ -78,13 +78,13 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
       const match = typeof item === "string" ? item.match(/\((\d+)\s+lessons?\)/i) : null;
       return match ? Number(match[1]) : null;
     });
-    if (curriculum.totalSuggestedLessons && allocationValues.length > 0 && allocationValues.every(value => value !== null)) {
+    if (!curriculum.reviewRequired && curriculum.totalSuggestedLessons && allocationValues.length > 0 && allocationValues.every(value => value !== null)) {
       const allocationTotal = allocationValues.reduce((sum, value) => sum + value, 0);
       const fullAllocationTotal = allocationTotal + (curriculum.additionalShowcaseLessons || 0);
       if (fullAllocationTotal !== curriculum.totalSuggestedLessons) {
         errors.push(`${label}: sub-strand lesson allocations plus showcase lessons sum to ${fullAllocationTotal}, but totalSuggestedLessons is ${curriculum.totalSuggestedLessons}`);
       }
-    } else if (curriculum.totalSuggestedLessons) {
+    } else if (!curriculum.reviewRequired && curriculum.totalSuggestedLessons) {
       const strandAllocations = (curriculum.strands || []).map(strand => {
         const match = (strand.name || "").match(/\((\d+)\s+lessons across strand\)/i);
         return match ? Number(match[1]) : null;

@@ -705,11 +705,15 @@ export const curriculumCatalog = {
   },
   "Grade 6": {
     "CRE": {
-      title: "Christian Religious Education Grade 6 (Revised 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/CRE-GRADE-6-DESIGN-Revised.pdf",
-      sourceLabel: "Official KICD revised Grade 6 CRE curriculum design (October 2024). Strand sequence awaits transcription and verification.",
+      title: "Christian Religious Education Grade 6 (KICD curriculum design, April 2024 — partial transcription)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-GRADE-6-DESIGN-APRIL-2024.pdf",
+      sourceLabel: "Official KICD Grade 6 CRE design, April 2024. This is a partial transcription only; the complete strand sequence must be checked against the full design.",
+      totalSuggestedLessons: 90,
+      reviewRequired: true,
+      reviewReason: "Partial transcription only: strands 1.0–3.0 and Church sub-strands 4.1–4.2 still need to be transcribed from the full KICD design. Scheme generation remains blocked.",
       strands: [
-        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Six CRE design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "4.0 The Church (partial)", subStrands: ["4.3 Church Unity (5 lessons)"] },
+        { name: "5.0 Christian Living Today", subStrands: ["5.1 Friendship Formation (6 lessons)", "5.2 Human Sexuality (7 lessons)", "5.3 Sanctity of Life (4 lessons)", "5.4 Alcohol, Drug and Substance Abuse (4 lessons)"] }
       ]
     },
     "Social Studies": {
@@ -951,6 +955,7 @@ export const curriculumCatalog = {
       totalSuggestedLessons: 60,
       additionalShowcaseLessons: 6,
       reviewRequired: true,
+      reviewReason: "The KICD summary table omits the Writing sub-strand list; only Listening and Speaking and Reading topics are transcribed.",
       strands: [
         { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["1.1 Active Listening", "1.2 Listening for Information", "1.3 Interactive Speaking", "1.4 Oral Expression"] },
         { name: "2.0 Reading (18 lessons across strand)", subStrands: ["2.1 Reading Comprehension", "2.2 Reading Aloud: Articulation", "2.3 Reading Aloud: Fluency"] },
@@ -1209,6 +1214,7 @@ export const curriculumCatalog = {
       sourceLabel: "KICD-linked revised Grade 8 design, July 2024. The summary table gives a 120-lesson sequence, but some detailed sub-strand pages show different allocations and labels; confirm the complete current sequence and lesson counts against the full design before final school planning.",
       totalSuggestedLessons: 120,
       reviewRequired: true,
+      reviewReason: "The KICD-linked summary table and detailed sub-strand pages show conflicting labels and lesson allocations; reconcile the full design before planning.",
       strands: [
         { name: "1.0 Foundations of Pre-Technical Studies", subStrands: ["1.1 Fire Safety (7 lessons)", "1.2 Data Safety (11 lessons)"] },
         { name: "2.0 Communication in Pre-Technical Studies", subStrands: ["2.1 Plane Geometry (4 lessons)", "2.2 Dimensioning (7 lessons)", "2.3 Plain Scale Drawing (6 lessons)", "2.4 Visual Programming (14 lessons)"] },
