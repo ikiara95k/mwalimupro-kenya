@@ -803,19 +803,19 @@ export const curriculumCatalog = {
       ]
     },
     "HRE": {
-      title: "Hindu Religious Education Grade 6 (KICD revised design, October 2024)",
+      title: "Hindu Religious Education Grade 6 (KICD revised curriculum design, October 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/HRE-GRADE-6-Revised.pdf",
-      sourceLabel: "Official KICD Grade 6 HRE design. Verify the sequence against the full design and any later revision before final school planning.",
+      sourceLabel: "Official KICD Grade 6 Hindu Religious Education revised design, October 2024. Verify any later revision before final school planning.",
       totalSuggestedLessons: 90,
       strands: [
-        { name: "1.0 Creation", subStrands: ["1.1 Creation as per Buddhist and Sikh faiths (8 lessons)", "1.2 Gifts of Nature (8 lessons)"] },
+        { name: "1.0 Creation", subStrands: ["1.1 Creation as per Buddhist and Sikh Faiths (8 lessons)", "1.2 Gifts of Nature (8 lessons)"] },
         { name: "2.0 Manifestations of Paramatma", subStrands: ["2.1 Enlightened Beings and Social Welfare (8 lessons)"] },
         { name: "3.0 Scriptures", subStrands: ["3.1 Scriptures and Moral Values (8 lessons)"] },
         { name: "4.0 Worship", subStrands: ["4.1 Basic Chants and Mantras in Buddhist Faith (8 lessons)", "4.2 Buddhist Vihaars in Africa (8 lessons)"] },
-        { name: "5.0 Sadachaar (Social Ethics)", subStrands: ["5.1 Managing Resources (9 lessons)"] },
-        { name: "6.0 Yoga (Holistic Wellness)", subStrands: ["6.1 Asanas (8 lessons)", "6.2 Communal Aspect of Yoga (9 lessons)"] },
+        { name: "5.0 Sadachaar: Social Ethics", subStrands: ["5.1 Managing Resources (9 lessons)"] },
+        { name: "6.0 Yoga", subStrands: ["6.1 Asanas (8 lessons)", "6.2 Communal Aspect of Yoga (9 lessons)"] },
         { name: "7.0 Principles of Dharma", subStrands: ["7.1 Virtues and Principles of Dharma in Buddhist Faith (8 lessons)"] },
-        { name: "8.0 Utsav (Social Festivals)", subStrands: ["8.1 Utsavs from Other Faiths (8 lessons)"] }
+        { name: "8.0 Utsav: Social Festivals", subStrands: ["8.1 Utsavs from Other Faiths (8 lessons)"] }
       ]
     },
     "Indigenous Language": {
