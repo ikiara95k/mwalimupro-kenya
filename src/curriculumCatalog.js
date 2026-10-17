@@ -1128,11 +1128,16 @@ export const curriculumCatalog = {
       ]
     },
     "Social Studies": {
-      title: "Social Studies Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Social Studies Grade 8 (KICD curriculum design, September 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/09/GRADE-8-SOCIAL-STUDIES.pdf",
+      sourceLabel: "Official KICD Grade 8 Social Studies design, September 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "Social Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Social Studies and Personal Management", subStrands: ["1.1 Self-Improvement (4 lessons)", "1.2 Self-Esteem Assessment (4 lessons)"] },
+        { name: "2.0 Community Service Learning", subStrands: ["2.1 Community Service Learning Project (8 lessons)"] },
+        { name: "3.0 People and Relationships", subStrands: ["3.1 Scientific Theory about Human Origin (6 lessons)", "3.2 Early Civilisations (8 lessons)", "3.3 Trans-Saharan Slave Trade (6 lessons)", "3.4 Population Growth in Africa (6 lessons)", "3.5 Diversity and Interpersonal Skills (8 lessons)", "3.6 Peaceful Conflict Resolution (8 lessons)"] },
+        { name: "4.0 Natural and Historic Built Environments", subStrands: ["4.1 Map Reading and Interpretation (12 lessons)", "4.2 Weather and Climate (10 lessons)", "4.3 Vegetation in Africa (8 lessons)", "4.4 Historical Sites and Monuments in Africa (8 lessons)"] },
+        { name: "5.0 Political Developments and Governance", subStrands: ["5.1 The Constitution of Kenya (6 lessons)", "5.2 Human Rights (8 lessons)", "5.3 Citizenship (10 lessons)"] }
       ]
     },
   },
