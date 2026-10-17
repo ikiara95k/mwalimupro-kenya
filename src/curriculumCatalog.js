@@ -106,6 +106,14 @@ export const curriculumCatalog = {
     }
   },
   "Grade 5": {
+    "CRE": {
+      title: "Christian Religious Education Grade 5 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/CRE-GRADE-5-DESIGN-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 5 CRE curriculum design (October 2024). Strand sequence awaits transcription and verification.",
+      strands: [
+        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Five CRE design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
     "Agriculture": {
       title: "Agriculture Grade 5 (Revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/AGRICULTURE-Grade-5-30.07.2024.pdf",
@@ -154,6 +162,14 @@ export const curriculumCatalog = {
     }
   },
   "Grade 6": {
+    "CRE": {
+      title: "Christian Religious Education Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/CRE-GRADE-6-DESIGN-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 6 CRE curriculum design (October 2024). Strand sequence awaits transcription and verification.",
+      strands: [
+        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Six CRE design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
     "Social Studies": {
       title: "Social Studies Grade 6 (Revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-6-Social-studies-Revised-Oct-1.pdf",
