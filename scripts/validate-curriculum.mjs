@@ -48,8 +48,9 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
     });
     if (curriculum.totalSuggestedLessons && allocationValues.length > 0 && allocationValues.every(value => value !== null)) {
       const allocationTotal = allocationValues.reduce((sum, value) => sum + value, 0);
-      if (allocationTotal !== curriculum.totalSuggestedLessons) {
-        errors.push(`${label}: sub-strand lesson allocations sum to ${allocationTotal}, but totalSuggestedLessons is ${curriculum.totalSuggestedLessons}`);
+      const fullAllocationTotal = allocationTotal + (curriculum.additionalShowcaseLessons || 0);
+      if (fullAllocationTotal !== curriculum.totalSuggestedLessons) {
+        errors.push(`${label}: sub-strand lesson allocations plus showcase lessons sum to ${fullAllocationTotal}, but totalSuggestedLessons is ${curriculum.totalSuggestedLessons}`);
       }
     }
   }
