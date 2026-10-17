@@ -665,11 +665,15 @@ export const curriculumCatalog = {
       ]
     },
     "Mandarin": {
-      title: "Mandarin Grade 5 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
-      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Mandarin Grade 5 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Mandarin-Grade-5-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 5 Mandarin design, October 2024.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Phonological Awareness: sound discrimination, initials and finals, rhyming, vocabulary and tone discrimination (9 lessons)", "Listening for Gist: active listening, comprehension and summarising (9 lessons)", "Imitative Speaking: pronunciation, intonation, rhythm, stress patterns, active listening and fluency (9 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Reading Aloud: Chinese tones, fluency, word recognition, oral presentation and vocabulary expansion (10 lessons)", "Guided Reading: word recognition, vocabulary development, reading strategies, articulation and intonation (8 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing: spelling, word order, punctuation, Chinese tones and characters, handwriting, vocabulary, paragraph writing and sentence structures (9 lessons)"] }
       ]
     },
     "Science & Technology": {
