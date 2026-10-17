@@ -1399,14 +1399,6 @@ export const curriculumCatalog = {
         { name: "Physical Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
-    "Physics": {
-      title: "Physics Grade 10 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
-      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
-      strands: [
-        { name: "Physics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
-      ]
-    },
     "Power Mechanics": {
       title: "Power Mechanics Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
