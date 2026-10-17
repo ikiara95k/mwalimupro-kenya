@@ -208,6 +208,21 @@ export const curriculumCatalog = {
     }
   },
   "Grade 9": {
+    "CRE": {
+      title: "Christian Religious Education Grade 9 (KICD revised curriculum design)",
+      sourceUrl: "https://drive.google.com/file/d/1FBMLUxBo1q4dHUkXLidZeqCiZWDzRBNI/preview",
+      sourceLabel: "Official KICD Grade Nine Designs page links to this CRE design. Sub-strand labels are indexed for planning; verify numbering and lesson allocations against the live design before final use.",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Creation", subStrands: ["Work (8 lessons)"] },
+        { name: "2.0 Bible", subStrands: ["Christian Moral Values (10 lessons)", "Kings David and Solomon (10 lessons)"] },
+        { name: "3.0 Life and Ministry of Jesus Christ", subStrands: ["Raising the Widow's Son (8 lessons)", "Healing the Ten Lepers (8 lessons)", "Parable on Prayer (8 lessons)", "Nicodemus' Encounter with Jesus Christ (8 lessons)", "Jesus' Ministry in Jerusalem (10 lessons)"] },
+        { name: "4.0 Church", subStrands: ["Early Church (8 lessons)", "Gifts of the Holy Spirit (8 lessons)"] },
+        { name: "5.0 Christian Living Today", subStrands: ["Courtship and Marriage (10 lessons)", "Responsible Parenthood (8 lessons)", "Leisure (8 lessons)", "Wealth, Money and Poverty (8 lessons)"] }
+      ]
+    }
+  },
+  "Grade 9": {
     "Mathematics": {
       title: "Mathematics Grade 9 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mathematics-Grade-9-Design-Formatted-April-2024.pdf",
