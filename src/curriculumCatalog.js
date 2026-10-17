@@ -893,11 +893,17 @@ export const curriculumCatalog = {
       ]
     },
     "CRE": {
-      title: "CRE Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Christian Religious Education Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-Grade-7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 CRE design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Overview of Christian Religious Education", subStrands: ["1.1 Importance of Learning CRE (6 lessons)"] },
+        { name: "2.0 Creation", subStrands: ["2.1 Accounts of Creation (6 lessons)", "2.2 Responsibility over Animals, Fish and Birds (6 lessons)", "2.3 Responsibility over Plants (6 lessons)", "2.4 Use and Misuse of God's Creation (6 lessons)"] },
+        { name: "3.0 The Bible", subStrands: ["3.1 Functions of the Bible (6 lessons)", "3.2 Divisions of the Bible (6 lessons)", "3.3 Bible Translation (6 lessons)", "3.4 Leadership in the Bible: Moses (7 lessons)"] },
+        { name: "4.0 The Early Life of Jesus Christ", subStrands: ["4.1 Background to the Birth of Jesus Christ (12 lessons)", "4.2 The Birth and Childhood of Jesus Christ (7 lessons)"] },
+        { name: "5.0 The Church in Action", subStrands: ["5.1 Selected Forms of Worship (6 lessons)", "5.2 Role of the Church in Education and Health (5 lessons)"] },
+        { name: "6.0 Christian Living Today", subStrands: ["6.1 Human Sexuality (7 lessons)", "6.2 Christian Marriage and Family (7 lessons)", "6.3 Alcohol and Substance Use (7 lessons)", "6.4 Social and Moral Issues: Gambling (7 lessons)", "6.5 Social Media (7 lessons)"] }
       ]
     },
     "English": {
