@@ -96,20 +96,22 @@ function App() {
       };
     });
     setScheme({ subject, grade, term, year, teacher, school, rows, curriculumTitle: curriculum.title, sourceUrl: curriculum.sourceUrl });
-    setNotice("Your draft uses the indexed KICD strand/sub-strand sequence. Add specific learning outcomes, suggested learning experiences and assessment details from the official design before use.");
+    setNotice(topics.length < count
+      ? "This curriculum has fewer indexed sub-strands than the number of weeks requested, so the draft contains " + topics.length + " topic rows rather than repeating or inventing topics. Add remaining verified topics or adjust teaching weeks. Lesson allocations shown are taken only from indexed labels."
+      : "Your draft preserves the indexed KICD topic order and balances adjacent topics using lesson allocations where available. Add specific learning outcomes, suggested learning experiences and assessment details from the official design before use.");
   }
 
   async function exportDocx() {
     if (!scheme) return;
     const cell = (value, bold = false) => new TableCell({
-      width: { size: 100 / 7, type: WidthType.PERCENTAGE },
+      width: { size: 100 / 8, type: WidthType.PERCENTAGE },
       children: [new Paragraph({ text: String(value ?? ""), bold })]
     });
-    const header = ["Week", "Strand / Topic", "Sub-topic", "Learning objectives", "Learning activities", "Resources", "Assessment"];
+    const header = ["Week", "Strand / Topic", "Sub-topic", "Suggested lessons", "Learning objectives", "Learning activities", "Resources", "Assessment"];
     const rows = [
       new TableRow({ children: header.map(value => cell(value, true)) }),
       ...scheme.rows.map(row => new TableRow({ children: [
-        cell(row.week), cell(row.topic), cell(row.subtopic), cell(row.objectives),
+        cell(row.week), cell(row.topic), cell(row.subtopic), cell(row.allocatedLessons ?? "—"), cell(row.objectives),
         cell(row.activities), cell(row.resources), cell(row.assessment)
       ] }))
     ];
@@ -135,7 +137,7 @@ function App() {
   function exportCsv() {
     if (!scheme) return;
     const header = ["Week", "Strand / Topic", "Sub-topic", "Learning objectives", "Learning activities", "Resources", "Assessment"];
-    const data = scheme.rows.map(r => [r.week, r.topic, r.subtopic, r.objectives, r.activities, r.resources, r.assessment]);
+    const data = scheme.rows.map(r => [r.week, r.topic, r.subtopic, r.allocatedLessons ?? "", r.objectives, r.activities, r.resources, r.assessment]);
     const quote = value => '"' + String(value ?? "").replaceAll('"', '""') + '"';
     const csv = [header, ...data].map(row => row.map(quote).join(",")).join("\r\n");
     const url = URL.createObjectURL(new Blob(["\ufeff" + csv], { type: "text/csv;charset=utf-8;" }));
@@ -199,7 +201,7 @@ function App() {
       </section>
       {scheme && <section className="panel preview">
         <div className="preview-heading"><div><div className="eyebrow">DOCUMENT PREVIEW</div><h2>{scheme.subject} — Scheme of Work</h2><p>{scheme.grade} · {scheme.term} · {scheme.year}{scheme.school ? ` · ${scheme.school}` : ""}{scheme.teacher ? ` · ${scheme.teacher}` : ""}</p></div><div className="button-row"><button className="secondary" onClick={exportCsv}>Export CSV</button><button className="secondary" onClick={exportDocx}>Download Word</button><button className="primary" onClick={() => window.print()}>Print / Save PDF</button></div></div>
-        <div className="table-wrap"><table><thead><tr><th>Week</th><th>Strand / Topic</th><th>Sub-topic</th><th>Learning objectives</th><th>Activities</th><th>Resources</th><th>Assessment</th></tr></thead><tbody>{scheme.rows.map(row => <tr key={row.week}><td>{row.week}</td><td>{row.topic}</td><td>{row.subtopic}</td><td>{row.objectives}</td><td>{row.activities}</td><td>{row.resources}</td><td>{row.assessment}</td></tr>)}</tbody></table></div>
+        <div className="table-wrap"><table><thead><tr><th>Week</th><th>Strand / Topic</th><th>Sub-topic</th><th>Suggested lessons</th><th>Learning objectives</th><th>Activities</th><th>Resources</th><th>Assessment</th></tr></thead><tbody>{scheme.rows.map(row => <tr key={row.week}><td>{row.week}</td><td>{row.topic}</td><td>{row.subtopic}</td><td>{row.allocatedLessons ?? "—"}</td><td>{row.objectives}</td><td>{row.activities}</td><td>{row.resources}</td><td>{row.assessment}</td></tr>)}</tbody></table></div>
         <p className="disclaimer">Source: {scheme.curriculumTitle}. This generated scheme is not an official KICD document. Verify specific learning outcomes, suggested learning experiences, lesson allocations and school calendar against the <a href={scheme.sourceUrl} target="_blank" rel="noreferrer">official KICD design</a>.</p>
       </section>}
       <footer className="footer"><span>© {new Date().getFullYear()} MwalimuPro Kenya</span><span>Made for teachers, with care.</span></footer>
