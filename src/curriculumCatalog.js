@@ -988,11 +988,16 @@ export const curriculumCatalog = {
       ]
     },
     "Social Studies": {
-      title: "Social Studies Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Social Studies Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Social-Studies-Grade-7-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 Social Studies design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "Social Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Social Studies and Personal Development", subStrands: ["1.1 Self-Exploration (6 lessons)", "1.2 Social Entrepreneurial Opportunities (5 lessons)"] },
+        { name: "2.0 People and Relationships", subStrands: ["2.1 Human Origin (4 lessons)", "2.2 Early Civilisation (4 lessons)", "2.3 Slavery and Servitude (5 lessons)", "2.4 Developments in Medium of Trade (4 lessons)", "2.5 Diversity and Interpersonal Relationships (5 lessons)", "2.6 Peaceful Coexistence (4 lessons)"] },
+        { name: "3.0 Community Service-Learning", subStrands: ["3.1 Community Service-Learning Project (20 lessons)"] },
+        { name: "4.0 Natural and Historic Built Environments", subStrands: ["4.1 Historical Information (4 lessons)", "4.2 Historical Development of Agriculture (4 lessons)", "4.3 Maps and Map Work (10 lessons)", "4.4 Earth and the Solar System (5 lessons)", "4.5 Weather (5 lessons)", "4.6 Fieldwork (10 lessons)"] },
+        { name: "5.0 Political Development and Governance", subStrands: ["5.1 Political Development in Africa (5 lessons)", "5.2 The Constitution of Kenya (5 lessons)", "5.3 Human Rights (5 lessons)", "5.4 African Diasporas (5 lessons)", "5.5 Citizenship (5 lessons)"] }
       ]
     },
   },
