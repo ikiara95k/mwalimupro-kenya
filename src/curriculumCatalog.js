@@ -713,13 +713,16 @@ export const curriculumCatalog = {
     "IRE": {
       title: "Islamic Religious Education Grade 6 (Revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/IRE-GRADE-6-CURRICULUM-DESIGNS-Revised.pdf",
-      sourceLabel: "Official KICD Grade 6 IRE curriculum design (revised 2024)",
+      sourceLabel: "Official KICD revised Grade 6 IRE design, October 2024; complete strand sequence and 90-lesson allocation.",
+      totalSuggestedLessons: 90,
       strands: [
         { name: "1.0 Qur'an", subStrands: ["1.1 Selected Chapters (Surah) (12 lessons)"] },
         { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Purity of Actions (3 lessons)", "2.2 Hadith on Dressing (3 lessons)", "2.3 Hadith on Planting (3 lessons)", "2.4 Hadith on Responsible Capabilities and Resources (3 lessons)"] },
         { name: "3.0 Pillars of Iman", subStrands: ["3.1 Stories of Prophets Ibrahim and Yusuf (A.S.) (8 lessons)", "3.2 Taqwa (God Consciousness) (2 lessons)", "3.3 Tawakul (Reliance on Allah) (2 lessons)"] },
         { name: "4.0 Devotional Acts", subStrands: ["4.1 Twaharah (Purity) (6 lessons)", "4.2 Zakat (3 lessons)", "4.3 Saum (4 lessons)", "4.4 Hajj (3 lessons)"] },
-        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Virtues: Work as a Form of Ibadah (2 lessons)", "5.2 Adalah (Justice) (2 lessons)", "5.3 Prohibitions in Islam: Intoxicants (3 lessons)", "5.4 Israf (Extravagance) (2 lessons)", "5.5 Dua (Supplication When Travelling) (2 lessons)"] }
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Virtues: Work as a Form of Ibadah (2 lessons)", "5.2 Adalah (Justice) (2 lessons)", "5.3 Prohibitions in Islam: Intoxicants (3 lessons)", "5.4 Israf (Extravagance) (2 lessons)", "5.5 Dua (Supplication When Travelling) (2 lessons)"] },
+        { name: "6.0 Muamalat (Social Relations)", subStrands: ["6.1 Fair Treatment of Workers (3 lessons)", "6.2 Relationship with People of Other Faiths (3 lessons)", "6.3 Corruption (4 lessons)"] },
+        { name: "7.0 History of Islam", subStrands: ["7.1 Battle of Badr and Uhud (4 lessons)", "7.2 Treaty of Hudaybiya (3 lessons)", "7.3 Conquest of Makkah (7 lessons)", "7.4 Farewell Pilgrimage (3 lessons)"] }
       ]
     },
     "Agriculture": {
