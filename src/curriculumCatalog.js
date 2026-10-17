@@ -1000,11 +1000,15 @@ export const curriculumCatalog = {
       ]
     },
     "Mandarin": {
-      title: "Mandarin Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Mandarin Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mandarin-Grade-7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 Mandarin design, April 2024. The searchable summary's lesson-count arithmetic is inconsistent, so this entry indexes topic labels without disputed individual allocations; confirm the full table before planning.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Oral Expression", "Phonological Awareness", "Listening for Information", "Interactive Speaking"] },
+        { name: "2.0 Reading", subStrands: ["Reading Aloud", "Reading for Understanding", "Guided Reading", "Reading for Fluency"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing"] }
       ]
     },
     "Pre-Technical Studies": {
