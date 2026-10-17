@@ -383,9 +383,18 @@ export function getCurriculum(grade, subject) {
 export function getCurriculumTopics(grade, subject) {
   const curriculum = getCurriculum(grade, subject);
   if (!curriculum) return [];
-  return curriculum.strands.flatMap(strand =>
+  const topics = curriculum.strands.flatMap(strand =>
     strand.subStrands.map(subStrand => ({ strand: strand.name, subStrand }))
   );
+  // Some KICD language designs allocate additional lessons to showcasing/exhibitions.
+  // Keep these visible in the generated scheme instead of silently dropping those lessons.
+  if (curriculum.additionalShowcaseLessons > 0) {
+    topics.push({
+      strand: "Showcasing of Skills and Concepts",
+      subStrand: `Showcasing of Skills and Concepts (Exhibition) (${curriculum.additionalShowcaseLessons} lessons)`
+    });
+  }
+  return topics;
 }
 
 export function getSubjectsForGrade(grade) {
