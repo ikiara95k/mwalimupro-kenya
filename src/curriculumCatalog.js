@@ -50,11 +50,16 @@ export const curriculumCatalog = {
       ]
     },
     "CRE": {
-      title: "CRE Pre-Primary 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/pre-primary/",
-      sourceLabel: "Official KICD Pre-Primary 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Christian Religious Education Pre-Primary 1 (KICD design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-PP1-APRIL-2024.pdf",
+      sourceLabel: "Official KICD Pre-Primary 1 CRE curriculum design, April 2024.",
+      totalSuggestedLessons: 90,
       strands: [
-        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Pre-Primary 1 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Creation", subStrands: ["1.1 Our God (7 lessons)", "1.2 God Our Creator (8 lessons)", "1.3 God Our Loving Father (8 lessons)"] },
+        { name: "2.0 The Bible", subStrands: ["2.1 A Holy Book (7 lessons)", "2.2 David and Goliath (6 lessons)"] },
+        { name: "3.0 The Life of Jesus Christ", subStrands: ["3.1 The Birth of Jesus Christ (8 lessons)", "3.2 The Wise Men (7 lessons)"] },
+        { name: "4.0 Christian Values", subStrands: ["4.1 Love for God (7 lessons)", "4.2 Love for Neighbour (9 lessons)", "4.3 Sharing with Others (8 lessons)"] },
+        { name: "5.0 The Church", subStrands: ["5.1 A House of God (7 lessons)", "5.2 Church Activities (8 lessons)"] }
       ]
     },
     "HRE": {
@@ -517,11 +522,16 @@ export const curriculumCatalog = {
   },
   "Grade 5": {
     "CRE": {
-      title: "Christian Religious Education Grade 5 (Revised 2024)",
+      title: "Christian Religious Education Grade 5 (KICD revised design, October 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/CRE-GRADE-5-DESIGN-Revised.pdf",
-      sourceLabel: "Official KICD revised Grade 5 CRE curriculum design (October 2024). Strand sequence awaits transcription and verification.",
+      sourceLabel: "Official KICD revised Grade 5 CRE curriculum design, October 2024.",
+      totalSuggestedLessons: 90,
       strands: [
-        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Five CRE design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Creation", subStrands: ["1.1 My Purpose (Talents and Abilities) (3 lessons)", "1.2 Work (3 lessons)", "1.3 The Fall of Man (3 lessons)", "1.4 Family Unity (3 lessons)"] },
+        { name: "2.0 The Bible", subStrands: ["2.1 The Bible as a Guide (3 lessons)", "2.2 Peter and John in the Temple (3 lessons)", "2.3 King Solomon the Wise Ruler (3 lessons)", "2.4 Noah and His Sons (3 lessons)", "2.5 A Hand Writes on the Wall (3 lessons)", "2.6 Mount Carmel Contest (3 lessons)", "2.7 God's Protection (3 lessons)", "2.8 The Call of Moses (3 lessons)"] },
+        { name: "3.0 The Life of Jesus Christ", subStrands: ["3.1 John the Baptist (3 lessons)", "3.2 The Baptism of Jesus Christ (3 lessons)", "3.3 Calming the Storm (3 lessons)", "3.4 Feeding the Four Thousand (3 lessons)", "3.5 Healing the Paralysed Man (3 lessons)", "3.6 Parable of the Lost Sheep (3 lessons)", "3.7 Sermon on the Mount (3 lessons)", "3.8 The Rich Young Ruler (3 lessons)", "3.9 A Friend at Midnight (3 lessons)"] },
+        { name: "4.0 The Church", subStrands: ["4.1 The Early Church (3 lessons)", "4.2 The Lord's Supper (3 lessons)", "4.3 The Holy Spirit (3 lessons)", "4.4 Peter's Miraculous Rescue (3 lessons)"] },
+        { name: "5.0 Christian Living", subStrands: ["5.1 Friendship Formation (3 lessons)", "5.2 Human Sexuality (3 lessons)", "5.3 Sanctity of Life (3 lessons)", "5.4 Alcohol, Drugs and Substance Abuse (3 lessons)", "5.5 Social Media (3 lessons)"] }
       ]
     },
     "Agriculture": {
