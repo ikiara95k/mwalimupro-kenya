@@ -30,7 +30,10 @@ const counts = rows.reduce((acc, row) => {
 
 console.log("MwalimuPro Kenya — curriculum coverage audit");
 console.log("============================================");
+const indexedCount = counts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0;
+const indexedPercent = rows.length ? (indexedCount / rows.length * 100).toFixed(1) : "0.0";
 console.log(`Catalogue entries checked: ${rows.length}`);
+console.log(`Indexed topic coverage: ${indexedCount}/${rows.length} (${indexedPercent}%)`);
 for (const status of [
   "INDEXED_NEEDS_TEACHER_VERIFICATION",
   "SOURCE_ONLY",
@@ -47,7 +50,7 @@ for (const grade of Object.keys(curriculumDirectory)) {
     return acc;
   }, {});
   console.log(
-    `${grade}: ${gradeRows.length} subjects | indexed ${gradeCounts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0} | source-only ${gradeCounts.SOURCE_ONLY ?? 0} | review ${gradeCounts.REVIEW_REQUIRED ?? 0} | missing ${gradeCounts.NOT_INDEXED ?? 0}`
+    `${grade}: ${gradeRows.length} subjects | indexed ${gradeCounts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0} (${gradeRows.length ? ((gradeCounts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0) / gradeRows.length * 100).toFixed(1) : "0.0"}%) | source-only ${gradeCounts.SOURCE_ONLY ?? 0} | review ${gradeCounts.REVIEW_REQUIRED ?? 0} | missing ${gradeCounts.NOT_INDEXED ?? 0}`
   );
 }
 
