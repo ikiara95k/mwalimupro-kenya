@@ -220,9 +220,7 @@ export const curriculumCatalog = {
         { name: "4.0 Church", subStrands: ["Early Church (8 lessons)", "Gifts of the Holy Spirit (8 lessons)"] },
         { name: "5.0 Christian Living Today", subStrands: ["Courtship and Marriage (10 lessons)", "Responsible Parenthood (8 lessons)", "Leisure (8 lessons)", "Wealth, Money and Poverty (8 lessons)"] }
       ]
-    }
-  },
-  "Grade 9": {
+    },
     "Mathematics": {
       title: "Mathematics Grade 9 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mathematics-Grade-9-Design-Formatted-April-2024.pdf",
