@@ -1425,7 +1425,7 @@ export const curriculumCatalog = {
     "Core Mathematics": {
       title: "Core Mathematics Grade 10 (July 2025)",
       sourceUrl: "https://drive.google.com/file/d/1XwcFQpw5J29rryJUjwJwpd1Py5PWDpqu/preview",
-      sourceLabel: "Official KICD-linked Grade 10 subject design, July 2025. Verify any later revision before final school planning.",
+      sourceLabel: "Official KICD-linked Grade 10 subject design. Verify any later revision before final school planning.",
       strands: [
         { name: "1.0 Numbers and Algebra", subStrands: ["1.1 Real Numbers", "1.2 Indices and Logarithms", "1.3 Quadratic Expressions and Equations"] },
         { name: "2.0 Measurements and Geometry", subStrands: ["2.1 Similarity and Enlargement", "2.2 Reflection and Congruence", "2.3 Rotation", "2.4 Trigonometry", "2.5 Area of Polygons", "2.6 Area of a Part of a Circle", "2.7 Surface Area and Volume of Solids", "2.8 Vectors", "2.9 Linear Motion"] },
@@ -1435,7 +1435,7 @@ export const curriculumCatalog = {
     Physics: {
       title: "Physics Grade 10 (2025)",
       sourceUrl: "https://drive.google.com/file/d/1vBYR4lx-zLtdjAe3n9FCJv7D0wiLhAGc/preview",
-      sourceLabel: "Official KICD-linked Grade 10 subject design, July 2025. Verify any later revision before final school planning.",
+      sourceLabel: "Official KICD-linked Grade 10 subject design. Verify any later revision before final school planning.",
       strands: [
         { name: "1.0 Mechanics and Thermal Physics", subStrands: ["1.1 Introduction to Physics", "1.2 Pressure", "1.3 Mechanical Properties of Materials", "1.4 Temperature and Thermal Expansion", "1.5 Moments and Equilibrium", "1.6 Energy, Work, Power and Machines"] },
         { name: "2.0 Waves and Optics", subStrands: ["2.1 Properties of Waves", "2.2 Radioactivity and Stability of Isotopes"] },
@@ -1446,7 +1446,7 @@ export const curriculumCatalog = {
     "Agriculture": {
       title: "Agriculture Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1AWkdwe-QpHx3wcyjjBM_ALRAnrC_X6ER/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Agriculture curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1454,7 +1454,7 @@ export const curriculumCatalog = {
     "Aviation": {
       title: "Aviation Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1KnaB7YU8F0Tgd483lA0PY31dluH6GzSp/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Aviation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1462,7 +1462,7 @@ export const curriculumCatalog = {
     "Biology": {
       title: "Biology Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/146apd-v5RRjkag1oqn214pPStKsSIanK/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Biology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1470,7 +1470,7 @@ export const curriculumCatalog = {
     "Chemistry": {
       title: "Chemistry Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1R293rOfFoxio7GqwY-mVAolmLDnnHnQ2/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Chemistry curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1478,7 +1478,7 @@ export const curriculumCatalog = {
     "Community Service Learning": {
       title: "Community Service Learning Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/15YaAz-FPWv2aa3MmfywqPs3DmFSh0SFD/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Community Service Learning curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1486,7 +1486,7 @@ export const curriculumCatalog = {
     "English": {
       title: "English Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1OFcHiuBagmwsfkqWe2aaDCaf_4JR4tt7/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1494,7 +1494,7 @@ export const curriculumCatalog = {
     "Fasihi ya Kiswahili": {
       title: "Fasihi ya Kiswahili Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/19wYZonmGJeNw9PD4fJLXFb1IlUfp0hUL/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Fasihi ya Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1502,7 +1502,7 @@ export const curriculumCatalog = {
     "Fine Arts": {
       title: "Fine Arts Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1gGJTA2HJGH8yrJiT5RFEMTc83SOHBQ0i/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Fine Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1510,7 +1510,7 @@ export const curriculumCatalog = {
     "General Science": {
       title: "General Science Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/18-lTCJ258Gno5vyBKnwXV7gd00CxPZtW/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "General Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1518,7 +1518,7 @@ export const curriculumCatalog = {
     "Geography": {
       title: "Geography Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1NOeCbiPRSXjsU0t_1WL0rUAT1sRJBcWb/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Geography curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1526,7 +1526,7 @@ export const curriculumCatalog = {
     "History & Citizenship": {
       title: "History & Citizenship Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1OfTy7Q2i-MPypS0xoIP6et2R5LPBlmib/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "History & Citizenship curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1534,7 +1534,7 @@ export const curriculumCatalog = {
     "Home Science": {
       title: "Home Science Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1NUCQjFPtDxCBJ3HerHE7OXM-bLdKili2/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Home Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1542,7 +1542,7 @@ export const curriculumCatalog = {
     "ICT": {
       title: "ICT Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1tT2NXWjmKRIUx4H4mX08-_IJGN5GZ3PT/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "ICT curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1550,7 +1550,7 @@ export const curriculumCatalog = {
     "Kiswahili": {
       title: "Kiswahili Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/18IUToqMjNfHeduzCW4xULCYnDK6MHs_4/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1558,7 +1558,7 @@ export const curriculumCatalog = {
     "Literature in English": {
       title: "Literature in English Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1zAu0cFvhsNlKDg2f4XMXqx8RSaGfxfww/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Literature in English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1574,7 +1574,7 @@ export const curriculumCatalog = {
     "Music & Dance": {
       title: "Music & Dance Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1OHOaw5D4XHReOfFu2MyAxMx4PlIRxAb8/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Music & Dance curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1582,7 +1582,7 @@ export const curriculumCatalog = {
     "Physical Education": {
       title: "Physical Education Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1F4mCo6uosoo7SxsIvWaf5CmLv3xyhG9y/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Physical Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1590,7 +1590,7 @@ export const curriculumCatalog = {
     "Power Mechanics": {
       title: "Power Mechanics Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1AucNtsaKXAyaZC0ow8vs7noaiWND3ku6/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Power Mechanics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1598,7 +1598,7 @@ export const curriculumCatalog = {
     "Sports & Recreation": {
       title: "Sports & Recreation Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1PiDA3G-WHJzMJxfVXDHqvXZLXqTzWNDM/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Sports & Recreation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1606,7 +1606,7 @@ export const curriculumCatalog = {
     "Theatre & Film": {
       title: "Theatre & Film Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1enGiaMZNlf81lSwVmf7F-kOPySRc81pK/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Theatre & Film curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1614,7 +1614,7 @@ export const curriculumCatalog = {
     "Woodwork": {
       title: "Woodwork Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1W_7L_7B3WLGvblXw3_6Hp9zs1Vkr33ET/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1638,7 +1638,7 @@ export const curriculumCatalog = {
     "Arabic": {
       title: "Arabic Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1Wwsy9kE5Hf6pnolTfMbtEZi4eeTymvd1/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1646,7 +1646,7 @@ export const curriculumCatalog = {
     "Building and Construction": {
       title: "Building and Construction Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1Me5EvPkj2KugmZfDQ7sDmSXwiVe5oPlr/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Building and Construction curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1654,7 +1654,7 @@ export const curriculumCatalog = {
     "Business Studies": {
       title: "Business Studies Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1IWWelD1Cfk2TaqhWg8pA1adt1ieKLx7L/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Business Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1662,7 +1662,7 @@ export const curriculumCatalog = {
     "Computer Studies": {
       title: "Computer Studies Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1e5lBROYbbw6JeVCduFMCkWh1MbluV5M8/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Computer Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1678,7 +1678,7 @@ export const curriculumCatalog = {
     "Electrical Technology": {
       title: "Electrical Technology Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1DohFLCqnrjdaifgNolv40vdpLNLPo67C/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Electrical Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1686,7 +1686,7 @@ export const curriculumCatalog = {
     "French": {
       title: "French Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1STLTzGqa_atYaumAl6fWAh-kKM5jtybY/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1694,7 +1694,7 @@ export const curriculumCatalog = {
     "German": {
       title: "German Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1CP0Ou6183X39e2hrrsKlBXck0ZESpqfW/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1702,7 +1702,7 @@ export const curriculumCatalog = {
     "Hindu Religious Education": {
       title: "Hindu Religious Education Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1I2XV5G-tc8SmYaX9Lx6l5t4ikJ91wvjN/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Hindu Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1710,7 +1710,7 @@ export const curriculumCatalog = {
     "Indigenous Language": {
       title: "Indigenous Language Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1EMzi8uwtnX5tRXD2EbXCpXI5rkkSE78w/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1718,7 +1718,7 @@ export const curriculumCatalog = {
     "Islamic Religious Education": {
       title: "Islamic Religious Education Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1yOkFItNFdP7iZ1lcblWIAU6WkmRQb5m-/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Islamic Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1726,7 +1726,7 @@ export const curriculumCatalog = {
     "Mandarin Chinese": {
       title: "Mandarin Chinese Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/11hQzVm8eXb4c-RRfhwEENnAbONwoPSL7/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Mandarin Chinese curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1742,7 +1742,7 @@ export const curriculumCatalog = {
     "Media Technology": {
       title: "Media Technology Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/15xkH3_MnkVKfikJ2DyyZXf-6tLr6vXXR/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Media Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1750,7 +1750,7 @@ export const curriculumCatalog = {
     "Metal Technology": {
       title: "Metal Technology Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1WoBDudNEMssactstaIBIq1GzsvZ4AyqL/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Metal Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -1774,7 +1774,7 @@ export const curriculumCatalog = {
     "Christian Religious Education": {
       title: "Christian Religious Education Grade 10 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1i35Q_3RZ475rMpPaD49PmgV-uhPCWH5-/preview",
-      sourceLabel: "Official KICD Grade 10 page links to this July 2025 subject design. Strand sequence awaits transcription and verification before scheme generation.",
+      sourceLabel: "Official KICD Grade 10 page links to this subject design. Strand sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Christian Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
