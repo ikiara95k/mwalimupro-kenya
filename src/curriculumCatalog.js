@@ -975,11 +975,18 @@ export const curriculumCatalog = {
     },
 
     "IRE": {
-      title: "IRE Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Islamic Religious Education Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Islamic-Religious-Education-Grade-7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 Islamic Religious Education design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Qur'an", subStrands: ["1.1 Ulumul Qur'an (8 lessons)", "1.2 Selected Chapters (Surah) (12 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Ulum al-Hadith (8 lessons)", "2.2 Selected Hadith (8 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Significance of Tawheed (4 lessons)", "3.2 Shirk (8 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1 Swalah (10 lessons)", "4.2 Zakat (5 lessons)", "4.3 Saum (5 lessons)"] },
+        { name: "5.0 Akhlaq: Moral Teachings", subStrands: ["5.1 Dimensions of Morality in Islam (4 lessons)", "5.2 Virtues in Islam (5 lessons)", "5.3 Prohibitions in Islam (8 lessons)"] },
+        { name: "6.0 Muamalat: Social Relations", subStrands: ["6.1 Marriage (6 lessons)", "6.2 Trade and Finance in Islam (8 lessons)", "6.3 Contemporary Issues (8 lessons)"] },
+        { name: "7.0 Islamic Heritage and Civilisation", subStrands: ["7.1 Reforms Introduced by Prophet Muhammad (S.A.W.) (13 lessons)"] }
       ]
     },
     "Kiswahili": {
