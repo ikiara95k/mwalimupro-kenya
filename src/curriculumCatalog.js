@@ -54,6 +54,29 @@ export const curriculumCatalog = {
     }
   },
   "Grade 5": {
+    "Agriculture": {
+      title: "Agriculture Grade 5 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/AGRICULTURE-Grade-5-30.07.2024.pdf",
+      sourceLabel: "Official KICD Grade 5 Agriculture curriculum design (revised 2024)",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Conservation of Resources", subStrands: ["1.1 Soil Conservation (8 lessons)", "1.2 Water Conservation (9 lessons)", "1.3 Conserving Wild Animals (6 lessons)"] },
+        { name: "2.0 Food Production Processes", subStrands: ["2.1 Growing Vegetables (9 lessons)", "2.2 Uses of Domestic Animals (8 lessons)", "2.3 Preservation of Cereals and Pulses (10 lessons)", "2.4 Food Nutrients (10 lessons)", "2.5 Cooking Food (9 lessons)"] },
+        { name: "3.0 Hygiene Practices", subStrands: ["3.1 Good Grooming Practices (7 lessons)", "3.2 Home Hygiene (9 lessons)", "3.3 Laundering Cotton Item (10 lessons)"] },
+        { name: "4.0 Production Techniques", subStrands: ["4.1 Repairing Garments (11 lessons)", "4.2 Constructing Innovative Gardens (14 lessons)"] }
+      ]
+    },
+    "Social Studies": {
+      title: "Social Studies Grade 5 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-5-Social-Studies-Revised-1.pdf",
+      sourceLabel: "Official KICD Grade 5 Social Studies curriculum design (revised 2024)",
+      strands: [
+        { name: "1.0 Natural and the Built Environments", subStrands: ["Elements of a Map (4 lessons)", "Location, Position and Size of Kenya (4 lessons)", "Main Physical Features in Kenya (5 lessons)", "Weather and Climate (4 lessons)", "The Built Environments (4 lessons)"] },
+        { name: "2.0 People and Social Organisation", subStrands: ["Language Groups in Kenya (5 lessons)", "Population Distribution in Kenya (4 lessons)", "African Traditional Education (4 lessons)", "School Administration (4 lessons)"] },
+        { name: "3.0 Resources and Economic Activities in Eastern Africa", subStrands: ["Resources in Kenya (4 lessons)", "Mining in Kenya (5 lessons)", "Fishing in Kenya (5 lessons)", "Wildlife and Tourism in Kenya (5 lessons)", "Development of Transport (5 lessons)", "Development of Communication (4 lessons)"] },
+        { name: "4.0 Political Systems", subStrands: ["Traditional Leaders in Kenya (4 lessons)", "Early Forms of Government in Kenya (5 lessons)", "Citizenship in Kenya (4 lessons)"] }
+      ]
+    },
     "Mathematics": {
       title: "Mathematics Grade 5 (Revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-5-Mathematics.pdf",
@@ -68,6 +91,18 @@ export const curriculumCatalog = {
     }
   },
   "Grade 6": {
+    "Agriculture": {
+      title: "Agriculture Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/AGRICULTURE-Grade-6-30.07.2024.pdf",
+      sourceLabel: "Official KICD Grade 6 Agriculture curriculum design (revised 2024)",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Conservation of Resources", subStrands: ["1.1 Controlling Soil Erosion (11 lessons)", "1.2 Conserving Water (11 lessons)", "1.3 Conserving Wild Animals (10 lessons)"] },
+        { name: "2.0 Food Production Processes", subStrands: ["2.1 Rearing Small Domestic Animals (12 lessons)", "2.2 Preserving Crop Products (11 lessons)", "2.3 Cooking Food (13 lessons)"] },
+        { name: "3.0 Hygiene Practices", subStrands: ["3.1 Good Grooming (9 lessons)", "3.2 Laundry: Stain Removal (12 lessons)"] },
+        { name: "4.0 Production Techniques", subStrands: ["4.1 Crocheting of Personal Protective Equipment (16 lessons)", "4.2 Constructing Moist Bed Garden (15 lessons)"] }
+      ]
+    },
     "Mathematics": {
       title: "Mathematics Grade 6 (Revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-6-Mathematics-Revised.pdf",
