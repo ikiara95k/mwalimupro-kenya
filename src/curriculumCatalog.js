@@ -345,7 +345,7 @@ export const curriculumCatalog = {
         { name: "2.0 Living Things and the Environment", subStrands: ["2.1 Nutrition in Plants (18 lessons)", "2.2 Nutrition in Animals (16 lessons)", "2.3 Reproduction in Plants (20 lessons)", "2.4 The Interdependence of Life (18 lessons)"] },
         { name: "3.0 Force and Energy", subStrands: ["3.1 Curved Mirrors (18 lessons)", "3.2 Waves (16 lessons)"] }
       ]
-    }
+    },
     "Creative Arts": {
       title: "Creative Arts & Sports Grade 9 (KICD source-linked placeholder)",
       sourceUrl: "https://drive.google.com/file/d/1XONxUP98Z6I85bPKx7CYIsAkEucl_dm-/preview",
