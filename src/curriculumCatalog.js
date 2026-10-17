@@ -1173,11 +1173,16 @@ export const curriculumCatalog = {
       ]
     },
     "Pre-Technical Studies": {
-      title: "Pre-Technical Studies Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Pre-Technical Studies Grade 8 (KICD revised curriculum design, July 2024)",
+      sourceUrl: "https://drive.google.com/file/d/1Cvh2JSBlrHU4z4FKt7uVMgTMXEWq9jdu/preview",
+      sourceLabel: "KICD-linked revised Grade 8 design, July 2024. The summary table gives a 120-lesson sequence, but some detailed sub-strand pages show different allocations and labels; confirm the complete current sequence and lesson counts against the full design before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "Pre-Technical Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Foundations of Pre-Technical Studies", subStrands: ["1.1 Fire Safety (7 lessons)", "1.2 Data Safety (11 lessons)"] },
+        { name: "2.0 Communication in Pre-Technical Studies", subStrands: ["2.1 Plane Geometry (4 lessons)", "2.2 Dimensioning (7 lessons)", "2.3 Plain Scale Drawing (6 lessons)", "2.4 Visual Programming (14 lessons)"] },
+        { name: "3.0 Materials for Production", subStrands: ["3.1 Composite Materials (7 lessons)", "3.2 Ceramics (7 lessons)"] },
+        { name: "4.0 Tools and Production", subStrands: ["4.1 Cutting Tools (15 lessons)", "4.2 Computer Software (6 lessons)"] },
+        { name: "5.0 Entrepreneurship", subStrands: ["5.1 Bookkeeping (12 lessons)", "5.2 Income and Budgeting (9 lessons)", "5.3 Marketing Goods and Services (8 lessons)", "5.4 Distribution of Goods and Services (7 lessons)"] }
       ]
     },
     "Social Studies": {
