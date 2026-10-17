@@ -1114,14 +1114,14 @@ export const curriculumCatalog = {
     "HRE": {
       title: "Hindu Religious Education Grade 8 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Hindu-Religious-Education-Grade-8-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 8 HRE design. Verify the sequence against the full design and any later revision before final school planning.",
+      sourceLabel: "Official KICD Grade 8 Hindu Religious Education design, April 2024. Verify any later revision before final school planning.",
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Manifestations of Paramatma", subStrands: ["1.1 Enlightened Beings (14 lessons)"] },
         { name: "2.0 Scriptures", subStrands: ["2.1 Scriptural Texts (13 lessons)"] },
         { name: "3.0 Principles of Dharma", subStrands: ["3.1 Fundamental Principles (13 lessons)", "3.2 Buddhist Principles (13 lessons)"] },
         { name: "4.0 Religious Practices", subStrands: ["4.1 Protocols in Sanatan Dharma (14 lessons)", "4.2 Protocols in Jain Dharma (13 lessons)"] },
-        { name: "5.0 Yog", subStrands: ["5.1 Path of Action (Karma Yog) (14 lessons)"] },
+        { name: "5.0 Yog", subStrands: ["5.1 Path of Action: Karma Yog (14 lessons)"] },
         { name: "6.0 Sanskaars", subStrands: ["6.1 Religious Ceremonies (13 lessons)", "6.2 Buddhist Sanskaars (13 lessons)"] }
       ]
     },
