@@ -192,6 +192,42 @@ export const curriculumCatalog = {
       ]
     }
   },
+  "Grade 8": {
+    "Mathematics": {
+      title: "Mathematics Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mathematics-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 Mathematics curriculum design; verify against any later revision before final school planning.",
+      totalSuggestedLessons: 150,
+      strands: [
+        { name: "1.0 Numbers", subStrands: ["1.1 Integers (6 lessons)", "1.2 Fractions (6 lessons)", "1.3 Decimals (8 lessons)", "1.4 Squares and Square Roots (6 lessons)", "1.5 Rates, Ratio, Proportions and Percentages (14 lessons)"] },
+        { name: "2.0 Algebra", subStrands: ["2.1 Algebraic Expressions (6 lessons)", "2.2 Linear Equations (7 lessons)"] },
+        { name: "3.0 Measurements", subStrands: ["3.1 Circles (5 lessons)", "3.2 Area (10 lessons)", "3.3 Money (9 lessons)"] },
+        { name: "4.0 Geometry", subStrands: ["4.1 Geometrical Constructions (12 lessons)", "4.2 Coordinates and Graphs (14 lessons)", "4.3 Scale Drawing (14 lessons)", "4.4 Common Solids (16 lessons)"] },
+        { name: "5.0 Data Handling and Probability", subStrands: ["5.1 Data Presentation and Interpretation (10 lessons)", "5.2 Probability (7 lessons)"] }
+      ]
+    }
+  },
+  "Grade 9": {
+    "Mathematics": {
+      title: "Mathematics Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mathematics-Grade-9-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 Mathematics curriculum design. Topic sequence is intentionally not indexed until it can be transcribed and verified from the regular-learner design.",
+      strands: [
+        { name: "Grade 9 Mathematics sequence not yet indexed", subStrands: ["Use the official KICD Grade 9 Mathematics design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Integrated Science": {
+      title: "Integrated Science Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Integrated-Science-Grade-9-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 Integrated Science curriculum design; verify against any later revision before final school planning.",
+      totalSuggestedLessons: 150,
+      strands: [
+        { name: "1.0 Mixtures, Elements and Compounds", subStrands: ["1.1 Structure of the Atom (14 lessons)", "1.2 Metals and Alloys (16 lessons)", "1.3 Water Hardness (14 lessons)"] },
+        { name: "2.0 Living Things and the Environment", subStrands: ["2.1 Nutrition in Plants (18 lessons)", "2.2 Nutrition in Animals (16 lessons)", "2.3 Reproduction in Plants (20 lessons)", "2.4 The Interdependence of Life (18 lessons)"] },
+        { name: "3.0 Force and Energy", subStrands: ["3.1 Curved Mirrors (18 lessons)", "3.2 Waves (16 lessons)"] }
+      ]
+    }
+  },
   "Grade 10": {
     "Core Mathematics": {
       title: "Core Mathematics Grade 10 (July 2025)",
