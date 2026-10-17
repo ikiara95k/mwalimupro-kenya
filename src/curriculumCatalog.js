@@ -236,9 +236,9 @@ export const curriculumCatalog = {
       ]
     },
     "CRE": {
-      title: "Christian Religious Education Grade 9 (KICD revised curriculum design)",
-      sourceUrl: "https://drive.google.com/file/d/1FBMLUxBo1q4dHUkXLidZeqCiZWDzRBNI/preview",
-      sourceLabel: "Official KICD Grade Nine Designs page links to this CRE design. Sub-strand labels are indexed for planning; verify numbering and lesson allocations against the live design before final use.",
+      title: "Christian Religious Education Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-Grade-9-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 CRE design, April 2024. The source summary table has inconsistent numbering for Leisure and Wealth, Money and Poverty, so those labels are listed without disputed numbers; verify against the PDF before final use.",
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Creation", subStrands: ["Work (8 lessons)"] },
