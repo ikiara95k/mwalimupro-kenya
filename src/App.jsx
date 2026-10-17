@@ -171,10 +171,11 @@ function App() {
         <div className="coverage-summary">
           <article><b>{coverage.indexed}</b><span>Indexed subject entries</span></article>
           <article><b>{coverage.sourceOnly}</b><span>Source-linked placeholders</span></article>
+          <article><b>{coverage.reviewRequired}</b><span>Needs manual review</span></article>
           <article><b>{coverage.notIndexed}</b><span>Still to index</span></article>
           <article><b>{coverage.total}</b><span>Directory subject slots</span></article>
         </div>
-        <div className="coverage-grid">{coverage.grades.map(item => <article className="coverage-grade" key={item.grade}><div className="coverage-grade-title"><b>{item.grade}</b><span>{item.indexed}/{item.total}</span></div><div className="coverage-track" role="img" aria-label={item.indexed + " of " + item.total + " subjects have topic entries"}><span style={{ width: (item.total ? item.indexed / item.total * 100 : 0) + "%" }} /></div><div className="coverage-legend"><span>{item.indexed} indexed</span><span>{item.sourceOnly} source-only</span><span>{item.notIndexed} remaining</span></div></article>)}</div>
+        <div className="coverage-grid">{coverage.grades.map(item => <article className="coverage-grade" key={item.grade}><div className="coverage-grade-title"><b>{item.grade}</b><span>{item.indexed}/{item.total}</span></div><div className="coverage-track" role="img" aria-label={item.indexed + " of " + item.total + " subjects have topic entries"}><span style={{ width: (item.total ? item.indexed / item.total * 100 : 0) + "%" }} /></div><div className="coverage-legend"><span>{item.indexed} indexed</span><span>{item.sourceOnly} source-only</span><span>{item.reviewRequired} review needed</span><span>{item.notIndexed} remaining</span></div></article>)}</div>
       </section>
       <section className="layout">
         <div className="panel" id="builder">
