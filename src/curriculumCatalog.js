@@ -188,8 +188,8 @@ export const curriculumCatalog = {
   "Grade 1": {
     "Creative Activities": {
       title: "Creative Activities Grade 1 (KICD curriculum design, May 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/GRADE-1-CREATIVE-ACTIVITIES-DESIGN-May-2024-final.pdf",
-      sourceLabel: "Official KICD Grade 1 Creative Activities design, May 2024. Verify the detailed sequence and allocations against the full design before final school planning.",
+      sourceUrl: "https://drive.google.com/file/d/1vrC5cJO2MpDm9v4u3-qwCze9yPa9HcEZ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Creative Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       totalSuggestedLessons: 196,
       strands: [
         { name: "1.0 Creating and Executing", subStrands: ["Jumping (14 lessons)", "Rhythm (14 lessons)", "Drawing (14 lessons)", "Stretching (14 lessons)", "Painting and Colouring (14 lessons)", "Melody (14 lessons)", "Pattern Making (10 lessons)"] },
@@ -199,64 +199,64 @@ export const curriculumCatalog = {
     },
     "CRE": {
       title: "CRE Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1YSXfOr81O2bn5t0ILvqDYkz3GchE9M3i/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 CRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "English Activities": {
       title: "English Activities Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/10KIOCSmh7CyDbjElisPQeeMTLu8AJI9z/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 English Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "English Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Environmental Activities": {
       title: "Environmental Activities Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1aw6VOZadfc1cFTa0x4o4ztzdorLY8xUS/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Environmental Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Environmental Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "HRE": {
       title: "HRE Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1iLmA5Hxzgscln94VzP0n5EhrH4I12iDQ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 HRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Indigenous Languages": {
       title: "Indigenous Languages Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1vrC5cJO2MpDm9v4u3-qwCze9yPa9HcEZ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Indigenous Languages curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Indigenous Languages curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "IRE": {
       title: "IRE Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1toUw1LJYL23CAdEl-tUJwjqn7wu89JIb/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 IRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Kiswahili": {
       title: "Kiswahili Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1xVa-cvQ3jSlfR4yNEL3DIXGmU-U7tHXk/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Kiswahili curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Mathematics": {
       title: "Mathematics Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 1–3 lower-primary curriculum designs page. The exact Mathematics design link and topic sequence must be confirmed from the current KICD page before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1YlwoCFAVxhjUo_V1A-89GRcho0r0Gq1u/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Mathematics curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -265,72 +265,72 @@ export const curriculumCatalog = {
   "Grade 2": {
     "Creative Activities": {
       title: "Creative Activities Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1vrC5cJO2MpDm9v4u3-qwCze9yPa9HcEZ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Creative Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Creative Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "CRE": {
       title: "CRE Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1YSXfOr81O2bn5t0ILvqDYkz3GchE9M3i/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 CRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "English Activities": {
       title: "English Activities Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/10KIOCSmh7CyDbjElisPQeeMTLu8AJI9z/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 English Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "English Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Environmental Activities": {
       title: "Environmental Activities Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1aw6VOZadfc1cFTa0x4o4ztzdorLY8xUS/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Environmental Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Environmental Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "HRE": {
       title: "HRE Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1iLmA5Hxzgscln94VzP0n5EhrH4I12iDQ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 HRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Indigenous Languages": {
       title: "Indigenous Languages Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1vrC5cJO2MpDm9v4u3-qwCze9yPa9HcEZ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Indigenous Languages curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Indigenous Languages curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "IRE": {
       title: "IRE Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1toUw1LJYL23CAdEl-tUJwjqn7wu89JIb/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 IRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Kiswahili": {
       title: "Kiswahili Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1xVa-cvQ3jSlfR4yNEL3DIXGmU-U7tHXk/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Kiswahili curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Mathematics": {
       title: "Mathematics Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 2–3 lower-primary curriculum designs page. The exact Mathematics design link and topic sequence must be confirmed from the current KICD page before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1YlwoCFAVxhjUo_V1A-89GRcho0r0Gq1u/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Mathematics curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
@@ -339,72 +339,72 @@ export const curriculumCatalog = {
   "Grade 3": {
     "Creative Activities": {
       title: "Creative Activities Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1vrC5cJO2MpDm9v4u3-qwCze9yPa9HcEZ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Creative Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Creative Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "CRE": {
       title: "CRE Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1YSXfOr81O2bn5t0ILvqDYkz3GchE9M3i/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 CRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "English Activities": {
       title: "English Activities Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/10KIOCSmh7CyDbjElisPQeeMTLu8AJI9z/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 English Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "English Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Environmental Activities": {
       title: "Environmental Activities Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1aw6VOZadfc1cFTa0x4o4ztzdorLY8xUS/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Environmental Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Environmental Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "HRE": {
       title: "HRE Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1iLmA5Hxzgscln94VzP0n5EhrH4I12iDQ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 HRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Indigenous Languages": {
       title: "Indigenous Languages Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1vrC5cJO2MpDm9v4u3-qwCze9yPa9HcEZ/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Indigenous Languages curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Indigenous Languages curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "IRE": {
       title: "IRE Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1toUw1LJYL23CAdEl-tUJwjqn7wu89JIb/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 IRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Kiswahili": {
       title: "Kiswahili Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1xVa-cvQ3jSlfR4yNEL3DIXGmU-U7tHXk/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Kiswahili curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
     "Mathematics": {
       title: "Mathematics Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/lower-primary/",
-      sourceLabel: "Official KICD Grade 3–3 lower-primary curriculum designs page. The exact Mathematics design link and topic sequence must be confirmed from the current KICD page before scheme generation.",
+      sourceUrl: "https://drive.google.com/file/d/1YlwoCFAVxhjUo_V1A-89GRcho0r0Gq1u/preview",
+      sourceLabel: "Official KICD revised Grade 1–3 Mathematics curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
       strands: [
         { name: "Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
