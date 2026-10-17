@@ -269,10 +269,24 @@ export const curriculumCatalog = {
   }
 };
 
+// One shared rule keeps the UI and the validation script from disagreeing about
+// whether an entry contains real topic labels or a source-only placeholder.
+const placeholderPattern = /(?:use the official KICD .* to confirm the current strand and sub-strand sequence|curriculum sequence not yet indexed|awaits transcription and verification|strand sequence awaits transcription)/i;
+
+export function isCurriculumPlaceholder(item, curriculum = null) {
+  if (typeof item === "string" && placeholderPattern.test(item)) return true;
+  if (!curriculum) return false;
+  if (placeholderPattern.test(curriculum.title || "")) return true;
+  if (placeholderPattern.test(curriculum.sourceLabel || "")) return true;
+  return (curriculum.strands || []).some(strand =>
+    placeholderPattern.test(strand.name || "") ||
+    (strand.subStrands || []).some(value => typeof value === "string" && placeholderPattern.test(value))
+  );
+}
+
 // Coverage reporting separates indexed topic lists from source-linked placeholders.
 // "Indexed" means the app has topic labels in its catalog; teachers should still verify them against KICD.
 export function getCurriculumCoverage() {
-  const placeholderPattern = /use the official KICD .* to confirm the current strand and sub-strand sequence/i;
   const grades = Object.entries(curriculumDirectory).map(([grade, directory]) => {
     const subjects = directory.subjects ?? [];
     let indexed = 0;
@@ -280,7 +294,7 @@ export function getCurriculumCoverage() {
     for (const subject of subjects) {
       const entry = curriculumCatalog[grade]?.[subject];
       if (!entry) continue;
-      const isPlaceholder = entry.strands?.some(strand => strand.subStrands?.some(item => placeholderPattern.test(item)));
+      const isPlaceholder = isCurriculumPlaceholder(null, entry);
       if (isPlaceholder) sourceOnly++;
       else if (entry.strands?.some(strand => strand.subStrands?.length)) indexed++;
     }
