@@ -30,7 +30,7 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
       for (const item of strand.subStrands) {
         if (typeof item !== "string" || !item.trim()) {
           errors.push(`${label} / ${strand.name}: blank or non-text sub-strand`);
-        } else if (isCurriculumPlaceholder(item, curriculum)) {
+        } else if (isCurriculumPlaceholder(item)) {
           // Explicit source-only placeholder: valid catalog record, but not a usable topic.
         } else {
           hasIndexedTopic = true;
