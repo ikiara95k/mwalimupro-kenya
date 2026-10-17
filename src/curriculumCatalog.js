@@ -871,7 +871,7 @@ export const curriculumCatalog = {
     "Agriculture": {
       title: "Agriculture Grade 7 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Agriculture-Grade7-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 7 Agriculture design, April 2024. Verify any later revision before final school planning.",
+      sourceLabel: "Official KICD Grade 7 Agriculture curriculum design, April 2024.",
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Conservation of Resources", subStrands: ["1.1 Controlling Soil Pollution (7 lessons)", "1.2 Constructing Water Retention Structures (8 lessons)", "1.3 Conserving Food Nutrients (9 lessons)", "1.4 Growing Trees (8 lessons)"] },
