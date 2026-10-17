@@ -848,13 +848,18 @@ export const curriculumCatalog = {
       ]
     },
     "Agriculture": {
-      title: "Agriculture Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Agriculture Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Agriculture-Grade7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 Agriculture design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 120,
       strands: [
-        { name: "Agriculture curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Conservation of Resources", subStrands: ["1.1 Controlling Soil Pollution (7 lessons)", "1.2 Constructing Water Retention Structures (8 lessons)", "1.3 Conserving Food Nutrients (9 lessons)", "1.4 Growing Trees (8 lessons)"] },
+        { name: "2.0 Food Production Processes", subStrands: ["2.1 Crop Establishment (9 lessons)", "2.2 Selected Crop Management Practices (8 lessons)", "2.3 Preparing Animal Products (9 lessons)", "2.4 Cooking Food (9 lessons)"] },
+        { name: "3.0 Hygiene Practices", subStrands: ["3.1 Hygiene in Rearing Animals (9 lessons)", "3.2 Laundry: Loose Coloured Items (8 lessons)"] },
+        { name: "4.0 Production Techniques", subStrands: ["4.1 Knitting Skills (10 lessons)", "4.2 Constructing Framed Suspended Garden (10 lessons)", "4.3 Adding Value to Crop Produce (8 lessons)", "4.4 Making Homemade Soap (8 lessons)"] }
       ]
     },
+
     "Arabic": {
       title: "Arabic Grade 7 (KICD source-linked placeholder)",
       sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
@@ -926,13 +931,18 @@ export const curriculumCatalog = {
       ]
     },
     "Integrated Science": {
-      title: "Integrated Science Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Integrated Science Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Integrated-Science-Grade-7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 Integrated Science design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 150,
       strands: [
-        { name: "Integrated Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Scientific Investigation", subStrands: ["1.1 Introduction to Integrated Science (12 lessons)", "1.2 Laboratory Safety (14 lessons)", "1.3 Laboratory Apparatus and Instruments (16 lessons)"] },
+        { name: "2.0 Mixtures, Elements and Compounds", subStrands: ["2.1 Mixtures (18 lessons)", "2.2 Acids, Bases and Indicators (22 lessons)"] },
+        { name: "3.0 Living Things and the Environment", subStrands: ["3.1 Human Reproductive System (16 lessons)", "3.2 Human Excretory System (18 lessons)"] },
+        { name: "4.0 Force and Energy", subStrands: ["4.1 Electrical Energy (18 lessons)", "4.2 Magnetism (16 lessons)"] }
       ]
     },
+
     "IRE": {
       title: "IRE Grade 7 (KICD source-linked placeholder)",
       sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
