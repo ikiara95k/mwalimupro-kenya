@@ -28,7 +28,59 @@ export const curriculumDirectory = {
   "Grade 1": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
   "Grade 2": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
   "Grade 3": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
-  "Grade 4": { url: ROOT + "grade-four-designs/", subjects: primarySubjects },
+  "Grade 4": {
+    "CRE": {
+      title: "Christian Religious Education Grade 4 (KICD curriculum design)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs directory; select CRE for the authoritative design.",
+      strands: [
+        { name: "CRE curriculum design", subStrands: ["Use the official KICD Grade Four Designs page to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "English": {
+      title: "English Grade 4 (KICD curriculum design)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs directory; select English for the authoritative design.",
+      strands: [
+        { name: "English curriculum design", subStrands: ["Use the official KICD Grade Four Designs page to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 4 (KICD curriculum design)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs directory; select Kiswahili for the authoritative design.",
+      strands: [
+        { name: "Kiswahili curriculum design", subStrands: ["Use the official KICD Grade Four Designs page to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Science & Technology": {
+      title: "Science and Technology Grade 4 (KICD curriculum design)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs directory; select Science and Technology for the authoritative design.",
+      strands: [
+        { name: "Science and Technology curriculum design", subStrands: ["Use the official KICD Grade Four Designs page to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Social Studies": {
+      title: "Social Studies Grade 4 (KICD curriculum design)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs directory; select Social Studies for the authoritative design.",
+      strands: [
+        { name: "Social Studies curriculum design", subStrands: ["Use the official KICD Grade Four Designs page to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mathematics": {
+      title: "Mathematics Grade 4 (Revised 2024)",
+      sourceUrl: "https://drive.google.com/file/d/1o5tDq16yC0Jj1h6zb9mo3dsxtjqXUk4G/preview",
+      sourceLabel: "KICD Grade 4 Mathematics design (linked from the official KICD Grade Four Designs page)",
+      strands: [
+        { name: "1.0 Numbers", subStrands: ["1.1 Whole Numbers (10 lessons)", "1.2 Addition (8 lessons)", "1.3 Subtraction (8 lessons)", "1.4 Multiplication (8 lessons)", "1.5 Division (8 lessons)", "1.6 Fractions (6 lessons)", "1.7 Decimals (10 lessons)", "1.8 Use of Letters (6 lessons)"] },
+        { name: "2.0 Measurement", subStrands: ["2.1 Length (10 lessons)", "2.2 Area (8 lessons)", "2.3 Volume (8 lessons)", "2.4 Capacity (8 lessons)", "2.5 Mass (8 lessons)", "2.6 Time (10 lessons)", "2.7 Money (8 lessons)"] },
+        { name: "3.0 Geometry", subStrands: ["3.1 Position and Direction (5 lessons)", "3.2 Angles (5 lessons)", "3.3 Plane Figures (6 lessons)"] },
+        { name: "4.0 Data Handling", subStrands: ["4.1 Data (10 lessons)"] }
+      ]
+    }
+  },
   "Grade 5": { url: ROOT + "grade-five-designs/", subjects: primarySubjects },
   "Grade 6": { url: ROOT + "grade-six-designs/", subjects: primarySubjects },
   "Grade 7": { url: ROOT + "grade-seven-designs/", subjects: juniorSubjects },
