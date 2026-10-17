@@ -23,8 +23,8 @@ const seniorSubjects = [
 ];
 
 export const curriculumDirectory = {
-  "Pre-Primary 1": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
-  "Pre-Primary 2": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
+  "Pre-Primary 1": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "CRE", "HRE", "IRE", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
+  "Pre-Primary 2": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "CRE", "HRE", "IRE", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
   "Grade 1": { url: "https://kicd.ac.ke/cbc-materials/lower-primary/", subjects: ["Creative Activities", "CRE", "English Activities", "Environmental Activities", "HRE", "Indigenous Languages", "IRE", "Kiswahili", "Mathematics"] },
   "Grade 2": { url: "https://kicd.ac.ke/cbc-materials/lower-primary/", subjects: ["Creative Activities", "CRE", "English Activities", "Environmental Activities", "HRE", "Indigenous Languages", "IRE", "Kiswahili", "Mathematics"] },
   "Grade 3": { url: "https://kicd.ac.ke/cbc-materials/lower-primary/", subjects: ["Creative Activities", "CRE", "English Activities", "Environmental Activities", "HRE", "Indigenous Languages", "IRE", "Kiswahili", "Mathematics"] },
