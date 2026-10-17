@@ -625,11 +625,15 @@ export const curriculumCatalog = {
       ]
     },
     "Indigenous Language": {
-      title: "Indigenous Language Grade 5 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
-      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Indigenous Languages Grade 5 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/FINAL-GRADE-5-INDIGENOUS-LANGUAGE-Revised-Oct.pdf",
+      sourceLabel: "Official KICD revised Grade 5 Indigenous Language design, October 2024; language-specific adaptation should follow the official design.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Attentive Listening: Poetry (2 lessons)", "Listening for Information: translation, instructions and vocabulary building (4 lessons)", "Listening for Comprehension (2 lessons)", "Fluency: Pronunciation (2 lessons)", "Expressing Self Creatively (2 lessons)", "Conversational Skills (2 lessons)", "Public Speaking (2 lessons)", "Language Strategies on Daily Experiences (2 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Reading for Information (6 lessons)", "Reading Fluency: speed and accuracy (2 lessons)", "Reading Comprehension (6 lessons)", "Extensive Reading: grade-appropriate texts, narratives and dialogue (4 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Handwriting (2 lessons)", "Punctuation: exclamation marks, quotation marks and question marks (2 lessons)", "Sequencing Ideas: connectors (2 lessons)", "Creative Writing: idioms, stories and poetry (6 lessons)", "Functional Writing: friendly letter, shopping list and recipe (6 lessons)"] }
       ]
     },
     "IRE": {
@@ -750,11 +754,15 @@ export const curriculumCatalog = {
       ]
     },
     "French": {
-      title: "French Grade 6 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
-      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "French Grade 6 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/FRENCH-GRADE-6-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 6 French design, October 2024. Strand-level allocations are listed; individual sub-strand lesson counts are not listed in this index.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["1.1 Interactive Speaking", "1.2 Oral Expression", "1.3 Interactive Listening", "1.4 Active Listening", "1.5 Listening for Information"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["2.1 Reading Aloud", "2.2 Reading for Understanding", "2.3 Guided Reading"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["3.1 Guided Writing"] }
       ]
     },
     "German": {
@@ -798,11 +806,15 @@ export const curriculumCatalog = {
       ]
     },
     "Mandarin": {
-      title: "Mandarin Grade 6 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
-      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Mandarin Grade 6 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Mandarin-Grade-6-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 6 Mandarin design, October 2024.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Active Listening: attentive listening, pronunciation, comprehension and vocabulary development (9 lessons)", "Oral Expression: vocabulary and language use, organization of ideas, active listening and pronunciation (9 lessons)", "Interactive Speaking: vocabulary, turn-taking, active listening and presentation skills (9 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Reading Aloud: Chinese tones, pronunciation, word recognition, fluency and oral presentation (8 lessons)", "Guided Reading: vocabulary, fluency, comprehension and reading strategies (10 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing: writing mechanics, Chinese characters, vocabulary, paragraph writing, sentence structures and handwriting (9 lessons)"] }
       ]
     },
     "Science & Technology": {
