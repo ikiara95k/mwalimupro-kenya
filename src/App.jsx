@@ -50,7 +50,7 @@ function App() {
     // Preserve KICD order and use stated lesson allocations to balance adjacent sub-strands.
     // If allocations are missing, fall back to equal topic weights rather than inventing lesson counts.
     const weights = topics.map(item => {
-      const match = item.subStrand.match(/\\((\\d+) lessons?\\)/i);
+      const match = item.subStrand.match(/\((\d+) lessons?\)/i);
       return match ? Number(match[1]) : 1;
     });
     const groups = [];
@@ -83,7 +83,7 @@ function App() {
       const topic = [...new Set(group.map(item => item.strand))].join(" / ");
       const subtopic = group.map(item => item.subStrand).join("; ");
       const allocatedLessons = group.reduce((sum, item) => {
-        const match = item.subStrand.match(/\\((\\d+) lessons?\\)/i);
+        const match = item.subStrand.match(/\((\d+) lessons?\)/i);
         return sum + (match ? Number(match[1]) : 0);
       }, 0);
       return {
