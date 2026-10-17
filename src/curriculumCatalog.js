@@ -710,6 +710,58 @@ export const curriculumCatalog = {
         { name: "4.0 Writing", subStrands: ["Creative Writing (14 lessons)", "Functional Writing (6 lessons)", "Mechanics of Writing (13 lessons)", "Guided Compositions (3 lessons)"] }
       ]
     },
+    "IRE": {
+      title: "Islamic Religious Education Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/IRE-GRADE-6-CURRICULUM-DESIGNS-Revised.pdf",
+      sourceLabel: "Official KICD Grade 6 IRE curriculum design (revised 2024)",
+      strands: [
+        { name: "1.0 Qur'an", subStrands: ["1.1 Selected Chapters (Surah) (12 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Purity of Actions (3 lessons)", "2.2 Hadith on Dressing (3 lessons)", "2.3 Hadith on Planting (3 lessons)", "2.4 Hadith on Responsible Capabilities and Resources (3 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Stories of Prophets Ibrahim and Yusuf (A.S.) (8 lessons)", "3.2 Taqwa (God Consciousness) (2 lessons)", "3.3 Tawakul (Reliance on Allah) (2 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1 Twaharah (Purity) (6 lessons)", "4.2 Zakat (3 lessons)", "4.3 Saum (4 lessons)", "4.4 Hajj (3 lessons)"] },
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Virtues: Work as a Form of Ibadah (2 lessons)", "5.2 Adalah (Justice) (2 lessons)", "5.3 Prohibitions in Islam: Intoxicants (3 lessons)", "5.4 Israf (Extravagance) (2 lessons)", "5.5 Dua (Supplication When Travelling) (2 lessons)"] }
+      ]
+    },
+    "Agriculture": {
+      title: "Agriculture Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/AGRICULTURE-Grade-6-30.07.2024.pdf",
+      sourceLabel: "Official KICD Grade 6 Agriculture curriculum design (revised 2024)",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Conservation of Resources", subStrands: ["1.1 Controlling Soil Erosion (11 lessons)", "1.2 Conserving Water (11 lessons)", "1.3 Conserving Wild Animals (10 lessons)"] },
+        { name: "2.0 Food Production Processes", subStrands: ["2.1 Rearing Small Domestic Animals (12 lessons)", "2.2 Preserving Crop Products (11 lessons)", "2.3 Cooking Food (13 lessons)"] },
+        { name: "3.0 Hygiene Practices", subStrands: ["3.1 Good Grooming (9 lessons)", "3.2 Laundry: Stain Removal (12 lessons)"] },
+        { name: "4.0 Production Techniques", subStrands: ["4.1 Crocheting of Personal Protective Equipment (16 lessons)", "4.2 Constructing Moist Bed Garden (15 lessons)"] }
+      ]
+    },
+    "Mathematics": {
+      title: "Mathematics Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-6-Mathematics-Revised.pdf",
+      sourceLabel: "Official KICD Grade 6 Mathematics curriculum design (revised 2024)",
+      totalSuggestedLessons: 150,
+      strands: [
+        { name: "1.0 Numbers", subStrands: ["1.1 Whole Numbers (20 lessons)", "1.2 Multiplication (6 lessons)", "1.3 Division (6 lessons)", "1.4 Fractions (12 lessons)", "1.5 Decimals (12 lessons)", "1.6 Inequalities (8 lessons)"] },
+        { name: "2.0 Measurement", subStrands: ["2.1 Length (14 lessons)", "2.2 Area (6 lessons)", "2.3 Capacity (6 lessons)", "2.4 Mass (14 lessons)", "2.5 Time (10 lessons)", "2.6 Money (8 lessons)"] },
+        { name: "3.0 Geometry", subStrands: ["3.1 Lines (6 lessons)", "3.2 Angles (6 lessons)", "3.3 3-D Objects (6 lessons)"] },
+        { name: "4.0 Data Handling", subStrands: ["4.1 Bar Graphs (10 lessons)"] }
+      ]
+    },
+    "Arabic": {
+      title: "Arabic Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Creative Arts": {
+      title: "Creative Arts Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Creative Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
     "French": {
       title: "French Grade 6 (KICD revised curriculum design, October 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/FRENCH-GRADE-6-Revised.pdf",
@@ -1020,11 +1072,14 @@ export const curriculumCatalog = {
       ]
     },
     "Integrated Science": {
-      title: "Integrated Science Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Integrated Science Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Integrated-Science-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 Integrated Science design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 150,
       strands: [
-        { name: "Integrated Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Mixtures, Elements and Compounds", subStrands: ["1.1 Elements and Compounds (18 lessons)", "1.2 Physical and Chemical Changes (22 lessons)", "1.3 Classes of Fire (20 lessons)"] },
+        { name: "2.0 Living Things and the Environment", subStrands: ["2.1 The Cell (20 lessons)", "2.2 Movement of Materials in and out of the Cell (16 lessons)", "2.3 Reproduction in Human Beings (18 lessons)"] },
+        { name: "3.0 Force and Energy", subStrands: ["3.1 Transformation of Energy (20 lessons)", "3.2 Pressure (16 lessons)"] }
       ]
     },
     "IRE": {
