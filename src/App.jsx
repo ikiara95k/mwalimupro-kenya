@@ -97,7 +97,7 @@ function App() {
         assessment: "Use the assessment methods and rubric in the official KICD design; record evidence of learner progress"
       };
     });
-    setScheme({ subject, grade, term, year, teacher, school, rows, curriculumTitle: curriculum.title, sourceUrl: curriculum.sourceUrl });
+    setScheme({ subject, grade, term, year, teacher, school, rows, curriculumTitle: curriculum.title, sourceLabel: curriculum.sourceLabel, sourceUrl: curriculum.sourceUrl });
     setNotice(topics.length < count
       ? "This curriculum has fewer indexed sub-strands than the number of weeks requested, so the draft contains " + topics.length + " topic rows rather than repeating or inventing topics. Add remaining verified topics or adjust teaching weeks. Lesson allocations shown are taken only from indexed labels."
       : "Your draft preserves the indexed KICD topic order and balances adjacent topics using lesson allocations where available. Add specific learning outcomes, suggested learning experiences and assessment details from the official design before use.");
@@ -109,7 +109,7 @@ function App() {
       width: { size: 100 / 8, type: WidthType.PERCENTAGE },
       children: [new Paragraph({ text: String(value ?? ""), bold })]
     });
-    const header = ["Week", "Strand / Topic", "Sub-topic", "Suggested lessons", "Learning objectives", "Learning activities", "Resources", "Assessment"];
+    const header = ["Week", "Strand / Topic", "Sub-topic", "Suggested lessons", "Learning objectives", "Learning activities", "Resources", "Assessment", "KICD curriculum design", "KICD source URL"];
     const rows = [
       new TableRow({ children: header.map(value => cell(value, true)) }),
       ...scheme.rows.map(row => new TableRow({ children: [
@@ -122,6 +122,9 @@ function App() {
       new Paragraph({ text: `${scheme.subject} — SCHEME OF WORK`, heading: HeadingLevel.HEADING_2 }),
       new Paragraph({ text: `Class: ${scheme.grade} | Term: ${scheme.term} | Year: ${scheme.year}` }),
       new Paragraph({ text: `Teacher: ${scheme.teacher || "________________"} | School: ${scheme.school || "________________"}` }),
+      new Paragraph({ text: `KICD curriculum design: ${scheme.curriculumTitle || "Not recorded"}` }),
+      new Paragraph({ text: `KICD source: ${scheme.sourceUrl || "Not recorded"}` }),
+      ...(scheme.sourceLabel ? [new Paragraph({ text: `Source note: ${scheme.sourceLabel}` })] : []),
       new Paragraph({ text: " " }),
       new Table({ rows, width: { size: 100, type: WidthType.PERCENTAGE } }),
       new Paragraph({ text: " " }),
@@ -139,7 +142,7 @@ function App() {
   function exportCsv() {
     if (!scheme) return;
     const header = ["Week", "Strand / Topic", "Sub-topic", "Suggested lessons", "Learning objectives", "Learning activities", "Resources", "Assessment"];
-    const data = scheme.rows.map(r => [r.week, r.topic, r.subtopic, r.allocatedLessons ?? "", r.objectives, r.activities, r.resources, r.assessment]);
+    const data = scheme.rows.map(r => [r.week, r.topic, r.subtopic, r.allocatedLessons ?? "", r.objectives, r.activities, r.resources, r.assessment, scheme.curriculumTitle || "", scheme.sourceUrl || ""]);
     const quote = value => '"' + String(value ?? "").replaceAll('"', '""') + '"';
     const csv = [header, ...data].map(row => row.map(quote).join(",")).join("\r\n");
     const url = URL.createObjectURL(new Blob(["\ufeff" + csv], { type: "text/csv;charset=utf-8;" }));
