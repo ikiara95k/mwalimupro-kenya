@@ -18,10 +18,10 @@ function App() {
   const gradeSubjects = useMemo(() => getSubjectsForGrade(grade), [grade]);
   const gradeSourceUrl = getCurriculumSourceUrl(grade);
   const coverage = useMemo(() => getCurriculumCoverage(), []);
-  // Some directory entries are intentionally source-linked placeholders, not verified topic indexes.
-  // Never let these placeholders produce a misleading scheme of work.
-  const hasPlaceholderTopics = Boolean(curriculum && isCurriculumPlaceholder(null, curriculum));
-  const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics);
+  // Source-linked placeholders and entries with unresolved source conflicts must not generate schemes.
+  const needsManualReview = Boolean(curriculum?.reviewRequired);
+  const hasPlaceholderTopics = Boolean(curriculum && isCurriculumPlaceholder(null, curriculum) && !needsManualReview);
+  const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics && !needsManualReview);
 
   function changeSubject(value) {
     setSubject(value);
@@ -41,9 +41,11 @@ function App() {
     event.preventDefault();
     if (!curriculumReady) {
       setScheme(null);
-      setNotice(hasPlaceholderTopics
-        ? "This subject is linked to the official KICD source, but its strand and sub-strand sequence is still a placeholder. A scheme cannot be generated until the actual curriculum sequence is verified and indexed."
-        : "A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
+      setNotice(needsManualReview
+        ? "This topic list needs manual review because the KICD-linked design has conflicting summary/detail allocations or labels. Scheme generation is blocked until the sequence and lesson counts are reconciled against the full design."
+        : hasPlaceholderTopics
+          ? "This subject is linked to the official KICD source, but its strand and sub-strand sequence is still a placeholder. A scheme cannot be generated until the actual curriculum sequence is verified and indexed."
+          : "A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
       return;
     }
     const count = Math.max(1, Math.min(16, Number(weeks) || 1));
@@ -189,14 +191,14 @@ function App() {
               <label>Teacher name<input value={teacher} onChange={e => setTeacher(e.target.value)} placeholder="Enter teacher name" /></label>
               <label>School name<input value={school} onChange={e => setSchool(e.target.value)} placeholder="Enter school name" /></label>
               <label className="full">Teaching weeks <div className="range-row"><input type="range" min="1" max="16" value={weeks} onChange={e => setWeeks(Number(e.target.value))} /><b>{weeks} weeks</b></div></label>
-              <div className="full curriculum-source"><div><b>{curriculumReady ? curriculum.title : "Official KICD source: " + grade + " — " + subject}</b><p>{curriculumReady ? topics.length + " indexed sub-strands loaded in sequence." : hasPlaceholderTopics ? "Source linked, but the curriculum sequence is not yet verified. Scheme generation is disabled for this entry." : "The official KICD grade page is linked below. This subject is not yet indexed inside MwalimuPro, so the app will not invent or substitute topics."}</p></div><a href={curriculumReady ? curriculum.sourceUrl : (curriculum?.sourceUrl || gradeSourceUrl)} target="_blank" rel="noreferrer">Open official KICD design for this grade ↗</a>{!curriculum && <><p className="directory-label">Subjects listed for {grade} on the KICD directory:</p><div className="subject-chips">{gradeSubjects.map(item => <span key={item} className={item === subject ? "subject-chip selected" : "subject-chip"}>{item}</span>)}</div></>}{curriculumReady && <ol className="curriculum-list">{curriculum.strands.map(strand => <li key={strand.name}><b>{strand.name}</b><ul>{strand.subStrands.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>}</div>
+              <div className="full curriculum-source"><div><b>{curriculumReady ? curriculum.title : "Official KICD source: " + grade + " — " + subject}</b><p>{curriculumReady ? topics.length + " indexed sub-strands loaded in sequence." : hasPlaceholderTopics ? "Source linked, but the curriculum sequence is not yet verified. Scheme generation is disabled for this entry." : "The official KICD grade page is linked below. This subject is not yet indexed inside MwalimuPro, so the app will not invent or substitute topics."}</p></div><a href={curriculumReady ? curriculum.sourceUrl : (curriculum?.sourceUrl || gradeSourceUrl)} target="_blank" rel="noreferrer">Open official KICD design for this grade ↗</a>{!curriculum && <><p className="directory-label">Subjects listed for {grade} on the KICD directory:</p><div className="subject-chips">{gradeSubjects.map(item => <span key={item} className={item === subject ? "subject-chip selected" : "subject-chip"}>{item}</span>)}</div></>}{(curriculumReady || needsManualReview) && <ol className="curriculum-list">{curriculum.strands.map(strand => <li key={strand.name}><b>{strand.name}</b><ul>{strand.subStrands.map(item => <li key={item}>{item}</li>)}</ul></li>)}</ol>}</div>
             </div>
             <div className="form-footer"><span>Drafts should be reviewed before classroom use.</span><button className="primary" type="submit">Generate scheme <b>→</b></button></div>
           </form>
           {notice && <div className="notice" role="status">{notice}</div>}
         </div>
         <aside className="right-column">
-          <div className="tip-card"><div className="tip-symbol">✦</div><div className="eyebrow">OFFICIAL SOURCE</div><h3>Curriculum-first planning.</h3><p>MwalimuPro links to KICD curriculum-design pages for Pre-Primary and Grades 1–12. Only verified, indexed strands can be used to generate a scheme; other subjects remain linked to KICD until their design content is indexed.</p><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Browse KICD curriculum designs ↗</a><div className="tip-footer">No generic topic list is substituted when curriculum data is unavailable.</div></div>
+          <div className="tip-card"><div className="tip-symbol">✦</div><div className="eyebrow">OFFICIAL SOURCE</div><h3>Curriculum-first planning.</h3><p>MwalimuPro links to KICD curriculum-design pages for Pre-Primary and Grades 1–12. Only indexed entries without unresolved review flags can generate a scheme; topic lists that still need source reconciliation are shown for inspection but remain blocked.</p><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Browse KICD curriculum designs ↗</a><div className="tip-footer">No generic topic list is substituted when curriculum data is unavailable.</div></div>
           <div className="panel roadmap"><h3>What's coming next</h3>{[["Lesson plans","Structured lesson preparation"],["Assessments","Questions and marking guides"],["Document library","Save and revisit your work"],["M-Pesa payments","When paid plans launch"]].map(([title,desc]) => <div className="roadmap-item" key={title}><span /> <div><b>{title}</b><p>{desc}</p></div></div>)}</div>
         </aside>
       </section>
