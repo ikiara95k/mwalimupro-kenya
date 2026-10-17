@@ -90,11 +90,16 @@ export const curriculumCatalog = {
       ]
     },
     "Environmental Activities": {
-      title: "Environmental Activities Pre-Primary 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/pre-primary/",
-      sourceLabel: "Official KICD Pre-Primary 1 curriculum design page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Environmental Activities Pre-Primary 1 (KICD revised design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Pre-Primary-1-Designs-Revised.pdf",
+      sourceLabel: "Official KICD revised Pre-Primary 1 design, October 2024. Confirm the learning-area section against the full document before final planning.",
+      totalSuggestedLessons: 154,
       strands: [
-        { name: "Environmental Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Pre-Primary 1 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Myself", subStrands: ["1.1 Self-awareness (10 lessons)", "1.2 External Body Parts (12 lessons)", "1.3 Handwashing (10 lessons)", "1.4 Brushing Teeth (10 lessons)"] },
+        { name: "2.0 My Family", subStrands: ["2.1 Family Members (12 lessons)", "2.2 Feeding (12 lessons)"] },
+        { name: "3.0 My Home", subStrands: ["3.1 Utensils Used at Home (12 lessons)", "3.2 Furniture Used at Home (10 lessons)"] },
+        { name: "4.0 My Neighbourhood", subStrands: ["4.1 Classmates (10 lessons)", "4.2 Friends (10 lessons)", "4.3 Parts of a Plant (10 lessons)"] },
+        { name: "5.0 My School", subStrands: ["5.1 My Class (10 lessons)", "5.2 Care for My Class (12 lessons)", "5.3 Cleanliness (14 lessons)"] }
       ]
     },
   },
