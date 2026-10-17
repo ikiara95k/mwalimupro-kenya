@@ -167,7 +167,7 @@ function App() {
         <article><div className="stat-icon blue">↗</div><div><small>Export formats</small><b>CSV + Print</b><span>Save as PDF from browser</span></div></article>
       </section>
       <section className="coverage-panel" aria-labelledby="coverage-title">
-        <div className="coverage-heading"><div><div className="eyebrow">CURRICULUM COVERAGE</div><h2 id="coverage-title">Know what is ready — and what still needs indexing.</h2><p>Counts reflect subjects listed in the grade directory. “Indexed” means topic labels exist in MwalimuPro; it is not a claim that every outcome has been independently verified.</p></div><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Check official KICD designs ↗</a></div>
+        <div className="coverage-heading"><div><div className="eyebrow">CURRICULUM COVERAGE</div><h2 id="coverage-title">Know what is ready — and what still needs indexing.</h2><p>Counts reflect learning areas/design options listed in the grade directory. Senior-school subjects are pathway/track options, not a compulsory set for every learner. “Indexed” means topic labels exist in MwalimuPro; it is not a claim that every outcome has been independently verified.</p></div><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Check official KICD designs ↗</a></div>
         <div className="coverage-summary">
           <article><b>{coverage.indexed}</b><span>Indexed subject entries</span></article>
           <article><b>{coverage.sourceOnly}</b><span>Source-linked placeholders</span></article>
