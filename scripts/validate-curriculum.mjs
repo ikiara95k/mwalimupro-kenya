@@ -1,13 +1,17 @@
-import { curriculumCatalog } from "../src/curriculumCatalog.js";
+import { curriculumCatalog, curriculumDirectory, isCurriculumPlaceholder } from "../src/curriculumCatalog.js";
 
 const errors = [];
 let subjectCount = 0;
 let indexedSubStrandCount = 0;
 let sourceOnlyCount = 0;
-const placeholderPattern = /use the official KICD .* to confirm the current strand and sub-strand sequence/i;
+
 
 for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
+  if (!curriculumDirectory[grade]) errors.push(`${grade}: catalog grade is missing from the grade directory`);
   for (const [subject, curriculum] of Object.entries(subjects)) {
+    if (!curriculumDirectory[grade]?.subjects?.includes(subject)) {
+      errors.push(`${grade} / ${subject}: catalog subject is not listed in the grade directory`);
+    }
     subjectCount += 1;
     const label = `${grade} / ${subject}`;
     if (!curriculum.title?.trim()) errors.push(`${label}: missing title`);
@@ -26,7 +30,7 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
       for (const item of strand.subStrands) {
         if (typeof item !== "string" || !item.trim()) {
           errors.push(`${label} / ${strand.name}: blank or non-text sub-strand`);
-        } else if (placeholderPattern.test(item)) {
+        } else if (isCurriculumPlaceholder(item, curriculum)) {
           // Explicit source-only placeholder: valid catalog record, but not a usable topic.
         } else {
           hasIndexedTopic = true;
@@ -34,7 +38,7 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
         }
       }
     }
-    if (!hasIndexedTopic) sourceOnlyCount += 1;
+    if (isCurriculumPlaceholder(null, curriculum) || !hasIndexedTopic) sourceOnlyCount += 1;
   }
 }
 
