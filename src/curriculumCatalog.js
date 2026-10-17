@@ -716,6 +716,18 @@ export const curriculumCatalog = {
         { name: "5.0 Christian Living Today", subStrands: ["5.1 Friendship Formation (6 lessons)", "5.2 Human Sexuality (7 lessons)", "5.3 Sanctity of Life (4 lessons)", "5.4 Alcohol, Drug and Substance Abuse (4 lessons)"] }
       ]
     },
+    "Social Studies": {
+      title: "Social Studies Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-6-Social-studies-Revised-Oct-1.pdf",
+      sourceLabel: "Official KICD Grade 6 Social Studies curriculum design (revised 2024)",
+      strands: [
+        { name: "1.0 Natural and the Built Environments", subStrands: ["Position and Size of Countries in Eastern Africa (3 lessons)", "Main Physical Features in Eastern Africa (4 lessons)", "Climatic Regions in Eastern Africa (5 lessons)", "Vegetation in Eastern Africa (4 lessons)", "Historic Built Environments (4 lessons)"] },
+        { name: "2.0 People and Social Organisation", subStrands: ["Language Groups in Eastern Africa (5 lessons)", "Population Distribution in Eastern Africa (3 lessons)", "Culture and Social Organisation (4 lessons)", "School and Community (3 lessons)"] },
+        { name: "3.0 Resources and Economic Activities in Eastern Africa", subStrands: ["Beef Farming (4 lessons)", "Fishing in Eastern Africa (5 lessons)", "Wildlife and Tourism in Eastern Africa (5 lessons)", "Transport in Eastern Africa (4 lessons)", "Communication in Eastern Africa (4 lessons)", "Mining in Eastern Africa (5 lessons)"] },
+        { name: "4.0 Political Systems", subStrands: ["Traditional Forms of Government (5 lessons)", "Regional Co-operations (4 lessons)", "Citizenship (4 lessons)", "Human Rights (4 lessons)"] },
+        { name: "5.0 Governance", subStrands: ["Peace and Conflict Resolution (4 lessons)", "Government Revenue and Expenditure (4 lessons)", "The Preamble of the Constitution of Kenya (3 lessons)"] }
+      ]
+    },
     "English": {
       title: "English Grade 6 (KICD revised curriculum design, September 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/ENGLISH-GRADE-6-UPDATED-Revised-Sept.pdf",
