@@ -50,7 +50,7 @@ function App() {
     link.href = url;
     link.download = "mwalimupro-curriculum-coverage.csv";
     link.click();
-    URL.revokeObjectURL(url);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   function changeSubject(value) {
@@ -180,7 +180,7 @@ function App() {
     link.href = url;
     link.download = `mwalimupro-${scheme.subject.toLowerCase().replaceAll(" ", "-")}-${scheme.term.toLowerCase().replaceAll(" ", "-")}.csv`;
     link.click();
-    URL.revokeObjectURL(url);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   return <div className="app-shell">
