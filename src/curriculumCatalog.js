@@ -124,6 +124,46 @@ export const curriculumCatalog = {
         { name: "Agriculture curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
+    "CRE": {
+      title: "CRE Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "English": {
+      title: "English Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Science & Technology": {
+      title: "Science & Technology Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Science & Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Social Studies": {
+      title: "Social Studies Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Social Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   },
   "Grade 5": {
     "CRE": {
