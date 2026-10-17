@@ -891,11 +891,15 @@ export const curriculumCatalog = {
     },
 
     "Arabic": {
-      title: "Arabic Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Arabic Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Arabic-Grade-7-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 7 Arabic curriculum design, April 2024. The searchable summary's lesson-count arithmetic is inconsistent, so topic labels are indexed without disputed individual allocations; confirm the full table before planning.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Listening for Gist", "Imitative Speaking: Pronunciation", "Phonological Awareness: Pronunciation", "Listening for Information", "Conversational Skills"] },
+        { name: "2.0 Reading", subStrands: ["Reading Aloud: Fluency", "Reading for Comprehension", "Reading for Information", "Extensive Reading: Library Skills"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing: Handwriting", "Guided Writing: Spelling", "Guided Writing: Paragraph Writing", "Guided Writing: Sequencing Ideas", "Guided Writing: Imaginative Composition", "Mechanics of Writing: Punctuation", "Guided Writing: Poetry"] }
       ]
     },
     "Creative Arts": {
