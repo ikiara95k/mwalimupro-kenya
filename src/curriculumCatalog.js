@@ -1067,11 +1067,15 @@ export const curriculumCatalog = {
       ]
     },
     "Arabic": {
-      title: "Arabic Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Arabic Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Arabic-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 Arabic curriculum design, April 2024.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Listening for Gist: Main Idea (2 lessons)", "Phonological Awareness (6 lessons)", "Imitative Speaking (4 lessons)", "Self-Expression (2 lessons)", "Public Presentation (2 lessons)", "Conversational Skills (2 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Guided Reading: Reading Fluency (4 lessons)", "Guided Reading: Reading Aloud (4 lessons)", "Guided Reading: Reading Comprehension (8 lessons)", "Guided Reading: Extensive Reading (2 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Guided Writing (2 lessons)", "Guided Writing: Neatness and Legibility (2 lessons)", "Guided Writing: Paragraph Writing (2 lessons)", "Guided Writing: Descriptive Writing (2 lessons)", "Guided Writing: Mechanics of Writing (2 lessons)", "Guided Writing: Poetry (2 lessons)", "Guided Writing: Creative Writing (4 lessons)", "Guided Writing: Essay Writing (2 lessons)"] }
       ]
     },
     "Creative Arts": {
