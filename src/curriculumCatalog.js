@@ -220,6 +220,21 @@ export const curriculumCatalog = {
         { name: "4.0 Production Techniques", subStrands: ["4.1 Grafting in Plants (13 lessons)", "4.2 Homemade Sun Dryer (13 lessons)"] }
       ]
     },
+    "IRE": {
+      title: "Islamic Religious Education Grade 9 (KICD curriculum design, March 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Islamic-Religious-Education-Grade-9-Formatted-12.3.2024.pdf",
+      sourceLabel: "Official KICD Grade 9 Islamic Religious Education curriculum design; verify against any later revision before final school planning.",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Qur'an", subStrands: ["1.1 Ulum al-Qur'an (7 lessons)", "1.2 Selected Chapter Surah Al-Hujurat (Q 49) (5 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Ulum al-Hadith (10 lessons)", "2.2 Selected Hadith (8 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Belief in the Last Day (Day of Judgement) (5 lessons)", "3.2 Belief in Qadar (4 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1 Shariah (Islamic Law) (6 lessons)", "4.2 Tawbah (Repentance) (5 lessons)"] },
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Virtues in Islam (9 lessons)", "5.2 Significance of Islamic Morality (2 lessons)", "5.3 Prohibitions in Islam (6 lessons)"] },
+        { name: "6.0 Muamalat (Social Relations)", subStrands: ["6.1 Domestic Violence (6 lessons)", "6.2 Iddah (5 lessons)", "6.3 Child Custody (4 lessons)", "6.4 Polygamy in Islam (6 lessons)", "6.5 Trade and Finance in Islam (6 lessons)", "6.6 Contemporary Issues (6 lessons)"] },
+        { name: "7.0 Islamic Heritage and Civilisation", subStrands: ["7.1 Islam in Kenya (7 lessons)", "7.2 Unity of Muslims (4 lessons)", "7.3 Muslim Institutions (9 lessons)"] }
+      ]
+    },
     "CRE": {
       title: "Christian Religious Education Grade 9 (KICD revised curriculum design)",
       sourceUrl: "https://drive.google.com/file/d/1FBMLUxBo1q4dHUkXLidZeqCiZWDzRBNI/preview",
@@ -231,6 +246,19 @@ export const curriculumCatalog = {
         { name: "3.0 Life and Ministry of Jesus Christ", subStrands: ["Raising the Widow's Son (8 lessons)", "Healing the Ten Lepers (8 lessons)", "Parable on Prayer (8 lessons)", "Nicodemus' Encounter with Jesus Christ (8 lessons)", "Jesus' Ministry in Jerusalem (10 lessons)"] },
         { name: "4.0 Church", subStrands: ["Early Church (8 lessons)", "Gifts of the Holy Spirit (8 lessons)"] },
         { name: "5.0 Christian Living Today", subStrands: ["Courtship and Marriage (10 lessons)", "Responsible Parenthood (8 lessons)", "Leisure (8 lessons)", "Wealth, Money and Poverty (8 lessons)"] }
+      ]
+    },
+    "Pre-Technical Studies": {
+      title: "Pre-Technical Studies Grade 9 (KICD curriculum design, 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Pre-Technical-Studies-Grade-9.pdf",
+      sourceLabel: "Official KICD Grade 9 Pre-Technical Studies curriculum design; verify against any later revision before final school planning.",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Foundations of Pre-Technical Studies", subStrands: ["1.1 Safety on Raised Platforms (8 lessons)", "1.2 Handling Hazardous Substances (9 lessons)", "1.3 Self-Exploration and Career Development (6 lessons)"] },
+        { name: "2.0 Communication in Pre-Technical Studies", subStrands: ["2.1 Oblique Projection (14 lessons)", "2.2 Visual Programming (15 lessons)"] },
+        { name: "3.0 Materials for Production", subStrands: ["3.1 Wood (8 lessons)", "3.2 Handling Waste Materials (8 lessons)"] },
+        { name: "4.0 Tools and Production", subStrands: ["4.1 Holding Tools (8 lessons)", "4.2 Driving Tools (8 lessons)", "4.3 Project (20 lessons)"] },
+        { name: "5.0 Entrepreneurship", subStrands: ["5.1 Financial Services (4 lessons)", "5.2 Government and Business (6 lessons)", "5.3 Business Plan (6 lessons)"] }
       ]
     },
     "Social Studies": {
