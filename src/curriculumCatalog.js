@@ -40,6 +40,20 @@ export const curriculumDirectory = {
 };
 
 export const curriculumCatalog = {
+  "Grade 7": {
+    "Mathematics": {
+      title: "Mathematics Grade 7 (Revised July 2024)",
+      sourceUrl: "https://drive.google.com/file/d/12Vb6W1_Vzn9BEH2MsM2WmUwWL5OKoucK/preview",
+      sourceLabel: "KICD Grade 7 Mathematics design (linked from the official KICD Grade Seven Designs page)",
+      strands: [
+        { name: "1.0 Numbers", subStrands: ["1.1 Whole Numbers (20 lessons)", "1.2 Factors (7 lessons)", "1.3 Fractions (9 lessons)", "1.4 Decimals (6 lessons)", "1.5 Squares and Square Roots (5 lessons)"] },
+        { name: "2.0 Algebra", subStrands: ["2.1 Algebraic Expressions (5 lessons)", "2.2 Linear Equations (6 lessons)", "2.3 Linear Inequalities (8 lessons)"] },
+        { name: "3.0 Measurements", subStrands: ["3.1 Pythagorean Relationship (4 lessons)", "3.2 Length (6 lessons)", "3.3 Area (8 lessons)", "3.4 Volume and Capacity (8 lessons)", "3.5 Time, Distance and Speed (8 lessons)", "3.6 Temperature (6 lessons)", "3.7 Money (14 lessons)"] },
+        { name: "4.0 Geometry", subStrands: ["4.1 Angles (8 lessons)", "4.2 Geometrical Constructions (12 lessons)"] },
+        { name: "5.0 Data Handling and Probability", subStrands: ["5.1 Data Handling (10 lessons)"] }
+      ]
+    }
+  },
   "Grade 10": {
     "Core Mathematics": {
       title: "Core Mathematics Grade 10 (July 2025)",
