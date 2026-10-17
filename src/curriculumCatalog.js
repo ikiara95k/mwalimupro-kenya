@@ -118,15 +118,17 @@ export const curriculumCatalog = {
   },
   "Pre-Primary 2": {
     "Creative Activities": {
-      title: "Creative Activities Pre-Primary 2 (KICD curriculum design, May 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/PP2-Creative-Activities-Curriculum-Designs-May-2024-final.pdf",
-      sourceLabel: "Official KICD Pre-Primary 2 Creative Activities design, May 2024.",
-      totalSuggestedLessons: 140,
+      title: "Creative Activities Pre-Primary 2 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Pre-Primary-2-Designs-Revised.pdf",
+      sourceLabel: "Official KICD revised Pre-Primary 2 design, October 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 180,
       strands: [
         { name: "1.0 Our Neighbourhood", subStrands: ["1.1 Doodling (15 lessons)", "1.2 Painting (20 lessons)"] },
         { name: "2.0 Our School", subStrands: ["2.1 Mosaic (15 lessons)", "2.2 Swinging and Stretching (15 lessons)", "2.3 Body Percussions (20 lessons)"] },
-        { name: "3.0 Our Market", subStrands: ["3.1 Colouring (20 lessons)"] },
-        { name: "4.0 Animals", subStrands: ["4.1 Modelling (20 lessons)", "4.2 Walking and Hopping (15 lessons)"] }
+        { name: "3.0 Our Market", subStrands: ["3.1 Colouring (10 lessons)", "3.2 Musical Rhymes (15 lessons)"] },
+        { name: "4.0 Animals", subStrands: ["4.1 Modelling (20 lessons)", "4.2 Walking and Hopping (15 lessons)"] },
+        { name: "5.0 Weather", subStrands: ["5.1 Paper Pleating (15 lessons)"] },
+        { name: "6.0 Water", subStrands: ["6.1 Water Play (20 lessons)"] }
       ]
     },
     "CRE": {
