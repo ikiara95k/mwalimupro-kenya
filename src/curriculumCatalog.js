@@ -235,11 +235,16 @@ export const curriculumCatalog = {
       ]
     },
     "Mathematics": {
-      title: "Mathematics Grade 9 (KICD curriculum design, April 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mathematics-Grade-9-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 9 Mathematics curriculum design. Topic sequence is intentionally not indexed until it can be transcribed and verified from the regular-learner design.",
+      title: "Mathematics Grade 9 (KICD revised regular-learner design, September 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/09/GRADE-9-MATHEMATICS.pdf",
+      sourceLabel: "Official KICD revised Grade 9 Mathematics curriculum design for regular learners; verify against any later revision before final school planning.",
+      totalSuggestedLessons: 150,
       strands: [
-        { name: "Grade 9 Mathematics sequence not yet indexed", subStrands: ["Use the official KICD Grade 9 Mathematics design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Numbers", subStrands: ["1.1 Integers (6 lessons)", "1.2 Cubes and Cube Roots (6 lessons)", "1.3 Indices and Logarithms (8 lessons)", "1.4 Compound Proportions and Rates of Work (9 lessons)"] },
+        { name: "2.0 Algebra", subStrands: ["2.1 Matrices (8 lessons)", "2.2 Equation of a Straight Line (15 lessons)", "2.3 Linear Inequalities (6 lessons)"] },
+        { name: "3.0 Measurements", subStrands: ["3.1 Area (8 lessons)", "3.2 Volume of Solids (8 lessons)", "3.3 Mass, Volume, Weight and Density (8 lessons)", "3.4 Time, Distance and Speed (10 lessons)", "3.5 Money (7 lessons)", "3.6 Approximations and Errors (4 lessons)"] },
+        { name: "4.0 Geometry", subStrands: ["4.1 Coordinates and Graphs (6 lessons)", "4.2 Scale Drawing (14 lessons)", "4.3 Similarity and Enlargement (8 lessons)", "4.4 Trigonometry (7 lessons)"] },
+        { name: "5.0 Data Handling and Probability", subStrands: ["5.1 Data Interpretation (Grouped Data) (6 lessons)", "5.2 Probability (6 lessons)"] }
       ]
     },
     "Integrated Science": {
