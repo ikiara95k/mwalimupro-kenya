@@ -1,9 +1,40 @@
+import { readFileSync } from "node:fs";
 import { curriculumCatalog, curriculumDirectory, isCurriculumPlaceholder } from "../src/curriculumCatalog.js";
 
 const errors = [];
 let subjectCount = 0;
 let indexedSubStrandCount = 0;
 let sourceOnlyCount = 0;
+let reviewRequiredCount = 0;
+
+// Detect duplicate subject keys before JavaScript silently overwrites them in the catalog object.
+const catalogSource = readFileSync(new URL("../src/curriculumCatalog.js", import.meta.url), "utf8");
+const catalogObjectStart = catalogSource.indexOf("export const curriculumCatalog = {");
+if (catalogObjectStart < 0) {
+  errors.push("src/curriculumCatalog.js: export const curriculumCatalog was not found");
+} else {
+  const gradeNames = Object.keys(curriculumDirectory);
+  for (let index = 0; index < gradeNames.length; index += 1) {
+    const grade = gradeNames[index];
+    const start = catalogSource.indexOf(`  "${grade}": {`, catalogObjectStart);
+    const nextGrade = gradeNames[index + 1];
+    const end = nextGrade
+      ? catalogSource.indexOf(`  "${nextGrade}": {`, start)
+      : catalogSource.indexOf("// One shared rule", start);
+    if (start < 0 || end < 0) {
+      errors.push(`${grade}: could not inspect catalog source for duplicate keys`);
+      continue;
+    }
+    const block = catalogSource.slice(start, end);
+    const keys = [...block.matchAll(/^    (?:"([^"]+)"|([A-Za-z][A-Za-z0-9 &'/-]*)):\s*\{/gm)]
+      .map(match => match[1] || match[2]);
+    const counts = new Map();
+    for (const key of keys) counts.set(key, (counts.get(key) || 0) + 1);
+    for (const [key, count] of counts) {
+      if (count > 1) errors.push(`${grade}: duplicate subject key "${key}" appears ${count} times`);
+    }
+  }
+}
 
 
 for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
@@ -38,7 +69,8 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
         }
       }
     }
-    if (isCurriculumPlaceholder(null, curriculum) || !hasIndexedTopic) sourceOnlyCount += 1;
+    if (curriculum.reviewRequired === true) reviewRequiredCount += 1;
+    else if (isCurriculumPlaceholder(null, curriculum) || !hasIndexedTopic) sourceOnlyCount += 1;
 
     // Where every sub-strand has an explicit lesson count, verify it against the declared total.
     // Placeholder-only and partial allocations are not treated as complete totals.
@@ -71,5 +103,5 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`);
   process.exitCode = 1;
 } else {
-  console.log(`Curriculum catalog structure OK: ${subjectCount} grade/subject entries; ${indexedSubStrandCount} indexed sub-strand items; ${sourceOnlyCount} source-linked entries still awaiting topic indexing.`);
+  console.log(`Curriculum catalog structure OK: ${subjectCount} grade/subject entries; ${indexedSubStrandCount} indexed sub-strand items; ${sourceOnlyCount} source-linked entries awaiting indexing; ${reviewRequiredCount} entries require manual review.`);
 }
