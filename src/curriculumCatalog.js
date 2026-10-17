@@ -121,9 +121,9 @@ export const curriculumCatalog = {
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Conservation of Resources", subStrands: ["1.1 Soil Conservation (8 lessons)", "1.2 Water Conservation (9 lessons)", "1.3 Conserving Wild Animals (6 lessons)"] },
-        { name: "2.0 Food Production Processes", subStrands: ["2.1 Growing Vegetables (9 lessons)", "2.2 Uses of Domestic Animals (8 lessons)", "2.3 Preservation of Cereals and Pulses (10 lessons)", "2.4 Food Nutrients (10 lessons)", "2.5 Cooking Food (9 lessons)"] },
+        { name: "2.0 Food Production Processes", subStrands: ["2.1 Growing Vegetables (9 lessons)", "2.2 Uses of Domestic Animals (8 lessons)", "2.3 Preservation of Cereals and Pulses (10 lessons)", "2.4 Food Nutrients (10 lessons)", "2.5 Dry Fat Frying and Deep Frying (9 lessons)"] },
         { name: "3.0 Hygiene Practices", subStrands: ["3.1 Good Grooming Practices (7 lessons)", "3.2 Home Hygiene (9 lessons)", "3.3 Laundering Cotton Item (10 lessons)"] },
-        { name: "4.0 Production Techniques", subStrands: ["4.1 Repairing Garments (11 lessons)", "4.2 Constructing Innovative Gardens (14 lessons)"] }
+        { name: "4.0 Production Techniques", subStrands: ["4.1 Repairing Garments (11 lessons)", "4.2 Constructing Vertical and Horizontal Garden (14 lessons)"] }
       ]
     },
     "Social Studies": {
