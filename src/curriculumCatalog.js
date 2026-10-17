@@ -1254,7 +1254,579 @@ export const curriculumCatalog = {
         { name: "3.0 Electricity and Magnetism", subStrands: ["3.1 Electrostatics", "3.2 Current Electricity", "3.3 Introduction to Electronics"] },
         { name: "4.0 Environmental and Space Physics", subStrands: ["4.1 Greenhouse Effect and Climate Change", "4.2 Introduction to Space Physics"] }
       ]
-    }
+    },
+    "Agriculture": {
+      title: "Agriculture Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Agriculture curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Aviation": {
+      title: "Aviation Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Aviation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Biology": {
+      title: "Biology Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Biology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Chemistry": {
+      title: "Chemistry Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Chemistry curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Community Service Learning": {
+      title: "Community Service Learning Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Community Service Learning curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "English": {
+      title: "English Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Fasihi ya Kiswahili": {
+      title: "Fasihi ya Kiswahili Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Fasihi ya Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Fine Arts": {
+      title: "Fine Arts Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Fine Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "General Science": {
+      title: "General Science Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "General Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Geography": {
+      title: "Geography Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Geography curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "History & Citizenship": {
+      title: "History & Citizenship Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "History & Citizenship curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Home Science": {
+      title: "Home Science Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Home Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "ICT": {
+      title: "ICT Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "ICT curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Literature in English": {
+      title: "Literature in English Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Literature in English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Marine and Fisheries": {
+      title: "Marine and Fisheries Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Marine and Fisheries curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Music & Dance": {
+      title: "Music & Dance Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Music & Dance curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Physical Education": {
+      title: "Physical Education Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Physical Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Physics": {
+      title: "Physics Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Physics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Power Mechanics": {
+      title: "Power Mechanics Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Power Mechanics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Sports & Recreation": {
+      title: "Sports & Recreation Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Sports & Recreation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Theatre & Film": {
+      title: "Theatre & Film Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Theatre & Film curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Woodwork": {
+      title: "Woodwork Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+  },
+  "Grade 11": {
+    "Agriculture": {
+      title: "Agriculture Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Agriculture curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Aviation": {
+      title: "Aviation Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Aviation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Biology": {
+      title: "Biology Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Biology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Chemistry": {
+      title: "Chemistry Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Chemistry curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Community Service Learning": {
+      title: "Community Service Learning Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Community Service Learning curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Core Mathematics": {
+      title: "Core Mathematics Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Core Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "English": {
+      title: "English Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Fasihi ya Kiswahili": {
+      title: "Fasihi ya Kiswahili Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Fasihi ya Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Fine Arts": {
+      title: "Fine Arts Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Fine Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "General Science": {
+      title: "General Science Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "General Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Geography": {
+      title: "Geography Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Geography curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "History & Citizenship": {
+      title: "History & Citizenship Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "History & Citizenship curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Home Science": {
+      title: "Home Science Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Home Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "ICT": {
+      title: "ICT Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "ICT curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Literature in English": {
+      title: "Literature in English Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Literature in English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Marine and Fisheries": {
+      title: "Marine and Fisheries Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Marine and Fisheries curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Music & Dance": {
+      title: "Music & Dance Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Music & Dance curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Physical Education": {
+      title: "Physical Education Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Physical Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Physics": {
+      title: "Physics Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Physics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Power Mechanics": {
+      title: "Power Mechanics Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Power Mechanics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Sports & Recreation": {
+      title: "Sports & Recreation Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Sports & Recreation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Theatre & Film": {
+      title: "Theatre & Film Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Theatre & Film curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Woodwork": {
+      title: "Woodwork Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+  },
+  "Grade 12": {
+    "Agriculture": {
+      title: "Agriculture Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Agriculture curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Aviation": {
+      title: "Aviation Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Aviation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Biology": {
+      title: "Biology Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Biology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Chemistry": {
+      title: "Chemistry Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Chemistry curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Community Service Learning": {
+      title: "Community Service Learning Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Community Service Learning curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Core Mathematics": {
+      title: "Core Mathematics Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Core Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "English": {
+      title: "English Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Fasihi ya Kiswahili": {
+      title: "Fasihi ya Kiswahili Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Fasihi ya Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Fine Arts": {
+      title: "Fine Arts Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Fine Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "General Science": {
+      title: "General Science Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "General Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Geography": {
+      title: "Geography Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Geography curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "History & Citizenship": {
+      title: "History & Citizenship Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "History & Citizenship curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Home Science": {
+      title: "Home Science Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Home Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "ICT": {
+      title: "ICT Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "ICT curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Literature in English": {
+      title: "Literature in English Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Literature in English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Marine and Fisheries": {
+      title: "Marine and Fisheries Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Marine and Fisheries curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Music & Dance": {
+      title: "Music & Dance Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Music & Dance curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Physical Education": {
+      title: "Physical Education Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Physical Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Physics": {
+      title: "Physics Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Physics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Power Mechanics": {
+      title: "Power Mechanics Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Power Mechanics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Sports & Recreation": {
+      title: "Sports & Recreation Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Sports & Recreation curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Theatre & Film": {
+      title: "Theatre & Film Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Theatre & Film curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Woodwork": {
+      title: "Woodwork Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   }
 };
 
