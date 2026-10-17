@@ -24,15 +24,18 @@ export const curriculumCatalog = {
             "2.2 Reflection and Congruence",
             "2.3 Rotation",
             "2.4 Trigonometry",
+            "2.5 Area of Polygons",
+            "2.6 Area of a Part of a Circle",
             "2.7 Surface Area and Volume of Solids",
-            "2.8 Vectors"
+            "2.8 Vectors",
+            "2.9 Linear Motion"
           ]
         },
         {
           name: "3.0 Statistics and Probability",
           subStrands: [
-            "3.1 Statistics",
-            "3.2 Probability"
+            "3.1 Statistics I",
+            "3.2 Probability I"
           ]
         }
       ]
