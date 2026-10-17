@@ -1087,11 +1087,15 @@ export const curriculumCatalog = {
       ]
     },
     "Indigenous Language": {
-      title: "Indigenous Language Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Indigenous Languages Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Indigenous-Languages-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 Indigenous Languages design, April 2024. The design allocates 54 strand lessons plus 6 showcase lessons; verify any later revision before planning.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Listening for Information (2 lessons)", "Listening for Comprehension (2 lessons)", "Attentive Listening (2 lessons)", "Public Speaking: Impromptu Speech (2 lessons)", "Storytelling (4 lessons)", "Self-Expression: Interviews (2 lessons)", "Presentation Skills: Debate and Songs (4 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Reading Comprehension (4 lessons)", "Extensive Reading: Library Skills and Grade-Appropriate Texts (4 lessons)", "Reading for Information (8 lessons)", "Intensive Reading (2 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Essay Writing (4 lessons)", "Social Writing: Cards (2 lessons)", "Creative Writing (4 lessons)", "Writing for Information (6 lessons)", "Functional Writing: Posters (2 lessons)"] }
       ]
     },
     "Integrated Science": {
