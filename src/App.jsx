@@ -91,10 +91,10 @@ function App() {
       return {
         week: index + 1, topic, subtopic,
         allocatedLessons: allocatedLessons || null,
-        objectives: "Plan learning outcomes for " + subtopic + ". Use the specific learning outcomes in the official KICD design.",
-        activities: "Use suggested learning experiences in the KICD design; adapt to learner needs and available resources",
-        resources: subject === "Physics" ? "KICD design, course book, locally available apparatus and approved digital resources" : "KICD design, course book, board, worksheets and locally available materials",
-        assessment: "Use the assessment methods and rubric in the official KICD design; record evidence of learner progress"
+        objectives: "Insert the specific learning outcome(s) for " + subtopic + " from the current KICD design.",
+        activities: "Insert the suggested learning experiences from the current KICD design for this sub-strand; adapt to learner needs and available resources.",
+        resources: "List resources specified in the current KICD design and materials available locally.",
+        assessment: "Insert the KICD-recommended assessment method/rubric and the evidence of learner progress to record."
       };
     });
     setScheme({ subject, grade, term, year, teacher, school, rows, curriculumTitle: curriculum.title, sourceLabel: curriculum.sourceLabel, sourceUrl: curriculum.sourceUrl });
