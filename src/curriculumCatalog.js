@@ -208,6 +208,18 @@ export const curriculumCatalog = {
     }
   },
   "Grade 9": {
+    "Agriculture": {
+      title: "Agriculture and Nutrition Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Agriculture-Grade-9-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 Agriculture and Nutrition curriculum design, April 2024; verify against any later revision before final school planning.",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Conservation of Resources", subStrands: ["1.1 Conserving Animal Feed: Hay (12 lessons)", "1.2 Conserving Leftover Food (11 lessons)", "1.3 Integrated Farming (12 lessons)"] },
+        { name: "2.0 Food Production Processes", subStrands: ["2.1 Organic Gardening (14 lessons)", "2.2 Storage of Crop Produce (10 lessons)", "2.3 Cooking: Using Flour Mixtures (14 lessons)"] },
+        { name: "3.0 Hygiene Practices", subStrands: ["3.1 Cleaning Waste Disposal Facilities (9 lessons)", "3.2 Disinfecting Clothing and Household Articles (12 lessons)"] },
+        { name: "4.0 Production Techniques", subStrands: ["4.1 Grafting in Plants (13 lessons)", "4.2 Homemade Sun Dryer (13 lessons)"] }
+      ]
+    },
     "CRE": {
       title: "Christian Religious Education Grade 9 (KICD revised curriculum design)",
       sourceUrl: "https://drive.google.com/file/d/1FBMLUxBo1q4dHUkXLidZeqCiZWDzRBNI/preview",
