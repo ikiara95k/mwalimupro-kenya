@@ -47,15 +47,48 @@ function App() {
       return;
     }
     const count = Math.max(1, Math.min(16, Number(weeks) || 1));
-    // Preserve KICD strand/sub-strand order. Group adjacent sub-strands if weeks are limited.
-    const rows = Array.from({ length: count }, (_, index) => {
-      const from = Math.floor(index * topics.length / count);
-      const to = Math.floor((index + 1) * topics.length / count);
-      const group = topics.length >= count ? topics.slice(from, Math.max(from + 1, to)) : [topics[Math.min(topics.length - 1, Math.floor(index * topics.length / count))]];
+    // Preserve KICD order and use stated lesson allocations to balance adjacent sub-strands.
+    // If allocations are missing, fall back to equal topic weights rather than inventing lesson counts.
+    const weights = topics.map(item => {
+      const match = item.subStrand.match(/\\((\\d+) lessons?\\)/i);
+      return match ? Number(match[1]) : 1;
+    });
+    const groups = [];
+    if (topics.length >= count) {
+      let cursor = 0;
+      let remainingWeight = weights.reduce((sum, value) => sum + value, 0);
+      for (let week = 0; week < count; week++) {
+        const weeksLeft = count - week;
+        const maxEnd = topics.length - (weeksLeft - 1);
+        const target = remainingWeight / weeksLeft;
+        let end = cursor;
+        let weight = 0;
+        while (end < maxEnd) {
+          const nextWeight = weights[end];
+          if (end > cursor && Math.abs(weight - target) <= Math.abs(weight + nextWeight - target)) break;
+          weight += nextWeight;
+          end++;
+          if (weight >= target && end < maxEnd) break;
+        }
+        if (end === cursor) { weight = weights[end]; end++; }
+        groups.push(topics.slice(cursor, end));
+        cursor = end;
+        remainingWeight -= weight;
+      }
+    } else {
+      // There are fewer indexed sub-strands than requested weeks; do not fabricate extra topics.
+      for (let index = 0; index < topics.length; index++) groups.push([topics[index]]);
+    }
+    const rows = groups.map((group, index) => {
       const topic = [...new Set(group.map(item => item.strand))].join(" / ");
       const subtopic = group.map(item => item.subStrand).join("; ");
+      const allocatedLessons = group.reduce((sum, item) => {
+        const match = item.subStrand.match(/\\((\\d+) lessons?\\)/i);
+        return sum + (match ? Number(match[1]) : 0);
+      }, 0);
       return {
         week: index + 1, topic, subtopic,
+        allocatedLessons: allocatedLessons || null,
         objectives: "Plan learning outcomes for " + subtopic + ". Use the specific learning outcomes in the official KICD design.",
         activities: "Use suggested learning experiences in the KICD design; adapt to learner needs and available resources",
         resources: subject === "Physics" ? "KICD design, course book, locally available apparatus and approved digital resources" : "KICD design, course book, board, worksheets and locally available materials",
