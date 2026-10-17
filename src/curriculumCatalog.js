@@ -1134,9 +1134,9 @@ export const curriculumCatalog = {
   },
   "Grade 9": {
     "Agriculture": {
-      title: "Agriculture and Nutrition Grade 9 (KICD curriculum design, April 2024)",
+      title: "Agriculture Grade 9 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Agriculture-Grade-9-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 9 Agriculture and Nutrition curriculum design, April 2024; verify against any later revision before final school planning.",
+      sourceLabel: "Official KICD Grade 9 Agriculture design, April 2024. Verify any later revision before final school planning.",
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Conservation of Resources", subStrands: ["1.1 Conserving Animal Feed: Hay (12 lessons)", "1.2 Conserving Leftover Food (11 lessons)", "1.3 Integrated Farming (12 lessons)"] },
@@ -1145,6 +1145,7 @@ export const curriculumCatalog = {
         { name: "4.0 Production Techniques", subStrands: ["4.1 Grafting in Plants (13 lessons)", "4.2 Homemade Sun Dryer (13 lessons)"] }
       ]
     },
+
     "Arabic": {
       title: "Arabic Grade 9 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Arabic-Grade-9-Design-Formatted-April-2024.pdf",
