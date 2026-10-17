@@ -1071,11 +1071,14 @@ export const curriculumCatalog = {
       ]
     },
     "Integrated Science": {
-      title: "Integrated Science Grade 8 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
-      sourceLabel: "Official KICD Grade Eight Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "Integrated Science Grade 8 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Integrated-Science-Grade-8-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 8 Integrated Science design, April 2024. Verify any later revision before final school planning.",
+      totalSuggestedLessons: 150,
       strands: [
-        { name: "Integrated Science curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Eight design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Mixtures, Elements and Compounds", subStrands: ["1.1 Elements and Compounds (18 lessons)", "1.2 Physical and Chemical Changes (22 lessons)", "1.3 Classes of Fire (20 lessons)"] },
+        { name: "2.0 Living Things and the Environment", subStrands: ["2.1 The Cell (20 lessons)", "2.2 Movement of Materials in and out of the Cell (16 lessons)", "2.3 Reproduction in Human Beings (18 lessons)"] },
+        { name: "3.0 Force and Energy", subStrands: ["3.1 Transformation of Energy (20 lessons)", "3.2 Pressure (16 lessons)"] }
       ]
     },
     "IRE": {
