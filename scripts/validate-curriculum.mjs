@@ -84,6 +84,18 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
       if (fullAllocationTotal !== curriculum.totalSuggestedLessons) {
         errors.push(`${label}: sub-strand lesson allocations plus showcase lessons sum to ${fullAllocationTotal}, but totalSuggestedLessons is ${curriculum.totalSuggestedLessons}`);
       }
+    } else if (curriculum.totalSuggestedLessons) {
+      const strandAllocations = (curriculum.strands || []).map(strand => {
+        const match = (strand.name || "").match(/\((\d+)\s+lessons across strand\)/i);
+        return match ? Number(match[1]) : null;
+      });
+      if (strandAllocations.length > 0 && strandAllocations.every(value => value !== null)) {
+        const strandTotal = strandAllocations.reduce((sum, value) => sum + value, 0);
+        const fullStrandTotal = strandTotal + (curriculum.additionalShowcaseLessons || 0);
+        if (fullStrandTotal !== curriculum.totalSuggestedLessons) {
+          errors.push(`${label}: strand-level lesson allocations plus showcase lessons sum to ${fullStrandTotal}, but totalSuggestedLessons is ${curriculum.totalSuggestedLessons}`);
+        }
+      }
     }
   }
 }
