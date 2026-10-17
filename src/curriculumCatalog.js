@@ -2490,20 +2490,29 @@ export function getCurriculumCoverage() {
     const subjects = directory.subjects ?? [];
     let indexed = 0;
     let sourceOnly = 0;
+    let reviewRequired = 0;
     for (const subject of subjects) {
       const entry = curriculumCatalog[grade]?.[subject];
       if (!entry) continue;
-      const isPlaceholder = isCurriculumPlaceholder(null, entry);
-      if (isPlaceholder) sourceOnly++;
+      if (entry.reviewRequired === true) reviewRequired++;
+      else if (isCurriculumPlaceholder(null, entry)) sourceOnly++;
       else if (entry.strands?.some(strand => strand.subStrands?.length)) indexed++;
     }
-    return { grade, total: subjects.length, indexed, sourceOnly, notIndexed: subjects.length - indexed - sourceOnly };
+    return {
+      grade,
+      total: subjects.length,
+      indexed,
+      sourceOnly,
+      reviewRequired,
+      notIndexed: subjects.length - indexed - sourceOnly - reviewRequired
+    };
   });
   return {
     grades,
     total: grades.reduce((sum, item) => sum + item.total, 0),
     indexed: grades.reduce((sum, item) => sum + item.indexed, 0),
     sourceOnly: grades.reduce((sum, item) => sum + item.sourceOnly, 0),
+    reviewRequired: grades.reduce((sum, item) => sum + item.reviewRequired, 0),
     notIndexed: grades.reduce((sum, item) => sum + item.notIndexed, 0)
   };
 }
