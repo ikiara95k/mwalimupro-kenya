@@ -217,7 +217,7 @@ export const curriculumCatalog = {
         { name: "4.0 Geometry", subStrands: ["4.1 Geometrical Constructions (12 lessons)", "4.2 Coordinates and Graphs (14 lessons)", "4.3 Scale Drawing (14 lessons)", "4.4 Common Solids (16 lessons)"] },
         { name: "5.0 Data Handling and Probability", subStrands: ["5.1 Data Presentation and Interpretation (10 lessons)", "5.2 Probability (7 lessons)"] }
       ]
-    }
+    },
     "Arabic": {
       title: "Arabic Grade 8 (KICD source-linked placeholder)",
       sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eight-designs/",
