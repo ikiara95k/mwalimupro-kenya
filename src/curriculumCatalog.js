@@ -1078,13 +1078,13 @@ export const curriculumCatalog = {
     "Arabic": {
       title: "Arabic Grade 8 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Arabic-Grade-8-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 8 Arabic curriculum design, April 2024.",
+      sourceLabel: "Official KICD Grade 8 Arabic design, April 2024. The design allocates 54 sub-strand lessons plus 6 showcasing lessons; verify any later revision before planning.",
       totalSuggestedLessons: 60,
       additionalShowcaseLessons: 6,
       strands: [
-        { name: "1.0 Listening and Speaking", subStrands: ["Listening for Gist: Main Idea (2 lessons)", "Phonological Awareness (6 lessons)", "Imitative Speaking (4 lessons)", "Self-Expression (2 lessons)", "Public Presentation (2 lessons)", "Conversational Skills (2 lessons)"] },
-        { name: "2.0 Reading", subStrands: ["Guided Reading: Reading Fluency (4 lessons)", "Guided Reading: Reading Aloud (4 lessons)", "Guided Reading: Reading Comprehension (8 lessons)", "Guided Reading: Extensive Reading (2 lessons)"] },
-        { name: "3.0 Writing", subStrands: ["Guided Writing (2 lessons)", "Guided Writing: Neatness and Legibility (2 lessons)", "Guided Writing: Paragraph Writing (2 lessons)", "Guided Writing: Descriptive Writing (2 lessons)", "Guided Writing: Mechanics of Writing (2 lessons)", "Guided Writing: Poetry (2 lessons)", "Guided Writing: Creative Writing (4 lessons)", "Guided Writing: Essay Writing (2 lessons)"] }
+        { name: "1.0 Listening and Speaking", subStrands: ["1.1 Listening for Gist: Main Idea (2 lessons)", "1.2 Phonological Awareness (6 lessons)", "1.3 Imitative Speaking (4 lessons)", "1.4 Self-Expression (2 lessons)", "1.5 Public Presentation (2 lessons)", "1.6 Conversational Skills (2 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["2.1 Guided Reading: Reading Fluency (4 lessons)", "2.2 Guided Reading: Reading Aloud (4 lessons)", "2.3 Guided Reading: Reading Comprehension (8 lessons)", "2.4 Guided Reading: Extensive Reading (2 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["3.1 Guided Writing (2 lessons)", "3.2 Guided Writing: Neatness and Legibility (2 lessons)", "3.3 Guided Writing: Paragraph Writing (2 lessons)", "3.4 Guided Writing: Descriptive Writing (2 lessons)", "3.5 Guided Writing: Mechanics of Writing (2 lessons)", "3.6 Guided Writing: Poetry (2 lessons)", "3.7 Guided Writing: Creative Writing (4 lessons)", "3.8 Guided Writing: Essay Writing (2 lessons)"] }
       ]
     },
     "Creative Arts": {
