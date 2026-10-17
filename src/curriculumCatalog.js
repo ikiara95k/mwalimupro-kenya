@@ -575,14 +575,14 @@ export const curriculumCatalog = {
       ]
     },
     "English": {
-      title: "English Grade 5 (KICD curriculum design)",
+      title: "English Grade 5 (KICD revised curriculum design, September 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/ENGLISH-GRADE-5-UPDATED-Revised-Sept.pdf",
-      sourceLabel: "Official KICD Grade 5 English curriculum design; language skills and grammar are developed through the listed themes.",
+      sourceLabel: "Official KICD revised Grade 5 English design, September 2024. The searchable summary's lesson-count arithmetic is inconsistent, so sub-strand labels are indexed here without assigning disputed individual allocations; confirm counts in the full PDF.",
       strands: [
-        { name: "1.0 Listening and Speaking", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] },
-        { name: "2.0 Reading", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] },
-        { name: "3.0 Grammar in Use", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] },
-        { name: "4.0 Writing", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] }
+        { name: "1.0 Listening and Speaking", subStrands: ["Listening Comprehension", "Pronunciation and Vocabulary", "Speaking Fluency"] },
+        { name: "2.0 Reading", subStrands: ["Extensive Reading", "Intensive Reading", "Fluency"] },
+        { name: "3.0 Grammar in Use", subStrands: ["Word Classes", "Language Patterns", "Tense"] },
+        { name: "4.0 Writing", subStrands: ["Creative Writing", "Functional Writing", "Mechanics of Writing"] }
       ]
     },
     "Mathematics": {
