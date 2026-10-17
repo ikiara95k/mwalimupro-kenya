@@ -945,11 +945,16 @@ export const curriculumCatalog = {
       ]
     },
     "German": {
-      title: "German Grade 7 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-seven-designs/",
-      sourceLabel: "Official KICD Grade Seven Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "German Grade 7 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/German-Grade-7-Design-Formatted-April-2024.doc.pdf",
+      sourceLabel: "Official KICD Grade 7 German design, April 2024. Listening and Speaking, Reading and Writing allocations are 27, 18 and 9 lessons respectively, plus 6 showcase lessons. The summary table omits the Writing sub-strand list, so this entry remains blocked pending full transcription.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
+      reviewRequired: true,
       strands: [
-        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Seven design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["1.1 Active Listening", "1.2 Listening for Information", "1.3 Interactive Speaking", "1.4 Oral Expression"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["2.1 Reading Comprehension", "2.2 Reading Aloud: Articulation", "2.3 Reading Aloud: Fluency"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["Writing sub-strand sequence awaits transcription and verification from the full KICD design."] }
       ]
     },
     "HRE": {
