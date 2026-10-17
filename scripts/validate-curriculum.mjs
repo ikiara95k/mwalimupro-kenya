@@ -26,7 +26,7 @@ if (catalogObjectStart < 0) {
       continue;
     }
     const block = catalogSource.slice(start, end);
-    const keys = [...block.matchAll(/^    (?:"([^"]+)"|([A-Za-z][A-Za-z0-9 &'/-]*)):\\s*\\{/gm)]
+    const keys = [...block.matchAll(/^    (?:"([^"]+)"|([A-Za-z][A-Za-z0-9 &'/-]*)):\s*\{/gm)]
       .map(match => match[1] || match[2]);
     const counts = new Map();
     for (const key of keys) counts.set(key, (counts.get(key) || 0) + 1);
