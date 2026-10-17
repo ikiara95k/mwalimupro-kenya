@@ -136,7 +136,7 @@ function App() {
 
   function exportCsv() {
     if (!scheme) return;
-    const header = ["Week", "Strand / Topic", "Sub-topic", "Learning objectives", "Learning activities", "Resources", "Assessment"];
+    const header = ["Week", "Strand / Topic", "Sub-topic", "Suggested lessons", "Learning objectives", "Learning activities", "Resources", "Assessment"];
     const data = scheme.rows.map(r => [r.week, r.topic, r.subtopic, r.allocatedLessons ?? "", r.objectives, r.activities, r.resources, r.assessment]);
     const quote = value => '"' + String(value ?? "").replaceAll('"', '""') + '"';
     const csv = [header, ...data].map(row => row.map(quote).join(",")).join("\r\n");
