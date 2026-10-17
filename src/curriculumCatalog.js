@@ -597,11 +597,15 @@ export const curriculumCatalog = {
       ]
     },
     "French": {
-      title: "French Grade 5 (KICD source-linked placeholder)",
-      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
-      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      title: "French Grade 5 (KICD revised curriculum design, October 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/FRENCH-GRADE-5-CURRICULUM-DESIGN-Revised.pdf",
+      sourceLabel: "Official KICD revised Grade 5 French design, October 2024. The design gives strand-level allocations; individual sub-strand allocations are not listed in this index.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
       strands: [
-        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Listening and Speaking (27 lessons across strand)", subStrands: ["1.1 Interactive Speaking", "1.2 Oral Expression", "1.3 Interactive Listening", "1.4 Active Listening", "1.5 Listening for Information"] },
+        { name: "2.0 Reading (18 lessons across strand)", subStrands: ["2.1 Reading Aloud", "2.2 Reading for Understanding", "2.3 Guided Reading"] },
+        { name: "3.0 Writing (9 lessons across strand)", subStrands: ["3.1 Guided Writing"] }
       ]
     },
     "German": {
