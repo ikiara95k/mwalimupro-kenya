@@ -77,6 +77,17 @@ export const curriculumCatalog = {
         { name: "4.0 Political Systems", subStrands: ["Traditional Leaders in Kenya (4 lessons)", "Early Forms of Government in Kenya (5 lessons)", "Citizenship in Kenya (4 lessons)"] }
       ]
     },
+    "English": {
+      title: "English Grade 5 (KICD curriculum design)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/ENGLISH-GRADE-5-UPDATED-Revised-Sept.pdf",
+      sourceLabel: "Official KICD Grade 5 English curriculum design; language skills and grammar are developed through the listed themes.",
+      strands: [
+        { name: "1.0 Listening and Speaking", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] },
+        { name: "2.0 Reading", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] },
+        { name: "3.0 Grammar in Use", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] },
+        { name: "4.0 Writing", subStrands: ["1. Child Rights and Responsibilities", "2. National Celebrations", "3. Etiquette - Table Manners", "4. Road Accidents - Prevention", "5. Nutrition - Traditional Foods", "6. Jobs and Occupations - Various Occupations", "7. Technology - Learning through Technology", "8. The Farm - Cash Crops", "9. Diseases - Communicable Diseases", "10. Leisure Time Activities", "11. Sports - Appreciating Talents", "12. Environmental Pollution", "13. Money - Savings and Banking"] }
+      ]
+    },
     "Mathematics": {
       title: "Mathematics Grade 5 (Revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-5-Mathematics.pdf",
@@ -101,6 +112,17 @@ export const curriculumCatalog = {
         { name: "3.0 Resources and Economic Activities in Eastern Africa", subStrands: ["Beef Farming (4 lessons)", "Fishing in Eastern Africa (5 lessons)", "Wildlife and Tourism in Eastern Africa (5 lessons)", "Transport in Eastern Africa (4 lessons)", "Communication in Eastern Africa (4 lessons)", "Mining in Eastern Africa (5 lessons)"] },
         { name: "4.0 Political Systems", subStrands: ["Traditional Forms of Government (5 lessons)", "Regional Co-operations (4 lessons)", "Citizenship (4 lessons)", "Human Rights (4 lessons)"] },
         { name: "5.0 Governance", subStrands: ["Peace and Conflict Resolution (4 lessons)", "Government Revenue and Expenditure (4 lessons)", "The Preamble of the Constitution of Kenya (3 lessons)"] }
+      ]
+    },
+    "English": {
+      title: "English Grade 6 (KICD curriculum design)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/09/GRADE-6-ENGLISH.pdf",
+      sourceLabel: "Official KICD Grade 6 English curriculum design; language skills and grammar are developed through the listed themes.",
+      strands: [
+        { name: "1.0 Listening and Speaking", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] },
+        { name: "2.0 Reading", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] },
+        { name: "3.0 Grammar in Use", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] },
+        { name: "4.0 Writing", subStrands: ["1. Child Labour", "2. Cultural and Religious Celebrations", "3. Etiquette - Telephone Etiquette", "4. Emergency Rescue Services", "5. Our Tourist Attractions", "6. Jobs and Occupations - Work Ethics", "7. Technology - Scientific Innovations", "8. The Farm - Animal Safety and Care", "9. Diseases - Lifestyle Diseases", "10. Proper Use of Leisure Time", "11. Sports - Indoor Games", "12. Environmental Conservation", "13. Money - Trade"] }
       ]
     },
     "IRE": {
