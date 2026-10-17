@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Document, Packer, Paragraph, Table, TableRow, TableCell, HeadingLevel, WidthType } from "docx";
-import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, curriculumDirectory, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
+import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
 
 function App() {
   const [subject, setSubject] = useState("Core Mathematics");
