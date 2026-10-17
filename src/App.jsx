@@ -24,7 +24,17 @@ function App() {
   const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics && !needsManualReview);
 
   function exportCurriculumCoverageCsv() {
-    const header = ["Grade", "Subject", "Status", "Curriculum design title", "KICD source URL", "Source note"];
+    const header = [
+      "Grade",
+      "Subject",
+      "Indexing status",
+      "Curriculum design title",
+      "KICD source URL",
+      "Source note",
+      "Review reason",
+      "Declared lesson total",
+      "Additional showcase lessons"
+    ];
     const rows = [];
     for (const [gradeName, directory] of Object.entries(curriculumDirectory)) {
       for (const subjectName of directory.subjects || []) {
@@ -39,7 +49,10 @@ function App() {
           status,
           entry?.title || "",
           entry?.sourceUrl || getCurriculumSourceUrl(gradeName) || "",
-          entry?.sourceLabel || ""
+          entry?.sourceLabel || "",
+          entry?.reviewReason || "",
+          entry?.totalSuggestedLessons ?? "",
+          entry?.additionalShowcaseLessons ?? ""
         ]);
       }
     }
