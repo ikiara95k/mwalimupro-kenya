@@ -256,6 +256,18 @@ export const curriculumCatalog = {
         { name: "3.0 Writing (9 lessons across strand)", subStrands: ["Guided Writing", "German Orthography Rules", "Vocabulary", "Creative Writing", "Functional Writing"] }
       ]
     },
+    "Indigenous Language": {
+      title: "Indigenous Languages Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Indigenous-Languages-Grade-9-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 Indigenous Languages design, April 2024; 54 sub-strand lessons plus 6 showcasing lessons, with language-specific adaptation as appropriate.",
+      totalSuggestedLessons: 60,
+      additionalShowcaseLessons: 6,
+      strands: [
+        { name: "1.0 Listening and Speaking", subStrands: ["Listening for Information (2 lessons)", "Listening for Comprehension (2 lessons)", "Fluency: Pronunciation (2 lessons)", "Conversational Skills: Negotiation (2 lessons)", "Presentation Skills: Debate and Public Speaking (4 lessons)", "Intensive Listening (2 lessons)", "Storytelling: Legends (2 lessons)"] },
+        { name: "2.0 Reading", subStrands: ["Reading Comprehension (6 lessons)", "Extensive Reading: Library Skills (2 lessons)", "Extensive Reading: Short Stories and Grade-Appropriate Texts (6 lessons)", "Reading for Information: Plays and Visuals (4 lessons)", "Intensive Reading (2 lessons)"] },
+        { name: "3.0 Writing", subStrands: ["Handwriting (2 lessons)", "Social Writing: Emails (2 lessons)", "Creative Writing: Poems, Plays and Short Stories (6 lessons)", "Essay Writing: Descriptive Essay (2 lessons)", "Writing for Information (2 lessons)", "Assessment of Writing (2 lessons)", "Functional Writing: Application Letters (2 lessons)"] }
+      ]
+    },
     "IRE": {
       title: "Islamic Religious Education Grade 9 (KICD curriculum design, March 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Islamic-Religious-Education-Grade-9-Formatted-12.3.2024.pdf",
