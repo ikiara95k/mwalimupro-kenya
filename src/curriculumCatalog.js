@@ -51,7 +51,119 @@ export const curriculumCatalog = {
         { name: "3.0 Geometry", subStrands: ["3.1 Position and Direction (5 lessons)", "3.2 Angles (5 lessons)", "3.3 Plane Figures (6 lessons)"] },
         { name: "4.0 Data Handling", subStrands: ["4.1 Data (10 lessons)"] }
       ]
-    }
+    },
+    "Arabic": {
+      title: "Arabic Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Creative Arts": {
+      title: "Creative Arts Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Creative Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "French": {
+      title: "French Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "German": {
+      title: "German Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "HRE": {
+      title: "HRE Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Indigenous Language": {
+      title: "Indigenous Language Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "IRE": {
+      title: "IRE Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mandarin": {
+      title: "Mandarin Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Agriculture": {
+      title: "Agriculture Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade 4 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Agriculture curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 4 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "CRE": {
+      title: "CRE Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "English": {
+      title: "English Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Science & Technology": {
+      title: "Science & Technology Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Science & Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Social Studies": {
+      title: "Social Studies Grade 4 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-four-designs/",
+      sourceLabel: "Official KICD Grade Four Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Social Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade Four design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   },
   "Grade 5": {
     "CRE": {
@@ -107,7 +219,87 @@ export const curriculumCatalog = {
         { name: "3.0 Geometry", subStrands: ["3.1 Lines (4 lessons)", "3.2 Angles (6 lessons)", "3.3 Three Dimension (3-D) Objects (6 lessons)"] },
         { name: "4.0 Data Handling", subStrands: ["4.1 Data Representation (6 lessons)"] }
       ]
-    }
+    },
+    "Arabic": {
+      title: "Arabic Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Creative Arts": {
+      title: "Creative Arts Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Creative Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "French": {
+      title: "French Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "German": {
+      title: "German Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "HRE": {
+      title: "HRE Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Indigenous Language": {
+      title: "Indigenous Language Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "IRE": {
+      title: "IRE Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mandarin": {
+      title: "Mandarin Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Science & Technology": {
+      title: "Science & Technology Grade 5 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-five-designs/",
+      sourceLabel: "Official KICD Grade 5 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Science & Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 5 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   },
   "Grade 6": {
     "CRE": {
@@ -176,7 +368,79 @@ export const curriculumCatalog = {
         { name: "3.0 Geometry", subStrands: ["3.1 Lines (6 lessons)", "3.2 Angles (6 lessons)", "3.3 3-D Objects (6 lessons)"] },
         { name: "4.0 Data Handling", subStrands: ["4.1 Bar Graphs (10 lessons)"] }
       ]
-    }
+    },
+    "Arabic": {
+      title: "Arabic Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Creative Arts": {
+      title: "Creative Arts Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Creative Arts curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "French": {
+      title: "French Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "German": {
+      title: "German Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "HRE": {
+      title: "HRE Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "HRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Indigenous Language": {
+      title: "Indigenous Language Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Kiswahili": {
+      title: "Kiswahili Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Kiswahili curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mandarin": {
+      title: "Mandarin Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Mandarin curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Science & Technology": {
+      title: "Science & Technology Grade 6 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-six-designs/",
+      sourceLabel: "Official KICD Grade 6 Designs page. Curriculum sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Science & Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 6 design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   },
   "Grade 7": {
     "Mathematics": {
