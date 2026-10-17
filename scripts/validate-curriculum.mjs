@@ -81,7 +81,7 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
           .trim();
         if (!normalized || isCurriculumPlaceholder(label)) continue;
         if (seenSubStrands.has(normalized)) {
-          errors.push(\`\${label}: duplicate sub-strand label in \${grade} \${subject} (also listed as "\${seenSubStrands.get(normalized)}")\`);
+          errors.push(label + ': duplicate sub-strand label in ' + grade + ' ' + subject + ' (also listed as "' + seenSubStrands.get(normalized) + '")');
         } else {
           seenSubStrands.set(normalized, label);
         }
