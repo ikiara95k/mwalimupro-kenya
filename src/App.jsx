@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Document, Packer, Paragraph, Table, TableRow, TableCell, HeadingLevel, WidthType } from "docx";
-import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, getCurriculumCoverage, isCurriculumPlaceholder, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
+import { getCurriculum, getCurriculumTopics, getSubjectsForGrade, getCurriculumSourceUrl, getGrades, getCurriculumCoverage, isCurriculumPlaceholder, curriculumDirectory, curriculumCatalog, KICD_CURRICULUM_URL } from "./curriculumCatalog.js";
 
 function App() {
   const [subject, setSubject] = useState("Core Mathematics");
@@ -22,6 +22,36 @@ function App() {
   const needsManualReview = Boolean(curriculum?.reviewRequired);
   const hasPlaceholderTopics = Boolean(curriculum && isCurriculumPlaceholder(null, curriculum) && !needsManualReview);
   const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics && !needsManualReview);
+
+  function exportCurriculumCoverageCsv() {
+    const header = ["Grade", "Subject", "Status", "Curriculum design title", "KICD source URL", "Source note"];
+    const rows = [];
+    for (const [gradeName, directory] of Object.entries(curriculumDirectory)) {
+      for (const subjectName of directory.subjects || []) {
+        const entry = curriculumCatalog[gradeName]?.[subjectName];
+        let status = "Not indexed";
+        if (entry?.reviewRequired) status = "Needs manual review";
+        else if (entry && isCurriculumPlaceholder(null, entry)) status = "Source-linked placeholder";
+        else if (entry?.strands?.some(strand => strand.subStrands?.length)) status = "Indexed";
+        rows.push([
+          gradeName,
+          subjectName,
+          status,
+          entry?.title || "",
+          entry?.sourceUrl || getCurriculumSourceUrl(gradeName) || "",
+          entry?.sourceLabel || ""
+        ]);
+      }
+    }
+    const quote = value => '"' + String(value ?? "").replaceAll('"', '""') + '"';
+    const csv = [header, ...rows].map(row => row.map(quote).join(",")).join("\r\n");
+    const url = URL.createObjectURL(new Blob(["\ufeff" + csv], { type: "text/csv;charset=utf-8;" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "mwalimupro-curriculum-coverage.csv";
+    link.click();
+    URL.revokeObjectURL(url);
+  }
 
   function changeSubject(value) {
     setSubject(value);
@@ -172,7 +202,7 @@ function App() {
         <article><div className="stat-icon blue">↗</div><div><small>Export formats</small><b>CSV + Print</b><span>Save as PDF from browser</span></div></article>
       </section>
       <section className="coverage-panel" aria-labelledby="coverage-title">
-        <div className="coverage-heading"><div><div className="eyebrow">CURRICULUM COVERAGE</div><h2 id="coverage-title">Know what is ready — and what still needs indexing.</h2><p>Counts reflect learning areas/design options listed in MwalimuPro. Senior-school entries are a combined catalogue of KICD pathway/track designs across Grades 10–12, not a claim that every subject is offered at every grade or school; check the grade-specific KICD page. “Indexed” means topic labels exist in MwalimuPro; it is not a claim that every outcome has been independently verified.</p></div><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Check official KICD designs ↗</a></div>
+        <div className="coverage-heading"><div><div className="eyebrow">CURRICULUM COVERAGE</div><h2 id="coverage-title">Know what is ready — and what still needs indexing.</h2><p>Counts reflect learning areas/design options listed in MwalimuPro. Senior-school entries are a combined catalogue of KICD pathway/track designs across Grades 10–12, not a claim that every subject is offered at every grade or school; check the grade-specific KICD page. “Indexed” means topic labels exist in MwalimuPro; it is not a claim that every outcome has been independently verified.</p><button type="button" className="secondary-button" onClick={exportCurriculumCoverageCsv}>Export coverage / review queue CSV</button></div><a href={KICD_CURRICULUM_URL} target="_blank" rel="noreferrer">Check official KICD designs ↗</a></div>
         <div className="coverage-summary">
           <article><b>{coverage.indexed}</b><span>Indexed subject entries</span></article>
           <article><b>{coverage.sourceOnly}</b><span>Source-linked placeholders</span></article>
