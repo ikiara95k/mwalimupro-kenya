@@ -221,6 +221,19 @@ export const curriculumCatalog = {
         { name: "5.0 Christian Living Today", subStrands: ["Courtship and Marriage (10 lessons)", "Responsible Parenthood (8 lessons)", "Leisure (8 lessons)", "Wealth, Money and Poverty (8 lessons)"] }
       ]
     },
+    "Social Studies": {
+      title: "Social Studies Grade 9 (KICD curriculum design, April 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Social-Studies-Grade-9-Design-Formatted-April-2024.pdf",
+      sourceLabel: "Official KICD Grade 9 Social Studies design, April 2024; verify against any later revision before final school planning.",
+      totalSuggestedLessons: 120,
+      strands: [
+        { name: "1.0 Social Studies and Career Development", subStrands: ["1.1 Pathway Choices (4 lessons)", "1.2 Pre-career Support Systems (4 lessons)"] },
+        { name: "2.0 Community Service-Learning", subStrands: ["2.1 Community Service-Learning Project (8 lessons)"] },
+        { name: "3.0 People and Relationships", subStrands: ["3.1 Socio-Economic Practices of Early Humans (6 lessons)", "3.2 Indigenous Knowledge Systems in African Societies (8 lessons)", "3.3 Poverty Reduction (6 lessons)", "3.4 Population Structure (8 lessons)", "3.5 Peaceful Conflict Resolution (8 lessons)", "3.6 Healthy Relationships (4 lessons)"] },
+        { name: "4.0 Natural and Historic Built Environments", subStrands: ["4.1 Topographical Maps (8 lessons)", "4.2 Internal Land Forming Processes (8 lessons)", "4.3 Multipurpose River Projects in Africa (8 lessons)", "4.4 Management and Conservation of the Environment (6 lessons)", "4.5 World Heritage Sites in Africa (6 lessons)"] },
+        { name: "5.0 Political Developments and Governance", subStrands: ["5.1 The Constitution of Kenya (8 lessons)", "5.2 Civic Engagement in Governance (6 lessons)", "5.3 Kenya's Bill of Rights (8 lessons)", "5.4 Cultural Globalisation (6 lessons)"] }
+      ]
+    },
     "Mathematics": {
       title: "Mathematics Grade 9 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/Mathematics-Grade-9-Design-Formatted-April-2024.pdf",
