@@ -13,13 +13,21 @@ const juniorSubjects = [
   "German", "HRE", "Indigenous Language", "Integrated Science", "IRE",
   "Kiswahili", "Mandarin", "Mathematics", "Pre-Technical Studies", "Social Studies"
 ];
+// Directory of KICD-listed senior-school subject designs. This is a catalogue of
+// available designs, not a claim that every subject is compulsory or offered by every school.
 const seniorSubjects = [
-  "Agriculture", "Aviation", "Biology", "Chemistry", "Community Service Learning",
-  "Core Mathematics", "English", "Fasihi ya Kiswahili", "Fine Arts",
-  "General Science", "Geography", "History & Citizenship", "Home Science",
-  "ICT", "Kiswahili", "Literature in English", "Marine and Fisheries",
+  "Agriculture", "Advanced English", "Advanced Mathematics", "Arabic", "Aviation",
+  "Biology", "Building and Construction", "Business Studies", "Chemistry",
+  "Community Service Learning", "Computer Studies", "Core Mathematics",
+  "Drawing and Design", "Electrical Technology", "English", "Fasihi ya Kiswahili",
+  "Fine Arts", "French", "German", "General Science", "Geography",
+  "History & Citizenship", "Home Science", "Hindu Religious Education",
+  "ICT", "Indigenous Language", "Islamic Religious Education", "Kiswahili",
+  "Literature in English", "Mandarin Chinese", "Marine and Fisheries",
+  "Marine and Fisheries Technology", "Media Technology", "Metal Technology",
   "Music & Dance", "Physical Education", "Physics", "Power Mechanics",
-  "Sports & Recreation", "Theatre & Film", "Woodwork"
+  "Sign Language", "Sports & Recreation", "Theatre & Film", "Wood Technology",
+  "Woodwork", "Christian Religious Education"
 ];
 
 export const curriculumDirectory = {
@@ -1477,6 +1485,166 @@ export const curriculumCatalog = {
         { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
+    "Advanced English": {
+      title: "Advanced English Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Advanced English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Advanced Mathematics": {
+      title: "Advanced Mathematics Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Advanced Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Arabic": {
+      title: "Arabic Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Building and Construction": {
+      title: "Building and Construction Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Building and Construction curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Business Studies": {
+      title: "Business Studies Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Business Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Computer Studies": {
+      title: "Computer Studies Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Computer Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Drawing and Design": {
+      title: "Drawing and Design Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Drawing and Design curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Electrical Technology": {
+      title: "Electrical Technology Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Electrical Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "French": {
+      title: "French Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "German": {
+      title: "German Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Hindu Religious Education": {
+      title: "Hindu Religious Education Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Hindu Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Indigenous Language": {
+      title: "Indigenous Language Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Islamic Religious Education": {
+      title: "Islamic Religious Education Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Islamic Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mandarin Chinese": {
+      title: "Mandarin Chinese Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Mandarin Chinese curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Marine and Fisheries Technology": {
+      title: "Marine and Fisheries Technology Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Marine and Fisheries Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Media Technology": {
+      title: "Media Technology Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Media Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Metal Technology": {
+      title: "Metal Technology Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Metal Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Sign Language": {
+      title: "Sign Language Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Sign Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Wood Technology": {
+      title: "Wood Technology Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Wood Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Christian Religious Education": {
+      title: "Christian Religious Education Grade 10 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-ten/",
+      sourceLabel: "Official KICD Grade 10 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Christian Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 10 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   },
   "Grade 11": {
     "Agriculture": {
@@ -1671,6 +1839,166 @@ export const curriculumCatalog = {
         { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
+    "Advanced English": {
+      title: "Advanced English Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Advanced English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Advanced Mathematics": {
+      title: "Advanced Mathematics Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Advanced Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Arabic": {
+      title: "Arabic Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Building and Construction": {
+      title: "Building and Construction Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Building and Construction curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Business Studies": {
+      title: "Business Studies Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Business Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Computer Studies": {
+      title: "Computer Studies Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Computer Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Drawing and Design": {
+      title: "Drawing and Design Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Drawing and Design curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Electrical Technology": {
+      title: "Electrical Technology Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Electrical Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "French": {
+      title: "French Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "German": {
+      title: "German Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Hindu Religious Education": {
+      title: "Hindu Religious Education Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Hindu Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Indigenous Language": {
+      title: "Indigenous Language Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Islamic Religious Education": {
+      title: "Islamic Religious Education Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Islamic Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mandarin Chinese": {
+      title: "Mandarin Chinese Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Mandarin Chinese curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Marine and Fisheries Technology": {
+      title: "Marine and Fisheries Technology Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Marine and Fisheries Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Media Technology": {
+      title: "Media Technology Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Media Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Metal Technology": {
+      title: "Metal Technology Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Metal Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Sign Language": {
+      title: "Sign Language Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Sign Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Wood Technology": {
+      title: "Wood Technology Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Wood Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Christian Religious Education": {
+      title: "Christian Religious Education Grade 11 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-eleven/",
+      sourceLabel: "Official KICD Grade 11 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Christian Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 11 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
   },
   "Grade 12": {
     "Agriculture": {
@@ -1863,6 +2191,166 @@ export const curriculumCatalog = {
       sourceLabel: "Official KICD Grade 12 curriculum-design page. Verify the relevant senior-school pathway/track and current design. Curriculum sequence awaits transcription and verification before scheme generation.",
       strands: [
         { name: "Woodwork curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 design for the selected pathway/track to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Advanced English": {
+      title: "Advanced English Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Advanced English curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Advanced Mathematics": {
+      title: "Advanced Mathematics Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Advanced Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Arabic": {
+      title: "Arabic Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Arabic curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Building and Construction": {
+      title: "Building and Construction Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Building and Construction curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Business Studies": {
+      title: "Business Studies Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Business Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Computer Studies": {
+      title: "Computer Studies Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Computer Studies curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Drawing and Design": {
+      title: "Drawing and Design Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Drawing and Design curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Electrical Technology": {
+      title: "Electrical Technology Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Electrical Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "French": {
+      title: "French Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "French curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "German": {
+      title: "German Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "German curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Hindu Religious Education": {
+      title: "Hindu Religious Education Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Hindu Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Indigenous Language": {
+      title: "Indigenous Language Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Indigenous Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Islamic Religious Education": {
+      title: "Islamic Religious Education Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Islamic Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Mandarin Chinese": {
+      title: "Mandarin Chinese Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Mandarin Chinese curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Marine and Fisheries Technology": {
+      title: "Marine and Fisheries Technology Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Marine and Fisheries Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Media Technology": {
+      title: "Media Technology Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Media Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Metal Technology": {
+      title: "Metal Technology Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Metal Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Sign Language": {
+      title: "Sign Language Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Sign Language curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Wood Technology": {
+      title: "Wood Technology Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Wood Technology curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
+      ]
+    },
+    "Christian Religious Education": {
+      title: "Christian Religious Education Grade 12 (KICD source-linked placeholder)",
+      sourceUrl: "https://kicd.ac.ke/cbc-materials/curriculum-designs/grade-twelve/",
+      sourceLabel: "Official KICD Grade 12 curriculum-design page. This is an available subject design, not a claim that every learner takes it. Topic sequence awaits transcription and verification before scheme generation.",
+      strands: [
+        { name: "Christian Religious Education curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 12 subject design to confirm the current strand and sub-strand sequence before planning."] }
       ]
     },
   }
