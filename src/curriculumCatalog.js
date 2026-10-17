@@ -24,7 +24,7 @@ const seniorSubjects = [
 
 export const curriculumDirectory = {
   "Pre-Primary 1": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
-  "Pre-Primary 2": { url: ROOT + "pre-primary-designs/", subjects: ["Creative Activities", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
+  "Pre-Primary 2": { url: "https://kicd.ac.ke/cbc-materials/pre-primary/", subjects: ["Creative Activities", "Language Activities", "Mathematical Activities", "Environmental Activities"] },
   "Grade 1": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
   "Grade 2": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
   "Grade 3": { url: ROOT + "lower-primary-designs/", subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Hygiene and Nutrition", "Movement and Creative Activities", "Religious Education"] },
@@ -50,6 +50,34 @@ export const curriculumCatalog = {
         { name: "2.0 Measurement", subStrands: ["2.1 Length (10 lessons)", "2.2 Area (8 lessons)", "2.3 Volume (8 lessons)", "2.4 Capacity (8 lessons)", "2.5 Mass (8 lessons)", "2.6 Time (10 lessons)", "2.7 Money (8 lessons)"] },
         { name: "3.0 Geometry", subStrands: ["3.1 Position and Direction (5 lessons)", "3.2 Angles (5 lessons)", "3.3 Plane Figures (6 lessons)"] },
         { name: "4.0 Data Handling", subStrands: ["4.1 Data (10 lessons)"] }
+      ]
+    }
+  },
+  "Grade 5": {
+    "Mathematics": {
+      title: "Mathematics Grade 5 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-5-Mathematics.pdf",
+      sourceLabel: "Official KICD Grade 5 Mathematics curriculum design (revised 2024)",
+      totalSuggestedLessons: 150,
+      strands: [
+        { name: "1.0 Numbers", subStrands: ["1.1 Whole Numbers (20 lessons)", "1.2 Addition (6 lessons)", "1.3 Subtraction (6 lessons)", "1.4 Multiplication (6 lessons)", "1.5 Division (6 lessons)", "1.6 Fractions (8 lessons)", "1.7 Decimals (6 lessons)", "1.8 Simple Equations (6 lessons)"] },
+        { name: "2.0 Measurement", subStrands: ["2.1 Length (12 lessons)", "2.2 Area (6 lessons)", "2.3 Volume (6 lessons)", "2.4 Capacity (12 lessons)", "2.5 Mass (12 lessons)", "2.6 Time (8 lessons)", "2.7 Money (8 lessons)"] },
+        { name: "3.0 Geometry", subStrands: ["3.1 Lines (4 lessons)", "3.2 Angles (6 lessons)", "3.3 Three Dimension (3-D) Objects (6 lessons)"] },
+        { name: "4.0 Data Handling", subStrands: ["4.1 Data Representation (6 lessons)"] }
+      ]
+    }
+  },
+  "Grade 6": {
+    "Mathematics": {
+      title: "Mathematics Grade 6 (Revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-6-Mathematics-Revised.pdf",
+      sourceLabel: "Official KICD Grade 6 Mathematics curriculum design (revised 2024)",
+      totalSuggestedLessons: 150,
+      strands: [
+        { name: "1.0 Numbers", subStrands: ["1.1 Whole Numbers (20 lessons)", "1.2 Multiplication (6 lessons)", "1.3 Division (6 lessons)", "1.4 Fractions (12 lessons)", "1.5 Decimals (12 lessons)", "1.6 Inequalities (8 lessons)"] },
+        { name: "2.0 Measurement", subStrands: ["2.1 Length (14 lessons)", "2.2 Area (6 lessons)", "2.3 Capacity (6 lessons)", "2.4 Mass (14 lessons)", "2.5 Time (10 lessons)", "2.6 Money (8 lessons)"] },
+        { name: "3.0 Geometry", subStrands: ["3.1 Lines (6 lessons)", "3.2 Angles (6 lessons)", "3.3 3-D Objects (6 lessons)"] },
+        { name: "4.0 Data Handling", subStrands: ["4.1 Bar Graphs (10 lessons)"] }
       ]
     }
   },
