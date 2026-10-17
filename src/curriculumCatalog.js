@@ -1409,7 +1409,7 @@ export const curriculumCatalog = {
   "Grade 10": {
     "Core Mathematics": {
       title: "Core Mathematics Grade 10 (July 2025)",
-      sourceUrl: ROOT + "grade-ten/",
+      sourceUrl: "https://drive.google.com/file/d/1XwcFQpw5J29rryJUjwJwpd1Py5PWDpqu/preview",
       sourceLabel: "Official KICD-linked Grade 10 subject design, July 2025. Verify any later revision before final school planning.",
       strands: [
         { name: "1.0 Numbers and Algebra", subStrands: ["1.1 Real Numbers", "1.2 Indices and Logarithms", "1.3 Quadratic Expressions and Equations"] },
@@ -1419,7 +1419,7 @@ export const curriculumCatalog = {
     },
     Physics: {
       title: "Physics Grade 10 (2025)",
-      sourceUrl: ROOT + "grade-ten/",
+      sourceUrl: "https://drive.google.com/file/d/1vBYR4lx-zLtdjAe3n9FCJv7D0wiLhAGc/preview",
       sourceLabel: "Official KICD-linked Grade 10 subject design, July 2025. Verify any later revision before final school planning.",
       strands: [
         { name: "1.0 Mechanics and Thermal Physics", subStrands: ["1.1 Introduction to Physics", "1.2 Pressure", "1.3 Mechanical Properties of Materials", "1.4 Temperature and Thermal Expansion", "1.5 Moments and Equilibrium", "1.6 Energy, Work, Power and Machines"] },
