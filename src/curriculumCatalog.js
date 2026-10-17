@@ -1072,7 +1072,7 @@ export const curriculumCatalog = {
     "CRE": {
       title: "Christian Religious Education Grade 8 (KICD curriculum design, April 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-Grade-8-Design-Formatted-April-2024.pdf",
-      sourceLabel: "Official KICD Grade 8 CRE design, April 2024. Verify any later revision before final school planning.",
+      sourceLabel: "Official KICD Grade 8 CRE curriculum design, April 2024.",
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Creation", subStrands: ["1.1 Origin and Consequences of Sin (6 lessons)", "1.2 God's Plan for Redemption (6 lessons)"] },
