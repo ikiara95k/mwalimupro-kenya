@@ -14,6 +14,7 @@ MwalimuPro Kenya is a responsive React + Vite teacher workspace focused on creat
 - Curriculum coverage view and source links where available
 - Guardrails that prevent generation from source-only placeholders or entries explicitly marked for review
 - Curriculum catalogue validation script
+- Detailed per-grade/per-subject coverage audit report (`npm run report:curriculum`)
 
 ## Curriculum data: read this before using a generated scheme
 
@@ -36,6 +37,12 @@ Validate the curriculum catalogue:
 
 ```bash
 npm run check:curriculum
+```
+
+Print a per-grade and per-subject report showing indexed entries, source-only placeholders, entries requiring review, and missing catalogue entries:
+
+```bash
+npm run report:curriculum
 ```
 
 Build the production app:
