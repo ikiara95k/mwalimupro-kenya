@@ -20,8 +20,12 @@ function App() {
   const coverage = useMemo(() => getCurriculumCoverage(), []);
   // Source-linked placeholders and entries with unresolved source conflicts must not generate schemes.
   const needsManualReview = Boolean(curriculum?.reviewRequired);
+  const sourceNote = String(curriculum?.sourceLabel || "").toLowerCase();
+  // Topic labels alone do not prove a design has been fully transcribed and checked.
+  // Keep records explicitly marked as awaiting transcription/verification out of scheme generation.
+  const awaitingSourceVerification = /await(?:s|ing) (?:topic )?transcription|remain to be transcribed|not yet (?:fully )?verified|awaiting verification|sequence .* not yet indexed/.test(sourceNote);
   const hasPlaceholderTopics = Boolean(curriculum && isCurriculumPlaceholder(null, curriculum) && !needsManualReview);
-  const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics && !needsManualReview);
+  const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics && !needsManualReview && !awaitingSourceVerification);
 
   function exportCurriculumCoverageCsv() {
     const header = [
@@ -86,9 +90,11 @@ function App() {
       setScheme(null);
       setNotice(needsManualReview
         ? (curriculum.reviewReason || "This topic list needs manual review before scheme generation.")
-        : hasPlaceholderTopics
-          ? "This subject is linked to the official KICD source, but its strand and sub-strand sequence is still a placeholder. A scheme cannot be generated until the actual curriculum sequence is verified and indexed."
-          : "A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
+        : awaitingSourceVerification
+          ? "This entry contains topic labels, but its source note says the sequence or allocations still need transcription/verification. Scheme generation is paused until that check is completed against the current KICD design."
+          : hasPlaceholderTopics
+            ? "This subject is linked to the official KICD source, but its strand and sub-strand sequence is still a placeholder. A scheme cannot be generated until the actual curriculum sequence is verified and indexed."
+            : "A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
       return;
     }
     const count = Math.max(1, Math.min(16, Number(weeks) || 1));
