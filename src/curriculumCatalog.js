@@ -2492,7 +2492,7 @@ export const curriculumCatalog = {
 
 // One shared rule keeps the UI and the validation script from disagreeing about
 // whether an entry contains real topic labels or a source-only placeholder.
-const placeholderPattern = /(?:use the official KICD .* to confirm the current strand and sub-strand sequence|curriculum sequence not yet indexed|awaits transcription and verification|strand sequence awaits transcription)/i;
+const placeholderPattern = /(?:use the official KICD .* to confirm the current strand and sub-strand sequence|curriculum sequence not yet indexed|awaits transcription and verification|strand sequence awaits transcription|(?:topic )?sequence .*remain(?:s)? to be transcribed and verified|awaiting (?:topic )?transcription and verification|awaiting verification of (?:the )?(?:topic|strand|sub-strand) sequence)/i;
 
 export function isCurriculumPlaceholder(item, curriculum = null) {
   if (typeof item === "string" && placeholderPattern.test(item)) return true;
