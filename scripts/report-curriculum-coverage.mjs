@@ -52,8 +52,7 @@ for (const status of [
 ]) {
   console.log(`${status}: ${counts[status] ?? 0}`);
 }
-console.log("
-Per-grade summary");
+console.log("\nPer-grade summary");
 for (const grade of Object.keys(curriculumDirectory)) {
   const gradeRows = rows.filter(row => row.grade === grade);
   const gradeCounts = gradeRows.reduce((acc, row) => {
@@ -67,8 +66,7 @@ for (const grade of Object.keys(curriculumDirectory)) {
 
 const unresolved = rows.filter(row => row.status !== "VERIFIED_SEQUENCE");
 if (unresolved.length) {
-  console.log("
-Entries requiring follow-up (grade | subject | status | source)");
+  console.log("\nEntries requiring follow-up (grade | subject | status | source)");
   for (const row of unresolved) {
     console.log(`${row.grade} | ${row.subject} | ${row.status} | ${row.sourceUrl}`);
   }
