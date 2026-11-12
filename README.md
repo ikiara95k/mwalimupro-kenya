@@ -67,9 +67,9 @@ The production build is written to `dist/`. A GitHub Actions workflow runs catal
 
 ## Development priorities
 
-1. Transcribe and cross-check remaining curriculum designs from KICD, prioritising regular-learner designs and recording the revision date/source for each.
-2. Add verified learning outcomes, learning experiences, resources, assessment methods and strand/sub-strand allocations.
-3. Keep source-only or conflicted entries blocked from automatic scheme generation.
-4. Run the curriculum validator and production build on every change.
-5. Add secure accounts and cloud storage only after the curriculum and document workflow are reliable.
-6. Test generated documents with Kenyan teachers before adding paid features or an Android app.
+1. Finish checking and polishing curriculum entries that already have KICD-linked strand/sub-strand sequences and allocations. Confirm source revision, grade sequence, lesson totals and progression before treating each entry as verified.
+2. Keep entries marked source-only, awaiting transcription, or review-required out of scheme generation. Defer filling those gaps until the currently indexed entries have been checked.
+3. Improve the scheme builder using only the verified curriculum entries, including accurate strand/sub-strand ordering and lesson planning.
+4. Run the curriculum validator, coverage report, progression screen and production build on every change.
+5. After the verified curriculum set is reliable, return to the deferred source-only entries and transcribe them from the correct regular-learner KICD designs.
+6. Test generated documents with Kenyan teachers before adding paid features, accounts, cloud storage or an Android app.
