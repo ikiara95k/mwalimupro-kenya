@@ -40,7 +40,7 @@ const indexedPercent = rows.length ? (indexedCount / rows.length * 100).toFixed(
 console.log(`Catalogue entries checked: ${rows.length}`);
 console.log(`Indexed topic coverage: ${indexedCount}/${rows.length} (${indexedPercent}%)`);
 for (const status of [
-  "INDEXED_NEEDS_TEACHER_VERIFICATION",
+  "VERIFIED_SEQUENCE",\n  "INDEXED_NEEDS_VERIFICATION",
   "SOURCE_ONLY",
   "REVIEW_REQUIRED",
   "NOT_INDEXED"
@@ -55,7 +55,7 @@ for (const grade of Object.keys(curriculumDirectory)) {
     return acc;
   }, {});
   console.log(
-    `${grade}: ${gradeRows.length} subjects | indexed ${gradeCounts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0} (${gradeRows.length ? ((gradeCounts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0) / gradeRows.length * 100).toFixed(1) : "0.0"}%) | source-only ${gradeCounts.SOURCE_ONLY ?? 0} | review ${gradeCounts.REVIEW_REQUIRED ?? 0} | missing ${gradeCounts.NOT_INDEXED ?? 0}`
+    `${grade}: ${gradeRows.length} subjects | indexed ${(gradeCounts.VERIFIED_SEQUENCE ?? 0) + (gradeCounts.INDEXED_NEEDS_VERIFICATION ?? 0)} (${gradeRows.length ? ((gradeCounts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0) / gradeRows.length * 100).toFixed(1) : "0.0"}%) | source-only ${gradeCounts.SOURCE_ONLY ?? 0} | review ${gradeCounts.REVIEW_REQUIRED ?? 0} | missing ${gradeCounts.NOT_INDEXED ?? 0}`
   );
 }
 
