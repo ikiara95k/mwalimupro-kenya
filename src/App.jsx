@@ -20,17 +20,24 @@ function App() {
   const coverage = useMemo(() => getCurriculumCoverage(), []);
   // Source-linked placeholders and entries with unresolved source conflicts must not generate schemes.
   const needsManualReview = Boolean(curriculum?.reviewRequired);
+  const sourceNote = String(curriculum?.sourceLabel || "").toLowerCase();
+  // Topic labels alone do not prove a design has been fully transcribed and checked.
+  // Keep records explicitly marked as awaiting transcription/verification out of scheme generation.
+  const awaitingSourceVerification = /await(?:s|ing) (?:topic )?transcription|remain to be transcribed|not yet (?:fully )?verified|awaiting verification|sequence .* not yet indexed/.test(sourceNote);
   const hasPlaceholderTopics = Boolean(curriculum && isCurriculumPlaceholder(null, curriculum) && !needsManualReview);
-  const curriculumReady = Boolean(curriculum && topics.length && !hasPlaceholderTopics && !needsManualReview);
+  const sequenceVerified = curriculum?.verificationStatus === "verified";
+  const curriculumReady = Boolean(curriculum && topics.length && sequenceVerified && !hasPlaceholderTopics && !needsManualReview && !awaitingSourceVerification);
 
   function exportCurriculumCoverageCsv() {
     const header = [
       "Grade",
       "Subject",
+      "Verification status",
       "Indexing status",
       "Curriculum design title",
       "KICD source URL",
       "Source note",
+      "Verification note",
       "Review reason",
       "Declared lesson total",
       "Additional showcase lessons"
@@ -42,14 +49,17 @@ function App() {
         let status = "Not indexed";
         if (entry?.reviewRequired) status = "Needs manual review";
         else if (entry && isCurriculumPlaceholder(null, entry)) status = "Source-linked placeholder";
-        else if (entry?.strands?.some(strand => strand.subStrands?.length)) status = "Indexed";
+        else if (entry?.verificationStatus === "verified") status = "Verified sequence";
+        else if (entry?.strands?.some(strand => strand.subStrands?.length)) status = "Indexed — awaiting verification";
         rows.push([
           gradeName,
           subjectName,
+          entry?.verificationStatus || "not verified",
           status,
           entry?.title || "",
           entry?.sourceUrl || getCurriculumSourceUrl(gradeName) || "",
           entry?.sourceLabel || "",
+          entry?.verificationNote || "",
           entry?.reviewReason || "",
           entry?.totalSuggestedLessons ?? "",
           entry?.additionalShowcaseLessons ?? ""
@@ -86,9 +96,13 @@ function App() {
       setScheme(null);
       setNotice(needsManualReview
         ? (curriculum.reviewReason || "This topic list needs manual review before scheme generation.")
-        : hasPlaceholderTopics
-          ? "This subject is linked to the official KICD source, but its strand and sub-strand sequence is still a placeholder. A scheme cannot be generated until the actual curriculum sequence is verified and indexed."
-          : "A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
+        : awaitingSourceVerification
+          ? "This entry contains topic labels, but its source note says the sequence or allocations still need transcription/verification. Scheme generation is paused until that check is completed against the current KICD design."
+          : hasPlaceholderTopics
+            ? "This subject is linked to the official KICD source, but its strand and sub-strand sequence is still a placeholder. A scheme cannot be generated until the actual curriculum sequence is verified and indexed."
+            : !sequenceVerified
+              ? "This curriculum has been indexed but its strand sequence and lesson allocations have not yet passed the KICD verification check. Scheme generation remains paused until that check is recorded."
+              : "A verified topic index for " + grade + " " + subject + " has not been added yet. Open the official KICD curriculum designs. No generic topics will be substituted.");
       return;
     }
     const count = Math.max(1, Math.min(16, Number(weeks) || 1));

@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check:curriculum": "node scripts/validate-curriculum.mjs"
+    "check:curriculum": "node scripts/validate-curriculum.mjs",
+    "report:curriculum": "node scripts/report-curriculum-coverage.mjs",
+    "report:curriculum:progression": "node scripts/report-curriculum-progression.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

@@ -14,12 +14,16 @@ MwalimuPro Kenya is a responsive React + Vite teacher workspace focused on creat
 - Curriculum coverage view and source links where available
 - Guardrails that prevent generation from source-only placeholders or entries explicitly marked for review
 - Curriculum catalogue validation script
+- Detailed per-grade/per-subject coverage audit report (`npm run report:curriculum`)
+- Adjacent-grade repeated sub-strand screening report (`npm run report:curriculum:progression`); flags exact repeated labels for teacher review and does not assume repetition is an error
 
 ## Curriculum data: read this before using a generated scheme
 
 The app contains a mixture of transcribed topic sequences and source-linked entries that are not yet fully indexed. The grade/subject directory is a coverage map; it does **not** mean every subject has a verified topic sequence. The coverage counter distinguishes indexed entries, source-only placeholders, and entries requiring review. An indexed entry is not a guarantee that every learning outcome, learning experience, assessment rubric, and lesson allocation has been independently checked.
 
 Use the official [KICD regular curriculum designs directory](https://kicd.ac.ke/cbc-materials/curriculum-designs/regular-curriculum-designs/) to confirm the latest applicable design and any revisions before teaching or submitting a scheme. Some indexed content refers to April 2024 designs; newer official revisions, if published, take precedence. Never treat automatically balanced lesson periods as official KICD allocations unless the source explicitly gives those allocations.
+
+For lower-primary entries, use the regular-learner designs linked from KICD's [Lower Primary page](https://kicd.ac.ke/cbc-materials/lower-primary/). Do not substitute a Special Needs Education (SNE) adaptation (for example, a design explicitly marked for learners with hearing, visual or physical impairments) for the mainstream learning-area design. If only an adapted document is accessible, keep the mainstream entry source-only until its correct design is verified.
 
 ## Local development
 
@@ -36,6 +40,12 @@ Validate the curriculum catalogue:
 
 ```bash
 npm run check:curriculum
+```
+
+Print a per-grade and per-subject report showing indexed entries, source-only placeholders, entries requiring review, and missing catalogue entries:
+
+```bash
+npm run report:curriculum
 ```
 
 Build the production app:
@@ -57,9 +67,9 @@ The production build is written to `dist/`. A GitHub Actions workflow runs catal
 
 ## Development priorities
 
-1. Transcribe and cross-check remaining curriculum designs from KICD, prioritising regular-learner designs and recording the revision date/source for each.
-2. Add verified learning outcomes, learning experiences, resources, assessment methods and strand/sub-strand allocations.
-3. Keep source-only or conflicted entries blocked from automatic scheme generation.
-4. Run the curriculum validator and production build on every change.
-5. Add secure accounts and cloud storage only after the curriculum and document workflow are reliable.
-6. Test generated documents with Kenyan teachers before adding paid features or an Android app.
+1. Finish checking and polishing curriculum entries that already have KICD-linked strand/sub-strand sequences and allocations. Confirm source revision, grade sequence, lesson totals and progression before treating each entry as verified.
+2. Require an explicit `verificationStatus: "verified"` record before any indexed curriculum can generate a scheme. Source-only, awaiting-transcription, review-required and indexed-but-unverified entries remain blocked.
+3. Improve the scheme builder using only the verified curriculum entries, including accurate strand/sub-strand ordering and lesson planning.
+4. Run the curriculum validator, coverage report, progression screen and production build on every change.
+5. After the verified curriculum set is reliable, return to the deferred source-only entries and transcribe them from the correct regular-learner KICD designs.
+6. Test generated documents with Kenyan teachers before adding paid features, accounts, cloud storage or an Android app.
