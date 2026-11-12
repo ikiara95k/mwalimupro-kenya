@@ -238,11 +238,18 @@ export const curriculumCatalog = {
       ]
     },
     "IRE": {
-      title: "IRE Grade 1 (KICD source-linked placeholder)",
-      sourceUrl: "https://drive.google.com/file/d/1toUw1LJYL23CAdEl-tUJwjqn7wu89JIb/preview",
-      sourceLabel: "Official KICD revised Grade 1–3 IRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
+      title: "Islamic Religious Education Activities Grade 1 (KICD revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-1-3-IRE-Revised.pdf",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, Islamic Religious Education Activities Grades 1–3, revised 2024. Grade 1 strand, sub-strand and lesson allocations transcribed from the Grade 1 summary table; verify any local implementation updates against KICD.",
+      totalSuggestedLessons: 90,
       strands: [
-        { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 1 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Qur’an", subStrands: ["1.1 Arabic Alphabet (10 lessons)", "1.2.1 Al-Fatiha (8 lessons)", "1.2.2 An-Naas (8 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Obedience to Parents (5 lessons)", "2.2 Hadith on Cleanliness (5 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Belief in Allah: Attributes of Allah (7 lessons)", "3.2 Belief in Angels (2 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1 Pillars of Islam (Five Pillars) (8 lessons)", "4.2 Shahadah (5 lessons)", "4.3 Wudhu: Steps and Performance (6 lessons)"] },
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1.1 Gratitude to Allah’s Bounties (6 lessons)", "5.1.2 Love for Parents (5 lessons)", "5.2 Care for the Environment (5 lessons)"] },
+        { name: "6.0 Siirah", subStrands: ["6.1 Birth of Prophet Muhammad (S.A.W.) (6 lessons)"] },
+        { name: "7.0 Islamic Festivals", subStrands: ["7.1 Eids (4 lessons)"] }
       ]
     },
     "Kiswahili": {
@@ -386,11 +393,18 @@ export const curriculumCatalog = {
       ]
     },
     "IRE": {
-      title: "IRE Grade 3 (KICD source-linked placeholder)",
-      sourceUrl: "https://drive.google.com/file/d/1toUw1LJYL23CAdEl-tUJwjqn7wu89JIb/preview",
-      sourceLabel: "Official KICD revised Grade 1–3 IRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
+      title: "Islamic Religious Education Activities Grade 3 (KICD revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-1-3-IRE-Revised.pdf",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, Islamic Religious Education Activities Grades 1–3, revised 2024. Grade 3 strand, sub-strand and lesson allocations transcribed from the Grade 3 summary table; verify any local implementation updates against KICD.",
+      totalSuggestedLessons: 90,
       strands: [
-        { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 3 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Qur’an", subStrands: ["1.1 Surah Al-Masad (8 lessons)", "1.2 Surah An-Nasr (8 lessons)", "1.3 Surah Al-Kafirun (8 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Ihsaan (6 lessons)", "2.2 Hadith on Honesty (6 lessons)", "2.3 Hadith on Respect (6 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Belief in the Last Day (4 lessons)", "3.2 Belief in His Power (4 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1.1 Swalah Postures and Phrases of Prayers (7 lessons)"] },
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Islamic Etiquette: Manners of Entering and Leaving Masjid (4 lessons)", "5.2 Islamic Phrases (4 lessons)", "5.3 Relationship: Care and Dua for the Sick (5 lessons)", "5.3.1 Places of Worship (4 lessons)", "5.4 Environment Care: Care for Domestic Animals (4 lessons)"] },
+        { name: "6.0 Siirah", subStrands: ["6.1 Early Life of the Prophet (S.A.W.) (6 lessons)"] },
+        { name: "7.0 Islamic Festivals", subStrands: ["7.1 Milad un Nabii (3 lessons)", "7.2 Aqiqa (3 lessons)"] }
       ]
     },
     "Kiswahili": {
