@@ -347,11 +347,15 @@ export const curriculumCatalog = {
       ]
     },
     "Mathematics": {
-      title: "Mathematics Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://drive.google.com/file/d/1YlwoCFAVxhjUo_V1A-89GRcho0r0Gq1u/preview",
-      sourceLabel: "Official KICD revised Grade 1–3 Mathematics curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
+      title: "Mathematical Activities Grade 2 (KICD revised 2024; review required)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-1-3-Mathematics-Revised.pdf",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, Mathematical Activities Grades 1–3, revised 2024. Grade 2 detailed strand tables transcribed with their stated sub-strand allocations. The Grade 2 summary table appears to repeat the Grade 1 sequence, so this entry is flagged for manual reconciliation against the full design before scheme generation.",
+      totalSuggestedLessons: 150,
+      reviewRequired: true,
       strands: [
-        { name: "Mathematics curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Numbers", subStrands: ["1.1 Number Concept (8 lessons)", "1.2 Whole Numbers (20 lessons)", "1.3 Addition (20 lessons)", "1.4 Subtraction (20 lessons)", "1.5 Multiplication (12 lessons)", "1.6 Division (8 lessons)", "1.7 Fractions (12 lessons)"] },
+        { name: "2.0 Measurement", subStrands: ["2.1 Length (6 lessons)", "2.2 Mass (6 lessons)", "2.3 Capacity (8 lessons)", "2.4 Time (10 lessons)", "2.5 Money (10 lessons)"] },
+        { name: "3.0 Geometry", subStrands: ["3.1 Lines (5 lessons)", "3.2 Shapes (5 lessons)"] }
       ]
     },
   },
