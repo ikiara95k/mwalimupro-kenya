@@ -7,7 +7,6 @@ let indexedSubStrandCount = 0;
 let sourceOnlyCount = 0;
 let reviewRequiredCount = 0;
 let verifiedCount = 0;
-let verifiedCount = 0;
 
 // Detect duplicate subject keys before JavaScript silently overwrites them in the catalog object.
 const catalogSource = readFileSync(new URL("../src/curriculumCatalog.js", import.meta.url), "utf8");
