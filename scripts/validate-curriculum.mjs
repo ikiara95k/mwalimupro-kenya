@@ -5,7 +5,7 @@ const errors = [];
 let subjectCount = 0;
 let indexedSubStrandCount = 0;
 let sourceOnlyCount = 0;
-let reviewRequiredCount = 0;
+let reviewRequiredCount = 0;\nlet verifiedCount = 0;
 
 // Detect duplicate subject keys before JavaScript silently overwrites them in the catalog object.
 const catalogSource = readFileSync(new URL("../src/curriculumCatalog.js", import.meta.url), "utf8");
@@ -47,7 +47,7 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
     const label = `${grade} / ${subject}`;
     if (!curriculum.title?.trim()) errors.push(`${label}: missing title`);
     if (!/^https:\/\//i.test(curriculum.sourceUrl || "")) errors.push(`${label}: missing or non-HTTPS source URL`);
-    if (curriculum.reviewRequired === true) {
+    if (curriculum.verificationStatus !== undefined && curriculum.verificationStatus !== "verified") {\n      errors.push(`${label}: verificationStatus must be "verified" when present`);\n    }\n    if (curriculum.verificationStatus === "verified") {\n      if (curriculum.reviewRequired === true || isCurriculumPlaceholder(null, curriculum)) {\n        errors.push(`${label}: verified entry cannot also be review-required or a placeholder`);\n      }\n      if (/await(?:s|ing) (?:topic )?transcription|remain to be transcribed|not yet (?:fully )?verified|awaiting verification|sequence .* not yet indexed/i.test(curriculum.sourceLabel || "")) {\n        errors.push(`${label}: verified entry source note still indicates pending transcription or verification`);\n      }\n      if (!curriculum.verificationNote?.trim()) errors.push(`${label}: verified entry is missing verificationNote`);\n      verifiedCount += 1;\n    }\n    if (curriculum.reviewRequired === true) {
       if (!curriculum.reviewReason?.trim()) errors.push(`${label}: reviewRequired is true but reviewReason is missing`);
       if (!isCurriculumPlaceholder(null, curriculum)) errors.push(`${label}: review-required entry is not blocked from scheme generation`);
     }
@@ -137,5 +137,5 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`);
   process.exitCode = 1;
 } else {
-  console.log(`Curriculum catalog structure OK: ${subjectCount} grade/subject entries; ${indexedSubStrandCount} indexed sub-strand items; ${sourceOnlyCount} source-linked entries awaiting indexing; ${reviewRequiredCount} entries require manual review.`);
+  console.log(`Curriculum catalog structure OK: ${subjectCount} grade/subject entries; ${indexedSubStrandCount} indexed sub-strand items; ${sourceOnlyCount} source-linked entries awaiting indexing; ${reviewRequiredCount} entries require manual review; ${verifiedCount} entries have verified scheme sequences.`);
 }
