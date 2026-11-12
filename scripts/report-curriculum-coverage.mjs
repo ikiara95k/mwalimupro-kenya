@@ -16,7 +16,8 @@ for (const [grade, directory] of Object.entries(curriculumDirectory)) {
     let status = "NOT_INDEXED";
     if (entry?.reviewRequired === true) status = "REVIEW_REQUIRED";
     else if (entry && isCurriculumPlaceholder(null, entry)) status = "SOURCE_ONLY";
-    else if (entry && topicCount > 0) status = "INDEXED_NEEDS_TEACHER_VERIFICATION";
+    else if (entry?.verificationStatus === "verified" && topicCount > 0) status = "VERIFIED_SEQUENCE";
+    else if (entry && topicCount > 0) status = "INDEXED_NEEDS_VERIFICATION";
 
     rows.push({
       grade,
@@ -35,19 +36,24 @@ const counts = rows.reduce((acc, row) => {
 
 console.log("MwalimuPro Kenya — curriculum coverage audit");
 console.log("============================================");
-const indexedCount = counts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0;
-const indexedPercent = rows.length ? (indexedCount / rows.length * 100).toFixed(1) : "0.0";
+const verifiedCount = counts.VERIFIED_SEQUENCE ?? 0;
+const indexedCount = counts.INDEXED_NEEDS_VERIFICATION ?? 0;
+const indexedPercent = rows.length ? ((verifiedCount + indexedCount) / rows.length * 100).toFixed(1) : "0.0";
 console.log(`Catalogue entries checked: ${rows.length}`);
-console.log(`Indexed topic coverage: ${indexedCount}/${rows.length} (${indexedPercent}%)`);
+console.log(`Indexed topic coverage: ${verifiedCount + indexedCount}/${rows.length} (${indexedPercent}%)`);
+console.log(`Verified scheme sequences: ${verifiedCount}`);
+console.log(`Indexed but awaiting verification: ${indexedCount}`);
 for (const status of [
-  "VERIFIED_SEQUENCE",\n  "INDEXED_NEEDS_VERIFICATION",
+  "VERIFIED_SEQUENCE",
+  "INDEXED_NEEDS_VERIFICATION",
   "SOURCE_ONLY",
   "REVIEW_REQUIRED",
   "NOT_INDEXED"
 ]) {
   console.log(`${status}: ${counts[status] ?? 0}`);
 }
-console.log("\nPer-grade summary");
+console.log("
+Per-grade summary");
 for (const grade of Object.keys(curriculumDirectory)) {
   const gradeRows = rows.filter(row => row.grade === grade);
   const gradeCounts = gradeRows.reduce((acc, row) => {
@@ -55,13 +61,14 @@ for (const grade of Object.keys(curriculumDirectory)) {
     return acc;
   }, {});
   console.log(
-    `${grade}: ${gradeRows.length} subjects | indexed ${(gradeCounts.VERIFIED_SEQUENCE ?? 0) + (gradeCounts.INDEXED_NEEDS_VERIFICATION ?? 0)} (${gradeRows.length ? ((gradeCounts.INDEXED_NEEDS_TEACHER_VERIFICATION ?? 0) / gradeRows.length * 100).toFixed(1) : "0.0"}%) | source-only ${gradeCounts.SOURCE_ONLY ?? 0} | review ${gradeCounts.REVIEW_REQUIRED ?? 0} | missing ${gradeCounts.NOT_INDEXED ?? 0}`
+    `${grade}: ${gradeRows.length} subjects | indexed ${(gradeCounts.VERIFIED_SEQUENCE ?? 0) + (gradeCounts.INDEXED_NEEDS_VERIFICATION ?? 0)} (${gradeRows.length ? (((gradeCounts.VERIFIED_SEQUENCE ?? 0) + (gradeCounts.INDEXED_NEEDS_VERIFICATION ?? 0)) / gradeRows.length * 100).toFixed(1) : "0.0"}%) | source-only ${gradeCounts.SOURCE_ONLY ?? 0} | review ${gradeCounts.REVIEW_REQUIRED ?? 0} | missing ${gradeCounts.NOT_INDEXED ?? 0}`
   );
 }
 
-const unresolved = rows.filter(row => row.status !== "INDEXED_NEEDS_TEACHER_VERIFICATION");
+const unresolved = rows.filter(row => row.status !== "VERIFIED_SEQUENCE");
 if (unresolved.length) {
-  console.log("\nEntries requiring follow-up (grade | subject | status | source)");
+  console.log("
+Entries requiring follow-up (grade | subject | status | source)");
   for (const row of unresolved) {
     console.log(`${row.grade} | ${row.subject} | ${row.status} | ${row.sourceUrl}`);
   }
