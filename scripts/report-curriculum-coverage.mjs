@@ -43,6 +43,9 @@ console.log(`Catalogue entries checked: ${rows.length}`);
 console.log(`Indexed topic coverage: ${verifiedCount + indexedCount}/${rows.length} (${indexedPercent}%)`);
 console.log(`Verified scheme sequences: ${verifiedCount}`);
 console.log(`Indexed but awaiting verification: ${indexedCount}`);
+for (const row of rows.filter(item => item.status === "VERIFIED_SEQUENCE")) {
+  console.log(`  READY: ${row.grade} — ${row.subject} (${row.topicCount} sub-strands)`);
+}
 for (const status of [
   "VERIFIED_SEQUENCE",
   "INDEXED_NEEDS_VERIFICATION",
