@@ -49,11 +49,11 @@ console.log("MwalimuPro Kenya — adjacent-grade sequence review");
 console.log("=================================================");
 console.log("This is a screening report, not an automatic curriculum judgement.");
 console.log("Repeated labels can be intentional spiralling; each finding needs teacher/KICD review.");
-console.log(\`Adjacent grade/subject pairs compared: \${comparedPairs}\`);
-console.log(\`Repeated sub-strand labels to review: \${findings.length}\`);
+console.log(`Adjacent grade/subject pairs compared: ${comparedPairs}`);
+console.log(`Repeated sub-strand labels to review: ${findings.length}`);
 if (findings.length) {
   for (const item of findings) {
-    console.log(\`REVIEW | \${item.previousGrade} → \${item.currentGrade} | \${item.subject} | \${item.label}\`);
+    console.log(`REVIEW | ${item.previousGrade} → ${item.currentGrade} | ${item.subject} | ${item.label}`);
   }
 } else {
   console.log("No exact repeated labels found in the indexed adjacent-grade pairs.");
