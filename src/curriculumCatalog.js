@@ -336,6 +336,7 @@ export const curriculumCatalog = {
       sourceLabel: "Official KICD Primary School Education Curriculum Design, Islamic Religious Education Activities Grades 1–3, revised 2024. Grade 2 summary strands, sub-strands and lesson allocations transcribed. The summary contains duplicated or irregular sub-strand numbering in the Akhlaq section, so the hierarchy is flagged for manual reconciliation before scheme generation.",
       totalSuggestedLessons: 90,
       reviewRequired: true,
+      reviewReason: "The Grade 2 Akhlaq summary has duplicated or irregular sub-strand numbering; reconcile the hierarchy with the detailed design before scheme generation.",
       strands: [
         { name: "1.0 Qur’an", subStrands: ["1.1 Arabic Alphabet (10 lessons)", "1.2 Selected Chapters (Surah) (16 lessons)"] },
         { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Swalah (4 lessons)", "2.2 Hadith on Iman (4 lessons)", "2.3 Hadith on Love (4 lessons)"] },
@@ -360,6 +361,7 @@ export const curriculumCatalog = {
       sourceLabel: "Official KICD Primary School Education Curriculum Design, Mathematical Activities Grades 1–3, revised 2024. Grade 2 detailed strand tables transcribed with their stated sub-strand allocations. The Grade 2 summary table appears to repeat the Grade 1 sequence, so this entry is flagged for manual reconciliation against the full design before scheme generation.",
       totalSuggestedLessons: 150,
       reviewRequired: true,
+      reviewReason: "KICD's Grade 2 summary table appears to repeat the Grade 1 sequence; reconcile it with the detailed Grade 2 tables before scheme generation.",
       strands: [
         { name: "1.0 Numbers", subStrands: ["1.1 Number Concept (8 lessons)", "1.2 Whole Numbers (20 lessons)", "1.3 Addition (20 lessons)", "1.4 Subtraction (20 lessons)", "1.5 Multiplication (12 lessons)", "1.6 Division (8 lessons)", "1.7 Fractions (12 lessons)"] },
         { name: "2.0 Measurement", subStrands: ["2.1 Length (6 lessons)", "2.2 Mass (6 lessons)", "2.3 Capacity (8 lessons)", "2.4 Time (10 lessons)", "2.5 Money (10 lessons)"] },
