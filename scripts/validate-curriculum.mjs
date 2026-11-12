@@ -59,6 +59,19 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
         errors.push(`${label}: verified entry source note still indicates pending transcription or verification`);
       }
       if (!curriculum.verificationNote?.trim()) errors.push(`${label}: verified entry is missing verificationNote`);
+      const verifiedItems = (curriculum.strands || []).flatMap(strand => strand.subStrands || []);
+      const verifiedAllocations = verifiedItems.map(item => {
+        const match = typeof item === "string" ? item.match(/\\((\\d+)\\s+lessons?\\)/i) : null;
+        return match ? Number(match[1]) : null;
+      });
+      if (!curriculum.totalSuggestedLessons || verifiedAllocations.length === 0 || verifiedAllocations.some(value => value === null)) {
+        errors.push(`${label}: verified sequence must have a declared lesson total and an explicit allocation for every sub-strand`);
+      } else {
+        const verifiedTotal = verifiedAllocations.reduce((sum, value) => sum + value, 0) + (curriculum.additionalShowcaseLessons || 0);
+        if (verifiedTotal !== curriculum.totalSuggestedLessons) {
+          errors.push(`${label}: verified sub-strand allocations plus showcase lessons sum to ${verifiedTotal}, but totalSuggestedLessons is ${curriculum.totalSuggestedLessons}`);
+        }
+      }
       verifiedCount += 1;
     }
     if (curriculum.reviewRequired === true) {
