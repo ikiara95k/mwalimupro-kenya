@@ -61,7 +61,7 @@ for (const [grade, subjects] of Object.entries(curriculumCatalog)) {
       if (!curriculum.verificationNote?.trim()) errors.push(`${label}: verified entry is missing verificationNote`);
       const verifiedItems = (curriculum.strands || []).flatMap(strand => strand.subStrands || []);
       const verifiedAllocations = verifiedItems.map(item => {
-        const match = typeof item === "string" ? item.match(/\\((\\d+)\\s+lessons?\\)/i) : null;
+        const match = typeof item === "string" ? item.match(/\((\d+)\s+lessons?\)/i) : null;
         return match ? Number(match[1]) : null;
       });
       if (!curriculum.totalSuggestedLessons || verifiedAllocations.length === 0 || verifiedAllocations.some(value => value === null)) {
