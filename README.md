@@ -68,7 +68,7 @@ The production build is written to `dist/`. A GitHub Actions workflow runs catal
 ## Development priorities
 
 1. Finish checking and polishing curriculum entries that already have KICD-linked strand/sub-strand sequences and allocations. Confirm source revision, grade sequence, lesson totals and progression before treating each entry as verified.
-2. Keep entries marked source-only, awaiting transcription, or review-required out of scheme generation. Defer filling those gaps until the currently indexed entries have been checked.
+2. Require an explicit `verificationStatus: "verified"` record before any indexed curriculum can generate a scheme. Source-only, awaiting-transcription, review-required and indexed-but-unverified entries remain blocked.
 3. Improve the scheme builder using only the verified curriculum entries, including accurate strand/sub-strand ordering and lesson planning.
 4. Run the curriculum validator, coverage report, progression screen and production build on every change.
 5. After the verified curriculum set is reliable, return to the deferred source-only entries and transcribe them from the correct regular-learner KICD designs.
