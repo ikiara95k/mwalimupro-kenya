@@ -37,6 +37,7 @@ function App() {
       "Curriculum design title",
       "KICD source URL",
       "Source note",
+      "Verification note",
       "Review reason",
       "Declared lesson total",
       "Additional showcase lessons"
@@ -58,6 +59,7 @@ function App() {
           entry?.title || "",
           entry?.sourceUrl || getCurriculumSourceUrl(gradeName) || "",
           entry?.sourceLabel || "",
+          entry?.verificationNote || "",
           entry?.reviewReason || "",
           entry?.totalSuggestedLessons ?? "",
           entry?.additionalShowcaseLessons ?? ""
