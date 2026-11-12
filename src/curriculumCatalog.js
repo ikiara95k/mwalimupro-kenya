@@ -240,7 +240,9 @@ export const curriculumCatalog = {
     "IRE": {
       title: "Islamic Religious Education Activities Grade 1 (KICD revised 2024)",
       sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-1-3-IRE-Revised.pdf",
-      sourceLabel: "Official KICD Primary School Education Curriculum Design, Islamic Religious Education Activities Grades 1–3, revised 2024. Grade 1 strand, sub-strand and lesson allocations transcribed from the Grade 1 summary table; verify any local implementation updates against KICD.",\n      verificationStatus: "verified",\n      verificationNote: "Strand and sub-strand sequence, stated lesson allocations and declared total cross-checked against the revised 2024 KICD grade summary. This verifies the indexed scheme sequence; it does not replace teacher review of the full learning outcomes and learning experiences.",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, Islamic Religious Education Activities Grades 1–3, revised 2024. Grade 1 strand, sub-strand and lesson allocations transcribed from the Grade 1 summary table; verify any local implementation updates against KICD.",
+      verificationStatus: "verified",
+      verificationNote: "Strand and sub-strand sequence, stated lesson allocations and declared total cross-checked against the revised 2024 KICD grade summary. This verifies the indexed scheme sequence; it does not replace teacher review of the full learning outcomes and learning experiences.",
       totalSuggestedLessons: 90,
       strands: [
         { name: "1.0 Qur’an", subStrands: ["1.1 Arabic Alphabet (10 lessons)", "1.2.1 Al-Fatiha (8 lessons)", "1.2.2 An-Naas (8 lessons)"] },
@@ -281,7 +283,9 @@ export const curriculumCatalog = {
     "CRE": {
       title: "Christian Religious Education Grade 2 (KICD revised 2024)",
       sourceUrl: "https://drive.google.com/file/d/1YSXfOr81O2bn5t0ILvqDYkz3GchE9M3i/preview",
-      sourceLabel: "Official KICD Primary School Curriculum Design, Christian Religious Education Grade Two, revised 2024. Strand, sub-strand labels and suggested lesson allocations transcribed from the design summary table.",\n      verificationStatus: "verified",\n      verificationNote: "Strand and sub-strand sequence, stated lesson allocations and declared total cross-checked against the revised 2024 KICD grade summary. This verifies the indexed scheme sequence; it does not replace teacher review of the full learning outcomes and learning experiences.",
+      sourceLabel: "Official KICD Primary School Curriculum Design, Christian Religious Education Grade Two, revised 2024. Strand, sub-strand labels and suggested lesson allocations transcribed from the design summary table.",
+      verificationStatus: "verified",
+      verificationNote: "Strand and sub-strand sequence, stated lesson allocations and declared total cross-checked against the revised 2024 KICD grade summary. This verifies the indexed scheme sequence; it does not replace teacher review of the full learning outcomes and learning experiences.",
       totalSuggestedLessons: 90,
       strands: [
         { name: "1.0 Creation", subStrands: ["1.1 Self awareness (4 lessons)", "1.2 My Family (4 lessons)", "1.3 Creation of Sky, Sun, moon and Stars (5 lessons)"] },
@@ -294,7 +298,9 @@ export const curriculumCatalog = {
     "English Activities": {
       title: "English Language Activities Grade 2 (KICD revised 2024)",
       sourceUrl: "https://drive.google.com/file/d/10KIOCSmh7CyDbjElisPQeeMTLu8AJI9z/preview",
-      sourceLabel: "Official KICD Primary School Education Curriculum Design, English Language Activities Grades 1–3, revised 2024. Grade 2 strand, sub-strand labels and suggested lesson allocations transcribed from the Grade 2 summary of strands and sub-strands.",\n      verificationStatus: "verified",\n      verificationNote: "Strand and sub-strand sequence, stated lesson allocations and declared total cross-checked against the revised 2024 KICD grade summary. This verifies the indexed scheme sequence; it does not replace teacher review of the full learning outcomes and learning experiences.",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, English Language Activities Grades 1–3, revised 2024. Grade 2 strand, sub-strand labels and suggested lesson allocations transcribed from the Grade 2 summary of strands and sub-strands.",
+      verificationStatus: "verified",
+      verificationNote: "Strand and sub-strand sequence, stated lesson allocations and declared total cross-checked against the revised 2024 KICD grade summary. This verifies the indexed scheme sequence; it does not replace teacher review of the full learning outcomes and learning experiences.",
       totalSuggestedLessons: 150,
       strands: [
         { name: "Listening and Speaking", subStrands: ["Pronunciation and vocabulary (30 lessons)"] },
