@@ -279,11 +279,16 @@ export const curriculumCatalog = {
       ]
     },
     "CRE": {
-      title: "CRE Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://drive.google.com/file/d/1YSXfOr81O2bn5t0ILvqDYkz3GchE9M3i/preview",
-      sourceLabel: "Official KICD revised Grade 1–3 CRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
+      title: "Christian Religious Education Grade 2 (KICD revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-GRADE-2-APRIL-2024.pdf",
+      sourceLabel: "Official KICD Primary School Curriculum Design, Christian Religious Education Grade Two, revised 2024. Strand, sub-strand labels and suggested lesson allocations transcribed from the design summary table.",
+      totalSuggestedLessons: 90,
       strands: [
-        { name: "CRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Creation", subStrands: ["1.1 Self awareness (4 lessons)", "1.2 My Family (4 lessons)", "1.3 Creation of Sky, Sun, moon and Stars (5 lessons)"] },
+        { name: "2.0 The Holy Bible", subStrands: ["2.1 Bible as Guide (3 lessons)", "2.2 Divisions of the Bible (4 lessons)", "2.3 The call of Samuel (5 lessons)", "2.4 Daniel in the Den of Lions (5 lessons)", "2.5 The Widow of Zarephath (5 lessons)"] },
+        { name: "3.0 The Early Life of Jesus Christ", subStrands: ["3.1 The Birth of Jesus Christ (5 lessons)", "3.2 Kindness of the Wise Men (4 lessons)", "3.3 Jesus Calms the Storm (4 lessons)", "3.4 Miraculous Catch of Fish (4 lessons)", "3.5 Healing the man with a Withered Hand (4 lessons)", "3.6 Easter (3 lessons)"] },
+        { name: "4.0 Christian Values", subStrands: ["4.1 Sharing (3 lessons)", "4.2 Obedience (3 lessons)", "4.3 Honesty (3 lessons)", "4.4 Thankfulness (3 lessons)", "4.5 Forgiveness (4 lessons)", "4.6 Responsibility (4 lessons)", "4.7 Work (3 lessons)"] },
+        { name: "5.0 The Church", subStrands: ["5.1 Prayer (4 lessons)", "5.2 The Holy Spirit (4 lessons)"] }
       ]
     },
     "English Activities": {
