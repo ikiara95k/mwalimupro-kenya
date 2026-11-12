@@ -331,11 +331,19 @@ export const curriculumCatalog = {
       ]
     },
     "IRE": {
-      title: "IRE Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://drive.google.com/file/d/1toUw1LJYL23CAdEl-tUJwjqn7wu89JIb/preview",
-      sourceLabel: "Official KICD revised Grade 1–3 IRE curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
+      title: "Islamic Religious Education Activities Grade 2 (KICD revised 2024; review required)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-1-3-IRE-Revised.pdf",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, Islamic Religious Education Activities Grades 1–3, revised 2024. Grade 2 summary strands, sub-strands and lesson allocations transcribed. The summary contains duplicated or irregular sub-strand numbering in the Akhlaq section, so the hierarchy is flagged for manual reconciliation before scheme generation.",
+      totalSuggestedLessons: 90,
+      reviewRequired: true,
       strands: [
-        { name: "IRE curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "1.0 Qur’an", subStrands: ["1.1 Arabic Alphabet (10 lessons)", "1.2 Selected Chapters (Surah) (16 lessons)"] },
+        { name: "2.0 Hadith", subStrands: ["2.1 Hadith on Swalah (4 lessons)", "2.2 Hadith on Iman (4 lessons)", "2.3 Hadith on Love (4 lessons)"] },
+        { name: "3.0 Pillars of Iman", subStrands: ["3.1 Belief in His Books (5 lessons)", "3.2 Belief in His Prophets (5 lessons)"] },
+        { name: "4.0 Devotional Acts", subStrands: ["4.1 Swalah (five daily prayers) (5 lessons)", "4.2 Swalah (Rakaat) (7 lessons)"] },
+        { name: "5.0 Akhlaq (Moral Teachings)", subStrands: ["5.1 Islamic phrases (dua before sleeping and after waking up) (5 lessons)", "5.2 Relationship: Love and care for neighbours (4 lessons)", "5.2 Relationship: Love and care for people with special needs (5 lessons)", "5.3 Environment: Caring for the school environment (5 lessons)"] },
+        { name: "6.0 Siirah", subStrands: ["6.1 Siirah (Guardians of the Prophet (S.A.W.)) (5 lessons)"] },
+        { name: "7.0 Islamic Festivals", subStrands: ["7.1 Islamic Festivals (Jum’ah) (6 lessons)"] }
       ]
     },
     "Kiswahili": {
