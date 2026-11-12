@@ -306,7 +306,7 @@ export const curriculumCatalog = {
     "Environmental Activities": {
       title: "Environmental Activities Grade 2 (KICD revised 2024)",
       sourceUrl: "https://drive.google.com/file/d/1aw6VOZadfc1cFTa0x4o4ztzdorLY8xUS/preview",
-      sourceLabel: "Official KICD Primary School Education Curriculum Design, Environmental Activities Grades 1–3, revised 2024 and linked from KICD's Lower Primary page. Grade 2 summary strands, sub-strands and lesson allocations indexed from an accessible text copy of the revised design; verify the detailed learning outcomes and experiences against the full official design.",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, Environmental Activities Grades 1–3, revised 2024 and linked from KICD's Lower Primary page. Grade 2 summary strands, sub-strands and lesson allocations indexed from an accessible text copy of the revised design. Detailed learning outcomes and experiences remain awaiting verification against the full official design before scheme generation.",
       totalSuggestedLessons: 120,
       strands: [
         { name: "1.0 Social Environment", subStrands: ["1.1 Our Home (16 lessons)", "1.2 Family Needs and Wants (8 lessons)", "1.3 Our School (8 lessons)", "1.4 Our National Flag (8 lessons)", "1.5 Our Rights and Responsibilities (6 lessons)", "1.6 Our Market (8 lessons)"] },
