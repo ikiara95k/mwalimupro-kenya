@@ -280,7 +280,7 @@ export const curriculumCatalog = {
     },
     "CRE": {
       title: "Christian Religious Education Grade 2 (KICD revised 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/06/CRE-GRADE-2-APRIL-2024.pdf",
+      sourceUrl: "https://drive.google.com/file/d/1YSXfOr81O2bn5t0ILvqDYkz3GchE9M3i/preview",
       sourceLabel: "Official KICD Primary School Curriculum Design, Christian Religious Education Grade Two, revised 2024. Strand, sub-strand labels and suggested lesson allocations transcribed from the design summary table.",
       totalSuggestedLessons: 90,
       strands: [
@@ -293,7 +293,7 @@ export const curriculumCatalog = {
     },
     "English Activities": {
       title: "English Language Activities Grade 2 (KICD revised 2024)",
-      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-1-3-English-Activities-Revised-Sept.pdf",
+      sourceUrl: "https://drive.google.com/file/d/10KIOCSmh7CyDbjElisPQeeMTLu8AJI9z/preview",
       sourceLabel: "Official KICD Primary School Education Curriculum Design, English Language Activities Grades 1–3, revised 2024. Grade 2 strand, sub-strand labels and suggested lesson allocations transcribed from the Grade 2 summary of strands and sub-strands.",
       totalSuggestedLessons: 150,
       strands: [
