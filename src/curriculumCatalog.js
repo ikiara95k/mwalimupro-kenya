@@ -292,11 +292,15 @@ export const curriculumCatalog = {
       ]
     },
     "English Activities": {
-      title: "English Activities Grade 2 (KICD source-linked placeholder)",
-      sourceUrl: "https://drive.google.com/file/d/10KIOCSmh7CyDbjElisPQeeMTLu8AJI9z/preview",
-      sourceLabel: "Official KICD revised Grade 1–3 English Activities curriculum design, linked from KICD's Lower Primary page. Topic sequence and lesson allocations remain to be transcribed and verified before scheme generation.",
+      title: "English Language Activities Grade 2 (KICD revised 2024)",
+      sourceUrl: "https://kicd.ac.ke/wp-content/uploads/2024/10/Grade-1-3-English-Activities-Revised-Sept.pdf",
+      sourceLabel: "Official KICD Primary School Education Curriculum Design, English Language Activities Grades 1–3, revised 2024. Grade 2 strand, sub-strand labels and suggested lesson allocations transcribed from the Grade 2 summary of strands and sub-strands.",
+      totalSuggestedLessons: 150,
       strands: [
-        { name: "English Activities curriculum sequence not yet indexed", subStrands: ["Use the official KICD Grade 2 design to confirm the current strand and sub-strand sequence before planning."] }
+        { name: "Listening and Speaking", subStrands: ["Pronunciation and vocabulary (30 lessons)"] },
+        { name: "Reading", subStrands: ["Fluency (30 lessons)", "Comprehension (30 lessons)"] },
+        { name: "Language Use", subStrands: ["Word classes (20 lessons)", "Tense (4 lessons)", "Word structures (6 lessons)"] },
+        { name: "Writing", subStrands: ["Handwriting (8 lessons)", "Spelling (8 lessons)", "Punctuation (4 lessons)", "Guided Writing (10 lessons)"] }
       ]
     },
     "Environmental Activities": {
