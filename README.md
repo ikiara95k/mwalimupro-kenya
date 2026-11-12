@@ -23,6 +23,8 @@ The app contains a mixture of transcribed topic sequences and source-linked entr
 
 Use the official [KICD regular curriculum designs directory](https://kicd.ac.ke/cbc-materials/curriculum-designs/regular-curriculum-designs/) to confirm the latest applicable design and any revisions before teaching or submitting a scheme. Some indexed content refers to April 2024 designs; newer official revisions, if published, take precedence. Never treat automatically balanced lesson periods as official KICD allocations unless the source explicitly gives those allocations.
 
+For lower-primary entries, use the regular-learner designs linked from KICD's [Lower Primary page](https://kicd.ac.ke/cbc-materials/lower-primary/). Do not substitute a Special Needs Education (SNE) adaptation (for example, a design explicitly marked for learners with hearing, visual or physical impairments) for the mainstream learning-area design. If only an adapted document is accessible, keep the mainstream entry source-only until its correct design is verified.
+
 ## Local development
 
 Requirements: Node.js 20 or later.
