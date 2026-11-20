@@ -6,3 +6,12 @@ import "./styles.css";
 createRoot(document.getElementById("root")).render(
   <React.StrictMode><App /></React.StrictMode>
 );
+
+// Register the lightweight app-shell service worker for install/offline support.
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch((error) => {
+      console.error("MwalimuPro service worker registration failed:", error);
+    });
+  });
+}
